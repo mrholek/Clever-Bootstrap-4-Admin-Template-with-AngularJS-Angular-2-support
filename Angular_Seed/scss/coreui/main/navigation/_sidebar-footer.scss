@@ -1,0 +1,118 @@
+body:not(.top-nav) {
+
+    .sidebar {
+
+        .sidebar-footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: $sidebar-width;
+            height: 86px;
+            padding: 10px 0 0;
+            overflow: visible;
+            background: $sidebar-footer-bg;
+
+            ul.sidebar-footer-menu {
+                position: relative;
+                display: table;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                table-layout: fixed;
+
+                li {
+                    display: table-cell;
+                    text-align: center;
+
+                    button {
+                        color: #fff;
+                        background: none;
+                        border: 0;
+
+                        i {
+                            display: block;
+                            font-size: 20px;
+                        }
+
+                        span {
+                            font-size: 10px;
+                        }
+                    }
+                }
+
+                .dropdown-menu {
+                    position: fixed;
+                    bottom: 85px;
+                    left: 5px;
+                    width: $sidebar-width - 10;
+                    overflow: hidden;
+                    background: #fff;
+                    border: 0;
+
+                    div {
+
+                        .title {
+                            font-size: 12px;
+
+                            span {
+                                float: right;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+
+                .btn-group .dropdown-toggle:active,
+                .btn-group.open .dropdown-toggle {
+
+                    &:before {
+                        position: absolute;
+                        top: -8px;
+                        margin-left: -8px;
+                        content: '';
+                        border-top: 8px solid #fff;
+                        border-right: 8px solid transparent;
+                        border-left: 8px solid transparent;
+                    }
+                }
+            }
+
+            ul.terms {
+                position: relative;
+                display: table;
+                width: 100%;
+                padding: 0;
+                line-height: 30px;
+                table-layout: fixed;
+                background: $sidebar-footer-bg;
+
+                li {
+                    display: table-cell;
+                    padding: 0;
+                    font-size: 12px;
+                    text-align: center;
+
+                    a {
+                        color: $text-muted;
+                        text-decoration: none;
+
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(sm) {
+
+    body.sidebar-nav.compact-nav {
+        .sidebar {
+            .sidebar-footer {
+                display: none;
+            }
+        }
+    }
+}
