@@ -1,7 +1,5 @@
 # Clever Bootstrap 4 Admin Template with AngularJS and Angular 2 support.
 
-Why I decided to create CoreUI? Please read this article: [Jack of all trades, master of none. Why Boostrap Admin Templates sucks.] (https://medium.com/@lukaszholeczek/jack-of-all-trades-master-of-none-5ea53ef8a1f#.7eqx1bcd8)
-
 Clever is not just another Admin Template. It goes way beyond hitherto admin templates thanks to transparent code and file structure. And if it’s not enough, let’s just add the Clver consists bunch of unique features and over 1000 high quality icons.,
 
 Clever based on Bootstrap 4 and offers 5 versions: HTML5, AJAX, AngularJS, Angular2 and React.
