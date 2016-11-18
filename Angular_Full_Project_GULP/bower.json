@@ -1,0 +1,53 @@
+{
+  "name": "genesis-ui",
+  "version": "1.5.10 (AngularJS)",
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.5",
+    "jquery": "^3.1.0",
+    "tether": "latest",
+    "angular": "latest",
+    "angular-animate": "latest",
+    "angular-ui-router": "1.0.0-beta.3",
+    "oclazyload": "latest",
+    "angular-breadcrumb": "latest",
+    "angular-loading-bar": "latest",
+    "fontawesome": "latest",
+    "simple-line-icons": "latest",
+    "chart.js": "^2.3.0",
+    "angular-chart.js": "^1.0.3",
+
+    "datatables": "latest",
+    "angular-datatables": "latest",
+    "bootstrap-daterangepicker": "latest",
+    "select2" : "latest",
+    "select2-bootstrap-css": "latest",
+    "ionrangeslider": "latest",
+    "ionrangeslider.angular": "https://github.com/mrholek/ionRangeSlider-Angular-Directive.git",
+    "angular-ui-mask": "latest",
+    "angular-sanitize": "latest",
+    "angular-ui-select": "latest",
+    "angular-daterangepicker": "latest",
+    "toastr": "latest",
+    "angular-toastr": "latest",
+    "angular-translate": "latest",
+    "angular-gaugejs": "latest",
+    "gauge.js": "latest",
+    "angular-ui-calendar": "latest",
+    "fullcalendar": "latest"
+  },
+  "overrides": {
+    "angular-gaugejs": {
+      "main": "src/angular-gauge.js"
+    },
+    "fullcalendar": {
+      "main": [
+        "dist/fullcalendar.js",
+        "dist/gcal.js"
+      ]
+    },
+    "ionrangeslider.angular": {
+      "main": "slider.js"
+    }
+  },
+  "private": true
+}

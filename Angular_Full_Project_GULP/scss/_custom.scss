@@ -1,0 +1,99 @@
+// Here you can add other styles
+.navbar {
+    .form-inline {
+        i {
+            color: $navbar-color;
+        }
+        .form-control {
+            margin-top: -3px;
+            color: $navbar-color;
+            border: 0;
+
+            &::placeholder {
+                color: $navbar-color;
+            }
+        }
+        .form-control::-webkit-input-placeholder { color: $navbar-color; }
+        .form-control:-moz-placeholder { color: $navbar-color; }
+        .form-control::-moz-placeholder { color: $navbar-color; }
+        .form-control:-ms-input-placeholder { color: $navbar-color; }
+    }
+    .nav-item {
+
+        .navbar-toggler {
+            height: 100%;
+        }
+
+        .nav-link.nav-pill {
+            width: 32px;
+            height: 32px;
+            padding: 0;
+            margin-top: ($navbar-height - 32px)/2;
+            line-height: 32px;
+            border: 1px solid $navbar-color;
+            border-radius: 50em;
+
+            &:hover {
+                border-color: $navbar-hover-color;
+            }
+
+            i {
+                vertical-align: top;
+            }
+
+            .tag-pill {
+                border: 2px solid #fff;
+            }
+
+            &.avatar {
+                width: 38px;
+                height: 38px;
+                margin-top: ($navbar-height - 38px)/2;
+
+                img {
+                    width: 36px;
+                    height: 36px;
+                    margin: 0;
+                    border: 0;
+                }
+
+                .tag {
+                    top: -6px;
+                    right: -10px;
+                }
+
+                &.dropdown-toggle:after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+.sidebar .sidebar-nav .nav {
+    .nav-title {
+        span {
+            position: relative;
+            display: inline-block;
+
+            &:before, &:after {
+                position: absolute;
+                top: 50%;
+                width: 25px;
+                height: 1px;
+                margin-top: -1px;
+                content: '';
+                border-bottom: 1px solid $sidebar-nav-title-color;
+            }
+
+            &:before {
+                left: -30px;
+            }
+
+            &:after {
+                right: -30px;
+            }
+        }
+    }
+}
