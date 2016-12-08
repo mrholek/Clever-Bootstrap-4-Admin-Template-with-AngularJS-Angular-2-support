@@ -184,6 +184,7 @@ function loadPage(url) {
 $(document).ready(function($){
 
 	navigationSmartResize();
+	smartResize();
 
 	// Add class .active to current link - AJAX Mode off
 	$.navigation.find('a').each(function(){
@@ -212,8 +213,8 @@ $(document).ready(function($){
 
         if ($(this).hasClass('nav-dropdown-toggle')) {
 			$(this).parent().toggleClass('open');
+			resizeBroadcast();
 		}
-
 	});
 
 	function resizeBroadcast() {
@@ -322,5 +323,17 @@ function navigationSmartResize(e) {
         } else {
             $('nav.sidebar-nav').css('height', bodyHeight - headerHeight);
         }
+	}
+}
+
+$(window).bind('resize', smartResize);
+
+function smartResize(e) {
+	var documentHeight = $(document).height()
+	var bodyHeight = $('body').height();
+	var sidebarHeight = $('.sidebar').height();
+
+	if (documentHeight > bodyHeight) {
+		$('body').css('min-height', documentHeight);
 	}
 }

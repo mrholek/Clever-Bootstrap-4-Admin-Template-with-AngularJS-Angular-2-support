@@ -1,6 +1,6 @@
 <!--
  * GenesisUI - Bootstrap 4 Admin Template
- * @version v1.5.9
+ * @version v1.5.11
  * @link https://genesisui.com
  * Copyright (c) 2016 creativeLabs Łukasz Holeczek
  * @license Commercial
@@ -60,7 +60,7 @@
                 <i class="fa fa-search"></i>
                 <input class="form-control" type="text" placeholder="Search...">
             </form>
-            <ul class="nav navbar-nav pull-right hidden-md-down">
+            <ul class="nav navbar-nav float-xs-right hidden-md-down">
                 <li class="nav-item dropdown pr-2">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                         <img src="img/flags/United-Kingdom.png" class="img-flag" alt="English" height="24">
@@ -77,11 +77,202 @@
                             <img src="img/flags/Spain.png" class="img-flag" alt="Español" height="24">Español</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-pill" href="#"><i class="icon-bell"></i><span class="tag tag-pill tag-danger">5</span></a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link nav-pill" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="icon-bell"></i>
+                        <span class="tag tag-pill tag-danger">5</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+
+                        <div class="dropdown-header text-xs-center">
+                            <strong>You have 5 notifications</strong>
+                        </div>
+
+                        <a href="#" class="dropdown-item">
+                            <i class="icon-user-follow text-success"></i> New user registered
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon-user-unfollow text-danger"></i> User deleted
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon-chart text-info"></i> Sales report is ready
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon-basket-loaded text-primary"></i> New client
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="icon-speedometer text-warning"></i> Server overloaded
+                        </a>
+
+                        <div class="dropdown-header text-xs-center">
+                            <strong>Server</strong>
+                        </div>
+
+                        <a href="#" class="dropdown-item">
+                            <div class="text-uppercase mb-q">
+                                <small><b>CPU Usage</b>
+                                </small>
+                            </div>
+                            <progress class="progress progress-xs progress-info m-0" value="25" max="100">25%</progress>
+                            <small class="text-muted">348 Processes. 1/4 Cores.</small>
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <div class="text-uppercase mb-q">
+                                <small><b>Memory Usage</b>
+                                </small>
+                            </div>
+                            <progress class="progress progress-xs progress-warning m-0" value="70" max="100">70%</progress>
+                            <small class="text-muted">11444GB/16384MB</small>
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <div class="text-uppercase mb-q">
+                                <small><b>SSD 1 Usage</b>
+                                </small>
+                            </div>
+                            <progress class="progress progress-xs progress-danger m-0" value="95" max="100">95%</progress>
+                            <small class="text-muted">243GB/256GB</small>
+                        </a>
+
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-pill" href="#"><i class="icon-list"></i></a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link nav-pill" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="icon-list"></i>
+                        <span class="tag tag-pill tag-warning">15</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+
+                        <div class="dropdown-header text-xs-center">
+                            <strong>You have 5 pending tasks</strong>
+                        </div>
+
+                        <a href="#" class="dropdown-item">
+                            <div class="small mb-q">Upgrade NPM &amp; Bower
+                                <span class="float-xs-right">
+                                    <strong>0%</strong>
+                                </span>
+                            </div>
+                            <progress class="progress progress-xs progress-info my-q" value="0" max="100">0%</progress>
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <div class="small mb-q">ReactJS Version
+                                <span class="float-xs-right">
+                                    <strong>25%</strong>
+                                </span>
+                            </div>
+                            <progress class="progress progress-xs progress-danger my-q" value="25" max="100">25%</progress>
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <div class="small mb-q">VueJS Version
+                                <span class="float-xs-right">
+                                    <strong>50%</strong>
+                                </span>
+                            </div>
+                            <progress class="progress progress-xs progress-warning my-q" value="50" max="100">50%</progress>
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <div class="small mb-q">Add new layouts
+                                <span class="float-xs-right">
+                                    <strong>75%</strong>
+                                </span>
+                            </div>
+                            <progress class="progress progress-xs progress-info my-q" value="75" max="100">75%</progress>
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <div class="small mb-q">Angular 2 Cli Version
+                                <span class="float-xs-right">
+                                    <strong>100%</strong>
+                                </span>
+                            </div>
+                            <progress class="progress progress-xs progress-success my-q" value="99" max="100">100%</progress>
+                        </a>
+
+                        <a href="#" class="dropdown-item text-xs-center">
+                            <strong>View all tasks</strong>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link nav-pill" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="icon-envelope-letter"></i>
+                        <span class="tag tag-pill tag-info">7</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+
+                        <div class="dropdown-header text-xs-center">
+                            <strong>You have 4 messages</strong>
+                        </div>
+
+                        <a href="#" class="dropdown-item">
+                            <div class="message">
+                                <div class="py-1 mr-1 float-xs-left">
+                                    <div class="avatar">
+                                        <img src="img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                                        <span class="avatar-status tag-success"></span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <small class="text-muted">John Doe</small>
+                                    <small class="text-muted float-xs-right mt-q">Just now</small>
+                                </div>
+                                <div class="text-truncate font-weight-bold">
+                                    <span class="fa fa-exclamation text-danger"></span>Important message</div>
+                                <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</div>
+                            </div>
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <div class="message">
+                                <div class="py-1 mr-1 float-xs-left">
+                                    <div class="avatar">
+                                        <img src="img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                                        <span class="avatar-status tag-warning"></span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <small class="text-muted">John Doe</small>
+                                    <small class="text-muted float-xs-right mt-q">5 minutes ago</small>
+                                </div>
+                                <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+                                <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</div>
+                            </div>
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <div class="message">
+                                <div class="py-1 mr-1 float-xs-left">
+                                    <div class="avatar">
+                                        <img src="img/avatars/5.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                                        <span class="avatar-status tag-danger"></span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <small class="text-muted">John Doe</small>
+                                    <small class="text-muted float-xs-right mt-q">1:52 PM</small>
+                                </div>
+                                <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+                                <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</div>
+                            </div>
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <div class="message">
+                                <div class="py-1 mr-1 float-xs-left">
+                                    <div class="avatar">
+                                        <img src="img/avatars/4.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                                        <span class="avatar-status tag-info"></span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <small class="text-muted">John Doe</small>
+                                    <small class="text-muted float-xs-right mt-q">4:03 PM</small>
+                                </div>
+                                <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+                                <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="dropdown-item text-xs-center">
+                            <strong>View all messages</strong>
+                        </a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-pill" href="#"><i class="icon-location-pin"></i></a>
@@ -151,9 +342,6 @@
                             <a class="nav-link" href="components-cards.html"><i class="icon-puzzle"></i> Cards</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="components-forms.html"><i class="icon-puzzle"></i> Forms</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="components-switches.html"><i class="icon-puzzle"></i> Switches</a>
                         </li>
                         <li class="nav-item">
@@ -161,6 +349,20 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="components-tabs.html"><i class="icon-puzzle"></i> Tabs</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item nav-dropdown">
+                    <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-note"></i> Forms</a>
+                    <ul class="nav-dropdown-items">
+                        <li class="nav-item">
+                            <a class="nav-link" href="forms-basic-forms.html"><i class="icon-note"></i> Basic Forms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="forms-advanced-forms.html"><i class="icon-note"></i> Advanced Forms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="forms-validation.html"><i class="icon-note"></i> Validation</a>
                         </li>
                     </ul>
                 </li>
@@ -191,18 +393,21 @@
                             <a class="nav-link" href="plugins-calendar.html"><i class="icon-calendar"></i> Calendar</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="plugins-loading-buttons.html"><i class="icon-cursor"></i> Loading Buttons</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="plugins-notifications.html"><i class="icon-info"></i> Notifications</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="plugins-sliders.html"><i class="icon-equalizer"></i> Sliders</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="plugins-spinners.html"><i class="fa fa-spinner"></i> Spinners</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="plugins-tables.html"><i class="icon-list"></i> Tables</a>
                         </li>
                     </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="forms.html"><i class="icon-note"></i> Forms <span class="tag tag-danger">NEW</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="widgets.html"><i class="icon-calculator"></i> Widgets <span class="tag tag-info">NEW</span></a>
@@ -332,7 +537,7 @@
                         <div class="card">
                             <div class="card-header">
                                 Card with switch
-                                <label class="switch switch-sm switch-text switch-info pull-right mb-0">
+                                <label class="switch switch-sm switch-text switch-info float-xs-right mb-0">
                                     <input type="checkbox" class="switch-input">
                                     <span class="switch-label" data-on="On" data-off="Off"></span>
                                     <span class="switch-handle"></span>
@@ -349,7 +554,7 @@
                         <div class="card">
                             <div class="card-header">
                                 Card with label
-                                <span class="tag tag-success pull-right">Success</span>
+                                <span class="tag tag-success float-xs-right">Success</span>
                             </div>
                             <div class="card-block">
                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
@@ -362,7 +567,7 @@
                         <div class="card">
                             <div class="card-header">
                                 Card with label
-                                <span class="tag tag-pill tag-danger pull-right">42</span>
+                                <span class="tag tag-pill tag-danger float-xs-right">42</span>
                             </div>
                             <div class="card-block">
                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
@@ -788,7 +993,7 @@
             </div>
             <div class="tab-pane p-1" id="messages" role="tabpanel">
                 <div class="message">
-                    <div class="py-1 pb-3 mr-1 pull-left">
+                    <div class="py-1 pb-3 mr-1 float-xs-left">
                         <div class="avatar">
                             <img src="img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                             <span class="avatar-status tag-success"></span>
@@ -796,14 +1001,14 @@
                     </div>
                     <div>
                         <small class="text-muted">Lukasz Holeczek</small>
-                        <small class="text-muted pull-right mt-q">1:52 PM</small>
+                        <small class="text-muted float-xs-right mt-q">1:52 PM</small>
                     </div>
                     <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
                     <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
                 </div>
                 <hr>
                 <div class="message">
-                    <div class="py-1 pb-3 mr-1 pull-left">
+                    <div class="py-1 pb-3 mr-1 float-xs-left">
                         <div class="avatar">
                             <img src="img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                             <span class="avatar-status tag-success"></span>
@@ -811,14 +1016,14 @@
                     </div>
                     <div>
                         <small class="text-muted">Lukasz Holeczek</small>
-                        <small class="text-muted pull-right mt-q">1:52 PM</small>
+                        <small class="text-muted float-xs-right mt-q">1:52 PM</small>
                     </div>
                     <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
                     <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
                 </div>
                 <hr>
                 <div class="message">
-                    <div class="py-1 pb-3 mr-1 pull-left">
+                    <div class="py-1 pb-3 mr-1 float-xs-left">
                         <div class="avatar">
                             <img src="img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                             <span class="avatar-status tag-success"></span>
@@ -826,14 +1031,14 @@
                     </div>
                     <div>
                         <small class="text-muted">Lukasz Holeczek</small>
-                        <small class="text-muted pull-right mt-q">1:52 PM</small>
+                        <small class="text-muted float-xs-right mt-q">1:52 PM</small>
                     </div>
                     <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
                     <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
                 </div>
                 <hr>
                 <div class="message">
-                    <div class="py-1 pb-3 mr-1 pull-left">
+                    <div class="py-1 pb-3 mr-1 float-xs-left">
                         <div class="avatar">
                             <img src="img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                             <span class="avatar-status tag-success"></span>
@@ -841,14 +1046,14 @@
                     </div>
                     <div>
                         <small class="text-muted">Lukasz Holeczek</small>
-                        <small class="text-muted pull-right mt-q">1:52 PM</small>
+                        <small class="text-muted float-xs-right mt-q">1:52 PM</small>
                     </div>
                     <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
                     <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
                 </div>
                 <hr>
                 <div class="message">
-                    <div class="py-1 pb-3 mr-1 pull-left">
+                    <div class="py-1 pb-3 mr-1 float-xs-left">
                         <div class="avatar">
                             <img src="img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                             <span class="avatar-status tag-success"></span>
@@ -856,7 +1061,7 @@
                     </div>
                     <div>
                         <small class="text-muted">Lukasz Holeczek</small>
-                        <small class="text-muted pull-right mt-q">1:52 PM</small>
+                        <small class="text-muted float-xs-right mt-q">1:52 PM</small>
                     </div>
                     <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
                     <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
@@ -869,7 +1074,7 @@
                     <div class="clearfix mt-2">
                         <small><b>Option 1</b>
                         </small>
-                        <label class="switch switch-text switch-pill switch-success switch-sm pull-right">
+                        <label class="switch switch-text switch-pill switch-success switch-sm float-xs-right">
                             <input type="checkbox" class="switch-input" checked="">
                             <span class="switch-label" data-on="On" data-off="Off"></span>
                             <span class="switch-handle"></span>
@@ -884,7 +1089,7 @@
                     <div class="clearfix mt-1">
                         <small><b>Option 2</b>
                         </small>
-                        <label class="switch switch-text switch-pill switch-success switch-sm pull-right">
+                        <label class="switch switch-text switch-pill switch-success switch-sm float-xs-right">
                             <input type="checkbox" class="switch-input">
                             <span class="switch-label" data-on="On" data-off="Off"></span>
                             <span class="switch-handle"></span>
@@ -899,7 +1104,7 @@
                     <div class="clearfix mt-1">
                         <small><b>Option 3</b>
                         </small>
-                        <label class="switch switch-text switch-pill switch-success switch-sm pull-right">
+                        <label class="switch switch-text switch-pill switch-success switch-sm float-xs-right">
                             <input type="checkbox" class="switch-input">
                             <span class="switch-label" data-on="On" data-off="Off"></span>
                             <span class="switch-handle"></span>
@@ -911,7 +1116,7 @@
                     <div class="clearfix mt-1">
                         <small><b>Option 4</b>
                         </small>
-                        <label class="switch switch-text switch-pill switch-success switch-sm pull-right">
+                        <label class="switch switch-text switch-pill switch-success switch-sm float-xs-right">
                             <input type="checkbox" class="switch-input" checked="">
                             <span class="switch-label" data-on="On" data-off="Off"></span>
                             <span class="switch-handle"></span>
@@ -958,7 +1163,7 @@
         <span class="text-left">
             <a href="https://genesisui.com">Clever</a> © 2016 creativeLabs.
         </span>
-        <span class="pull-right">
+        <span class="float-xs-right">
             Powered by <a href="https://genesisui.com">GenesisUI</a>
         </span>
     </footer>

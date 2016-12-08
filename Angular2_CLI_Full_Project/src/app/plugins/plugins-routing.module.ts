@@ -2,10 +2,6 @@ import { NgModule }                 from '@angular/core';
 import { Routes,
          RouterModule }             from '@angular/router';
 
-import { CalendarComponent }        from './calendar.component';
-import { DataTableComponent }       from './datatable.component';
-import { NotificationsComponent }   from './notifications.component';
-
 const routes: Routes = [
     {
         path: '',
@@ -15,24 +11,23 @@ const routes: Routes = [
         children: [
             {
                 path: 'calendar',
-                component: CalendarComponent,
-                data: {
-                    title: 'Calendar'
-                }
+                loadChildren: 'app/plugins/calendar/calendar.module#CalendarInitModule'
             },
             {
                 path: 'datatable',
-                component: DataTableComponent,
-                data: {
-                    title: 'DataTable'
-                }
+                loadChildren: 'app/plugins/datatable/datatable.module#DatatableInitModule'
+            },
+            {
+                path: 'loading-buttons',
+                loadChildren: 'app/plugins/loading-buttons/loading-buttons.module#LoadingButtonsModule'
             },
             {
                 path: 'notifications',
-                component: NotificationsComponent,
-                data: {
-                    title: 'Notifications'
-                }
+                loadChildren: 'app/plugins/notifications/notifications.module#NotificationsModule'
+            },
+            {
+                path: 'spinners',
+                loadChildren: 'app/plugins/spinners/spinners.module#SpinnersModule'
             }
         ]
     }

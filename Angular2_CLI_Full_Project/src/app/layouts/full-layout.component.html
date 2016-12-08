@@ -12,7 +12,7 @@
             <i class="fa fa-search"></i>
             <input class="form-control" type="text" placeholder="Search...">
         </form>
-        <ul class="nav navbar-nav pull-right hidden-md-down">
+        <ul class="nav navbar-nav float-xs-right hidden-md-down">
             <li class="nav-item">
                 <a class="nav-link nav-pill" href="#"><i class="icon-bell"></i><span class="tag tag-pill tag-danger">5</span></a>
             </li>
@@ -120,6 +120,17 @@
                 </ul>
             </li>
             <li class="nav-item nav-dropdown" routerLinkActive="open">
+                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-note"></i> Forms</a>
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" [routerLink]="['/forms/basic-forms']"><i class="icon-note"></i> Basic Forms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" [routerLink]="['/forms/advanced-forms']"><i class="icon-note"></i> Advanced Forms</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item nav-dropdown" routerLinkActive="open">
                 <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-energy"></i> Plugins</a>
                 <ul class="nav-dropdown-items">
                     <li class="nav-item">
@@ -129,7 +140,13 @@
                         <a class="nav-link" routerLinkActive="active" [routerLink]="['/plugins/datatable']"><i class="icon-menu"></i> DataTable</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" [routerLink]="['/plugins/loading-buttons']"><i class="icon-cursor"></i> Loading Buttons</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" routerLinkActive="active" [routerLink]="['/plugins/notifications']"><i class="icon-info"></i> Notifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" [routerLink]="['/plugins/spinners']"><i class="fa fa-spinner"></i> Spinners</a>
                     </li>
                 </ul>
             </li>
@@ -157,6 +174,36 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" routerLinkActive="active" [routerLink]="['/pages/500']"><i class="icon-star"></i> Error 500</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item nav-dropdown" routerLinkActive="open">
+                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-layers"></i> UI Kits</a>
+
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item nav-dropdown" routerLinkActive="open">
+                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-speech"></i> Invoicing</a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" routerLinkActive="active" [routerLink]="['/uikits/invoicing/invoice']"><i class="icon-speech"></i> Invoice</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item nav-dropdown" routerLinkActive="open">
+                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-speech"></i> Email</a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" routerLinkActive="active" [routerLink]="['/uikits/email/inbox']"><i class="icon-speech"></i> Inbox</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" routerLinkActive="active" [routerLink]="['/uikits/email/message']"><i class="icon-speech"></i> Message</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" routerLinkActive="active" [routerLink]="['/uikits/email/compose']"><i class="icon-speech"></i> Compose</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </li>
@@ -298,7 +345,7 @@
             </template>
             <div class="p-1">
                 <div class="message">
-                    <div class="py-1 pb-3 mr-1 pull-left">
+                    <div class="py-1 pb-3 mr-1 float-xs-left">
                         <div class="avatar">
                             <img src="assets/img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                             <span class="avatar-status tag-success"></span>
@@ -306,14 +353,14 @@
                     </div>
                     <div>
                         <small class="text-muted">Lukasz Holeczek</small>
-                        <small class="text-muted pull-right mt-q">1:52 PM</small>
+                        <small class="text-muted float-xs-right mt-q">1:52 PM</small>
                     </div>
                     <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
                     <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
                 </div>
                 <hr>
                 <div class="message">
-                    <div class="py-1 pb-3 mr-1 pull-left">
+                    <div class="py-1 pb-3 mr-1 float-xs-left">
                         <div class="avatar">
                             <img src="assets/img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                             <span class="avatar-status tag-success"></span>
@@ -321,14 +368,14 @@
                     </div>
                     <div>
                         <small class="text-muted">Lukasz Holeczek</small>
-                        <small class="text-muted pull-right mt-q">1:52 PM</small>
+                        <small class="text-muted float-xs-right mt-q">1:52 PM</small>
                     </div>
                     <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
                     <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
                 </div>
                 <hr>
                 <div class="message">
-                    <div class="py-1 pb-3 mr-1 pull-left">
+                    <div class="py-1 pb-3 mr-1 float-xs-left">
                         <div class="avatar">
                             <img src="assets/img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                             <span class="avatar-status tag-success"></span>
@@ -336,14 +383,14 @@
                     </div>
                     <div>
                         <small class="text-muted">Lukasz Holeczek</small>
-                        <small class="text-muted pull-right mt-q">1:52 PM</small>
+                        <small class="text-muted float-xs-right mt-q">1:52 PM</small>
                     </div>
                     <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
                     <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
                 </div>
                 <hr>
                 <div class="message">
-                    <div class="py-1 pb-3 mr-1 pull-left">
+                    <div class="py-1 pb-3 mr-1 float-xs-left">
                         <div class="avatar">
                             <img src="assets/img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                             <span class="avatar-status tag-success"></span>
@@ -351,14 +398,14 @@
                     </div>
                     <div>
                         <small class="text-muted">Lukasz Holeczek</small>
-                        <small class="text-muted pull-right mt-q">1:52 PM</small>
+                        <small class="text-muted float-xs-right mt-q">1:52 PM</small>
                     </div>
                     <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
                     <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
                 </div>
                 <hr>
                 <div class="message">
-                    <div class="py-1 pb-3 mr-1 pull-left">
+                    <div class="py-1 pb-3 mr-1 float-xs-left">
                         <div class="avatar">
                             <img src="assets/img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
                             <span class="avatar-status tag-success"></span>
@@ -366,7 +413,7 @@
                     </div>
                     <div>
                         <small class="text-muted">Lukasz Holeczek</small>
-                        <small class="text-muted pull-right mt-q">1:52 PM</small>
+                        <small class="text-muted float-xs-right mt-q">1:52 PM</small>
                     </div>
                     <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
                     <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt...</small>
@@ -383,7 +430,7 @@
                     <div class="clearfix mt-2">
                         <small><b>Option 1</b>
                         </small>
-                        <label class="switch switch-text switch-pill switch-success switch-sm pull-right">
+                        <label class="switch switch-text switch-pill switch-success switch-sm float-xs-right">
                             <input type="checkbox" class="switch-input" checked>
                             <span class="switch-label" data-on="On" data-off="Off"></span>
                             <span class="switch-handle"></span>
@@ -398,7 +445,7 @@
                     <div class="clearfix mt-1">
                         <small><b>Option 2</b>
                         </small>
-                        <label class="switch switch-text switch-pill switch-success switch-sm pull-right">
+                        <label class="switch switch-text switch-pill switch-success switch-sm float-xs-right">
                             <input type="checkbox" class="switch-input">
                             <span class="switch-label" data-on="On" data-off="Off"></span>
                             <span class="switch-handle"></span>
@@ -413,7 +460,7 @@
                     <div class="clearfix mt-1">
                         <small><b>Option 3</b>
                         </small>
-                        <label class="switch switch-text switch-pill switch-success switch-sm pull-right">
+                        <label class="switch switch-text switch-pill switch-success switch-sm float-xs-right">
                             <input type="checkbox" class="switch-input">
                             <span class="switch-label" data-on="On" data-off="Off"></span>
                             <span class="switch-handle"></span>
@@ -425,7 +472,7 @@
                     <div class="clearfix mt-1">
                         <small><b>Option 4</b>
                         </small>
-                        <label class="switch switch-text switch-pill switch-success switch-sm pull-right">
+                        <label class="switch switch-text switch-pill switch-success switch-sm float-xs-right">
                             <input type="checkbox" class="switch-input" checked>
                             <span class="switch-label" data-on="On" data-off="Off"></span>
                             <span class="switch-handle"></span>
@@ -472,7 +519,7 @@
     <span class="text-left">
         <a href="https://genesisui.com">Clever</a> &copy; 2016 creativeLabs.
     </span>
-    <span class="pull-right">
+    <span class="float-xs-right">
         Powered by <a href="https://genesisui.com">GenesisUI</a>
     </span>
 </footer>

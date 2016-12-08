@@ -1,6 +1,6 @@
 /**
  * GenesisUI - Bootstrap 4 Admin Template
- * @version v1.5.9
+ * @version v1.5.11
  * @link https://genesisui.com
  * Copyright (c) 2016 creativeLabs Łukasz Holeczek
  * @license Commercial
@@ -232,9 +232,11 @@ textarea {
     page-break-after: avoid; }
   .navbar {
     display: none; }
-  .btn > .caret, .fc button > .caret,
+  .btn > .caret, .fc button > .caret, .well.well-sm.bg-faded .btn-sm > .caret, .well.well-sm.bg-faded .btn-group-sm > .btn > .caret,
   .dropup > .btn > .caret, .fc
-  .dropup > button > .caret {
+  .dropup > button > .caret, .well.well-sm.bg-faded
+  .dropup > .btn-sm > .caret, .well.well-sm.bg-faded
+  .btn-group-sm.dropup > .btn > .caret {
     border-top-color: #000 !important; }
   .tag {
     border: 1px solid #000; }
@@ -1516,35 +1518,47 @@ select.form-control:focus::-ms-value, .daterangepicker select.input-mini:focus::
   .form-control-static.form-control-sm, .input-group-sm > .form-control-static.form-control, .daterangepicker .input-group-sm > .form-control-static.input-mini, .input-group > .ui-select-bootstrap.input-group-sm > input.form-control-static.ui-select-search.form-control,
   .input-group-sm > .form-control-static.input-group-addon,
   .input-group-sm > .input-group-btn > .form-control-static.btn, .fc
-  .input-group-sm > .input-group-btn > button.form-control-static, .form-control-static.form-control-lg, .input-group-lg > .form-control-static.form-control, .daterangepicker .input-group-lg > .form-control-static.input-mini, .input-group > .ui-select-bootstrap.input-group-lg > input.form-control-static.ui-select-search.form-control,
+  .input-group-sm > .input-group-btn > button.form-control-static, .well.well-sm.bg-faded
+  .input-group-sm > .input-group-btn > .form-control-static.btn-sm, .well.well-sm.bg-faded
+  .input-group-sm > .btn-group-sm.input-group-btn > .form-control-static.btn, .form-control-static.form-control-lg, .input-group-lg > .form-control-static.form-control, .daterangepicker .input-group-lg > .form-control-static.input-mini, .input-group > .ui-select-bootstrap.input-group-lg > input.form-control-static.ui-select-search.form-control,
   .input-group-lg > .form-control-static.input-group-addon,
   .input-group-lg > .input-group-btn > .form-control-static.btn, .fc
-  .input-group-lg > .input-group-btn > button.form-control-static {
+  .input-group-lg > .input-group-btn > button.form-control-static, .well.well-sm.bg-faded
+  .input-group-lg > .input-group-btn > .form-control-static.btn-sm, .well.well-sm.bg-faded
+  .input-group-lg > .btn-group-sm.input-group-btn > .form-control-static.btn {
     padding-right: 0;
     padding-left: 0; }
 
 .form-control-sm, .input-group-sm > .form-control, .daterangepicker .input-group-sm > .input-mini, .input-group > .ui-select-bootstrap.input-group-sm > input.ui-select-search.form-control,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn, .fc
-.input-group-sm > .input-group-btn > button {
+.input-group-sm > .input-group-btn > button, .well.well-sm.bg-faded
+.input-group-sm > .input-group-btn > .btn-sm, .well.well-sm.bg-faded
+.input-group-sm > .btn-group-sm.input-group-btn > .btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem; }
 
 select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]), .daterangepicker .input-group-sm > select.input-mini:not([size]):not([multiple]),
 .input-group-sm > select.input-group-addon:not([size]):not([multiple]),
-.input-group-sm > .input-group-btn > select.btn:not([size]):not([multiple]) {
+.input-group-sm > .input-group-btn > select.btn:not([size]):not([multiple]), .well.well-sm.bg-faded
+.input-group-sm > .input-group-btn > select.btn-sm:not([size]):not([multiple]), .well.well-sm.bg-faded
+.input-group-sm > .btn-group-sm.input-group-btn > select.btn:not([size]):not([multiple]) {
   height: 1.8125rem; }
 
 .form-control-lg, .input-group-lg > .form-control, .daterangepicker .input-group-lg > .input-mini, .input-group > .ui-select-bootstrap.input-group-lg > input.ui-select-search.form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn, .fc
-.input-group-lg > .input-group-btn > button {
+.input-group-lg > .input-group-btn > button, .well.well-sm.bg-faded
+.input-group-lg > .input-group-btn > .btn-sm, .well.well-sm.bg-faded
+.input-group-lg > .btn-group-sm.input-group-btn > .btn {
   padding: 0.75rem 1.5rem;
   font-size: 1.25rem; }
 
 select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.form-control:not([size]):not([multiple]), .daterangepicker .input-group-lg > select.input-mini:not([size]):not([multiple]),
 .input-group-lg > select.input-group-addon:not([size]):not([multiple]),
-.input-group-lg > .input-group-btn > select.btn:not([size]):not([multiple]) {
+.input-group-lg > .input-group-btn > select.btn:not([size]):not([multiple]), .well.well-sm.bg-faded
+.input-group-lg > .input-group-btn > select.btn-sm:not([size]):not([multiple]), .well.well-sm.bg-faded
+.input-group-lg > .btn-group-sm.input-group-btn > select.btn:not([size]):not([multiple]) {
   height: 3.16667rem; }
 
 .form-group {
@@ -1694,7 +1708,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   .form-inline .has-feedback .form-control-feedback {
     top: 0; } }
 
-.btn, .fc button {
+.btn, .fc button, .well.well-sm.bg-faded .btn-sm, .well.well-sm.bg-faded .btn-group-sm > .btn {
   display: inline-block;
   font-weight: normal;
   line-height: 1.25;
@@ -1707,57 +1721,89 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   padding: 0.5rem 1rem;
   font-size: 0.875rem;
   transition: all 0.2s ease-in-out; }
-  .btn:focus, .fc button:focus, .btn.focus, .fc button.focus, .btn:active:focus, .fc button:active:focus, .btn:active.focus, .fc button:active.focus, .btn.active:focus, .fc button.active:focus, .btn.active.focus, .fc button.active.focus {
+  .btn:focus, .fc button:focus, .well.well-sm.bg-faded .btn-sm:focus, .well.well-sm.bg-faded .btn-group-sm > .btn:focus, .btn.focus, .fc button.focus, .well.well-sm.bg-faded .focus.btn-sm, .well.well-sm.bg-faded .btn-group-sm > .focus.btn, .btn:active:focus, .fc button:active:focus, .well.well-sm.bg-faded .btn-sm:active:focus, .well.well-sm.bg-faded .btn-group-sm > .btn:active:focus, .btn:active.focus, .fc button:active.focus, .well.well-sm.bg-faded .btn-sm:active.focus, .well.well-sm.bg-faded .btn-group-sm > .btn:active.focus, .btn.active:focus, .fc button.active:focus, .well.well-sm.bg-faded .active.btn-sm:focus, .well.well-sm.bg-faded .btn-group-sm > .active.btn:focus, .btn.active.focus, .fc button.active.focus, .well.well-sm.bg-faded .active.focus.btn-sm, .well.well-sm.bg-faded .btn-group-sm > .active.focus.btn {
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
-  .btn:focus, .fc button:focus, .btn:hover, .fc button:hover {
+  .btn:focus, .fc button:focus, .well.well-sm.bg-faded .btn-sm:focus, .well.well-sm.bg-faded .btn-group-sm > .btn:focus, .btn:hover, .fc button:hover, .well.well-sm.bg-faded .btn-sm:hover, .well.well-sm.bg-faded .btn-group-sm > .btn:hover {
     text-decoration: none; }
-  .btn.focus, .fc button.focus {
+  .btn.focus, .fc button.focus, .well.well-sm.bg-faded .focus.btn-sm, .well.well-sm.bg-faded .btn-group-sm > .focus.btn {
     text-decoration: none; }
-  .btn:active, .fc button:active, .btn.active, .fc button.active {
+  .btn:active, .fc button:active, .well.well-sm.bg-faded .btn-sm:active, .well.well-sm.bg-faded .btn-group-sm > .btn:active, .btn.active, .fc button.active, .well.well-sm.bg-faded .active.btn-sm, .well.well-sm.bg-faded .btn-group-sm > .active.btn {
     background-image: none;
     outline: 0; }
-  .btn.disabled, .fc button.disabled, .btn:disabled, .fc button:disabled {
+  .btn.disabled, .fc button.disabled, .well.well-sm.bg-faded .disabled.btn-sm, .well.well-sm.bg-faded .btn-group-sm > .disabled.btn, .btn:disabled, .fc button:disabled, .well.well-sm.bg-faded .btn-sm:disabled, .well.well-sm.bg-faded .btn-group-sm > .btn:disabled {
     cursor: not-allowed;
     opacity: .65; }
 
-a.btn.disabled,
-fieldset[disabled] a.btn {
+a.btn.disabled, .well.well-sm.bg-faded a.disabled.btn-sm, .well.well-sm.bg-faded .btn-group-sm > a.disabled.btn,
+fieldset[disabled] a.btn,
+fieldset[disabled] .well.well-sm.bg-faded a.btn-sm, .well.well-sm.bg-faded
+fieldset[disabled] a.btn-sm,
+fieldset[disabled] .well.well-sm.bg-faded .btn-group-sm > a.btn, .well.well-sm.bg-faded
+fieldset[disabled] .btn-group-sm > a.btn {
   pointer-events: none; }
 
-.btn-primary, .fc-today-button {
+.btn-primary, .fc-today-button, .well.well-sm.bg-faded .btn-sm:hover, .well.well-sm.bg-faded .btn-group-sm > .btn:hover, .well.well-sm.bg-faded .fc .btn-group-sm > button:hover, .fc .well.well-sm.bg-faded .btn-group-sm > button:hover, .well.well-sm.bg-faded .btn-sm.active, .well.well-sm.bg-faded .btn-group-sm > .active.btn, .well.well-sm.bg-faded .fc .btn-group-sm > button.active, .fc .well.well-sm.bg-faded .btn-group-sm > button.active {
   color: #fff;
   background-color: #20a8d8;
   border-color: #20a8d8; }
-  .btn-primary:hover, .fc-today-button:hover {
+  .btn-primary:hover, .fc-today-button:hover, .well.well-sm.bg-faded .btn-sm:hover, .well.well-sm.bg-faded .btn-group-sm > .btn:hover, .well.well-sm.bg-faded .fc .btn-group-sm > button:hover, .fc .well.well-sm.bg-faded .btn-group-sm > button:hover {
     color: #fff;
     background-color: #1985ac;
     border-color: #187fa3; }
-  .btn-primary:focus, .fc-today-button:focus, .btn-primary.focus, .focus.fc-today-button {
+  .btn-primary:focus, .fc-today-button:focus, .well.well-sm.bg-faded .btn-sm:focus:hover, .well.well-sm.bg-faded .btn-group-sm > .btn:focus:hover, .well.well-sm.bg-faded .fc .btn-group-sm > button:focus:hover, .fc .well.well-sm.bg-faded .btn-group-sm > button:focus:hover, .well.well-sm.bg-faded .btn-sm.active:focus, .well.well-sm.bg-faded .btn-group-sm > .active.btn:focus, .well.well-sm.bg-faded .fc .btn-group-sm > button.active:focus, .fc .well.well-sm.bg-faded .btn-group-sm > button.active:focus, .btn-primary.focus, .focus.fc-today-button, .well.well-sm.bg-faded .focus.btn-sm:hover, .well.well-sm.bg-faded .btn-group-sm > .focus.btn:hover, .well.well-sm.bg-faded .fc .btn-group-sm > button.focus:hover, .fc .well.well-sm.bg-faded .btn-group-sm > button.focus:hover, .well.well-sm.bg-faded .focus.btn-sm.active, .well.well-sm.bg-faded .btn-group-sm > .focus.active.btn, .well.well-sm.bg-faded .fc .btn-group-sm > button.focus.active, .fc .well.well-sm.bg-faded .btn-group-sm > button.focus.active {
     color: #fff;
     background-color: #1985ac;
     border-color: #187fa3; }
-  .btn-primary:active, .fc-today-button:active, .btn-primary.active, .active.fc-today-button,
+  .btn-primary:active, .fc-today-button:active, .well.well-sm.bg-faded .btn-sm:active:hover, .well.well-sm.bg-faded .btn-group-sm > .btn:active:hover, .well.well-sm.bg-faded .fc .btn-group-sm > button:active:hover, .fc .well.well-sm.bg-faded .btn-group-sm > button:active:hover, .well.well-sm.bg-faded .btn-sm.active:active, .well.well-sm.bg-faded .btn-group-sm > .active.btn:active, .well.well-sm.bg-faded .fc .btn-group-sm > button.active:active, .fc .well.well-sm.bg-faded .btn-group-sm > button.active:active, .btn-primary.active, .active.fc-today-button, .well.well-sm.bg-faded .active.btn-sm, .well.well-sm.bg-faded .btn-group-sm > .active.btn, .well.well-sm.bg-faded .fc .btn-group-sm > button.active, .fc .well.well-sm.bg-faded .btn-group-sm > button.active,
   .open > .btn-primary.dropdown-toggle,
-  .open > .dropdown-toggle.fc-today-button {
+  .open > .dropdown-toggle.fc-today-button, .well.well-sm.bg-faded
+  .open > .dropdown-toggle.btn-sm:hover, .well.well-sm.bg-faded
+  .btn-group-sm.open > .dropdown-toggle.btn:hover, .well.well-sm.bg-faded .fc
+  .btn-group-sm.open > button.dropdown-toggle:hover, .fc .well.well-sm.bg-faded
+  .btn-group-sm.open > button.dropdown-toggle:hover, .well.well-sm.bg-faded
+  .open > .dropdown-toggle.btn-sm.active, .well.well-sm.bg-faded
+  .btn-group-sm.open > .dropdown-toggle.active.btn, .well.well-sm.bg-faded .fc
+  .btn-group-sm.open > button.dropdown-toggle.active, .fc .well.well-sm.bg-faded
+  .btn-group-sm.open > button.dropdown-toggle.active {
     color: #fff;
     background-color: #1985ac;
     border-color: #187fa3;
     background-image: none; }
-    .btn-primary:active:hover, .fc-today-button:active:hover, .btn-primary:active:focus, .fc-today-button:active:focus, .btn-primary:active.focus, .fc-today-button:active.focus, .btn-primary.active:hover, .active.fc-today-button:hover, .btn-primary.active:focus, .active.fc-today-button:focus, .btn-primary.active.focus, .active.focus.fc-today-button,
+    .btn-primary:active:hover, .fc-today-button:active:hover, .well.well-sm.bg-faded .btn-sm:active:hover, .well.well-sm.bg-faded .btn-group-sm > .btn:active:hover, .well.well-sm.bg-faded .fc .btn-group-sm > button:active:hover, .fc .well.well-sm.bg-faded .btn-group-sm > button:active:hover, .btn-primary:active:focus, .fc-today-button:active:focus, .well.well-sm.bg-faded .btn-sm:active:focus:hover, .well.well-sm.bg-faded .btn-group-sm > .btn:active:focus:hover, .well.well-sm.bg-faded .fc .btn-group-sm > button:active:focus:hover, .fc .well.well-sm.bg-faded .btn-group-sm > button:active:focus:hover, .well.well-sm.bg-faded .btn-sm.active:active:focus, .well.well-sm.bg-faded .btn-group-sm > .active.btn:active:focus, .well.well-sm.bg-faded .fc .btn-group-sm > button.active:active:focus, .fc .well.well-sm.bg-faded .btn-group-sm > button.active:active:focus, .btn-primary:active.focus, .fc-today-button:active.focus, .well.well-sm.bg-faded .btn-sm:active.focus:hover, .well.well-sm.bg-faded .btn-group-sm > .btn:active.focus:hover, .well.well-sm.bg-faded .fc .btn-group-sm > button:active.focus:hover, .fc .well.well-sm.bg-faded .btn-group-sm > button:active.focus:hover, .well.well-sm.bg-faded .btn-sm.active:active.focus, .well.well-sm.bg-faded .btn-group-sm > .active.btn:active.focus, .well.well-sm.bg-faded .fc .btn-group-sm > button.active:active.focus, .fc .well.well-sm.bg-faded .btn-group-sm > button.active:active.focus, .btn-primary.active:hover, .active.fc-today-button:hover, .well.well-sm.bg-faded .active.btn-sm:hover, .well.well-sm.bg-faded .btn-group-sm > .active.btn:hover, .well.well-sm.bg-faded .fc .btn-group-sm > button.active:hover, .fc .well.well-sm.bg-faded .btn-group-sm > button.active:hover, .btn-primary.active:focus, .active.fc-today-button:focus, .well.well-sm.bg-faded .active.btn-sm:focus, .well.well-sm.bg-faded .btn-group-sm > .active.btn:focus, .well.well-sm.bg-faded .fc .btn-group-sm > button.active:focus, .fc .well.well-sm.bg-faded .btn-group-sm > button.active:focus, .btn-primary.active.focus, .active.focus.fc-today-button, .well.well-sm.bg-faded .active.focus.btn-sm, .well.well-sm.bg-faded .btn-group-sm > .active.focus.btn, .well.well-sm.bg-faded .fc .btn-group-sm > button.active.focus, .fc .well.well-sm.bg-faded .btn-group-sm > button.active.focus,
     .open > .btn-primary.dropdown-toggle:hover,
-    .open > .dropdown-toggle.fc-today-button:hover,
+    .open > .dropdown-toggle.fc-today-button:hover, .well.well-sm.bg-faded
+    .open > .dropdown-toggle.btn-sm:hover, .well.well-sm.bg-faded
+    .btn-group-sm.open > .dropdown-toggle.btn:hover, .well.well-sm.bg-faded .fc
+    .btn-group-sm.open > button.dropdown-toggle:hover, .fc .well.well-sm.bg-faded
+    .btn-group-sm.open > button.dropdown-toggle:hover,
     .open > .btn-primary.dropdown-toggle:focus,
-    .open > .dropdown-toggle.fc-today-button:focus,
+    .open > .dropdown-toggle.fc-today-button:focus, .well.well-sm.bg-faded
+    .open > .dropdown-toggle.btn-sm:focus:hover, .well.well-sm.bg-faded
+    .btn-group-sm.open > .dropdown-toggle.btn:focus:hover, .well.well-sm.bg-faded .fc
+    .btn-group-sm.open > button.dropdown-toggle:focus:hover, .fc .well.well-sm.bg-faded
+    .btn-group-sm.open > button.dropdown-toggle:focus:hover, .well.well-sm.bg-faded
+    .open > .dropdown-toggle.btn-sm.active:focus, .well.well-sm.bg-faded
+    .btn-group-sm.open > .dropdown-toggle.active.btn:focus, .well.well-sm.bg-faded .fc
+    .btn-group-sm.open > button.dropdown-toggle.active:focus, .fc .well.well-sm.bg-faded
+    .btn-group-sm.open > button.dropdown-toggle.active:focus,
     .open > .btn-primary.dropdown-toggle.focus,
-    .open > .dropdown-toggle.focus.fc-today-button {
+    .open > .dropdown-toggle.focus.fc-today-button, .well.well-sm.bg-faded
+    .open > .dropdown-toggle.focus.btn-sm:hover, .well.well-sm.bg-faded
+    .btn-group-sm.open > .dropdown-toggle.focus.btn:hover, .well.well-sm.bg-faded .fc
+    .btn-group-sm.open > button.dropdown-toggle.focus:hover, .fc .well.well-sm.bg-faded
+    .btn-group-sm.open > button.dropdown-toggle.focus:hover, .well.well-sm.bg-faded
+    .open > .dropdown-toggle.focus.btn-sm.active, .well.well-sm.bg-faded
+    .btn-group-sm.open > .dropdown-toggle.focus.active.btn, .well.well-sm.bg-faded .fc
+    .btn-group-sm.open > button.dropdown-toggle.focus.active, .fc .well.well-sm.bg-faded
+    .btn-group-sm.open > button.dropdown-toggle.focus.active {
       color: #fff;
       background-color: #156d8c;
       border-color: #105269; }
-  .btn-primary.disabled:focus, .disabled.fc-today-button:focus, .btn-primary.disabled.focus, .disabled.focus.fc-today-button, .btn-primary:disabled:focus, .fc-today-button:disabled:focus, .btn-primary:disabled.focus, .fc-today-button:disabled.focus {
+  .btn-primary.disabled:focus, .disabled.fc-today-button:focus, .well.well-sm.bg-faded .disabled.btn-sm:focus:hover, .well.well-sm.bg-faded .btn-group-sm > .disabled.btn:focus:hover, .well.well-sm.bg-faded .fc .btn-group-sm > button.disabled:focus:hover, .fc .well.well-sm.bg-faded .btn-group-sm > button.disabled:focus:hover, .well.well-sm.bg-faded .disabled.btn-sm.active:focus, .well.well-sm.bg-faded .btn-group-sm > .disabled.active.btn:focus, .well.well-sm.bg-faded .fc .btn-group-sm > button.disabled.active:focus, .fc .well.well-sm.bg-faded .btn-group-sm > button.disabled.active:focus, .btn-primary.disabled.focus, .disabled.focus.fc-today-button, .well.well-sm.bg-faded .disabled.focus.btn-sm:hover, .well.well-sm.bg-faded .btn-group-sm > .disabled.focus.btn:hover, .well.well-sm.bg-faded .fc .btn-group-sm > button.disabled.focus:hover, .fc .well.well-sm.bg-faded .btn-group-sm > button.disabled.focus:hover, .well.well-sm.bg-faded .disabled.focus.btn-sm.active, .well.well-sm.bg-faded .btn-group-sm > .disabled.focus.active.btn, .well.well-sm.bg-faded .fc .btn-group-sm > button.disabled.focus.active, .fc .well.well-sm.bg-faded .btn-group-sm > button.disabled.focus.active, .btn-primary:disabled:focus, .fc-today-button:disabled:focus, .well.well-sm.bg-faded .btn-sm:disabled:focus:hover, .well.well-sm.bg-faded .btn-group-sm > .btn:disabled:focus:hover, .well.well-sm.bg-faded .fc .btn-group-sm > button:disabled:focus:hover, .fc .well.well-sm.bg-faded .btn-group-sm > button:disabled:focus:hover, .well.well-sm.bg-faded .btn-sm.active:disabled:focus, .well.well-sm.bg-faded .btn-group-sm > .active.btn:disabled:focus, .well.well-sm.bg-faded .fc .btn-group-sm > button.active:disabled:focus, .fc .well.well-sm.bg-faded .btn-group-sm > button.active:disabled:focus, .btn-primary:disabled.focus, .fc-today-button:disabled.focus, .well.well-sm.bg-faded .btn-sm:disabled.focus:hover, .well.well-sm.bg-faded .btn-group-sm > .btn:disabled.focus:hover, .well.well-sm.bg-faded .fc .btn-group-sm > button:disabled.focus:hover, .fc .well.well-sm.bg-faded .btn-group-sm > button:disabled.focus:hover, .well.well-sm.bg-faded .btn-sm.active:disabled.focus, .well.well-sm.bg-faded .btn-group-sm > .active.btn:disabled.focus, .well.well-sm.bg-faded .fc .btn-group-sm > button.active:disabled.focus, .fc .well.well-sm.bg-faded .btn-group-sm > button.active:disabled.focus {
     background-color: #20a8d8;
     border-color: #20a8d8; }
-  .btn-primary.disabled:hover, .disabled.fc-today-button:hover, .btn-primary:disabled:hover, .fc-today-button:disabled:hover {
+  .btn-primary.disabled:hover, .disabled.fc-today-button:hover, .well.well-sm.bg-faded .disabled.btn-sm:hover, .well.well-sm.bg-faded .btn-group-sm > .disabled.btn:hover, .well.well-sm.bg-faded .fc .btn-group-sm > button.disabled:hover, .fc .well.well-sm.bg-faded .btn-group-sm > button.disabled:hover, .btn-primary:disabled:hover, .fc-today-button:disabled:hover, .well.well-sm.bg-faded .btn-sm:disabled:hover, .well.well-sm.bg-faded .btn-group-sm > .btn:disabled:hover, .well.well-sm.bg-faded .fc .btn-group-sm > button:disabled:hover, .fc .well.well-sm.bg-faded .btn-group-sm > button:disabled:hover {
     background-color: #20a8d8;
     border-color: #20a8d8; }
 
@@ -2123,11 +2169,11 @@ fieldset[disabled] a.btn {
     color: #c0cadd;
     text-decoration: none; }
 
-.btn-lg, .btn-group-lg > .btn, .fc .btn-group-lg > button {
+.btn-lg, .btn-group-lg > .btn, .fc .btn-group-lg > button, .well.well-sm.bg-faded .btn-group-lg > .btn-sm, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn {
   padding: 0.75rem 1.5rem;
   font-size: 1.25rem; }
 
-.btn-sm, .btn-group-sm > .btn, .fc .btn-group-sm > button {
+.btn-sm, .btn-group-sm > .btn, .fc .btn-group-sm > button, .well.well-sm.bg-faded .btn-group-sm > .btn-sm {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem; }
 
@@ -2143,7 +2189,7 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%; }
 
-.btn .tag, .fc button .tag {
+.btn .tag, .fc button .tag, .well.well-sm.bg-faded .btn-sm .tag, .well.well-sm.bg-faded .btn-group-sm > .btn .tag {
   position: absolute;
   top: 2px;
   right: 6px;
@@ -2313,51 +2359,80 @@ tbody.collapse.in {
   padding: 8px 20px;
   background: #f9f9fa;
   border-bottom: 1px solid #e1e6ef; }
-  .dropdown-header .btn, .dropdown-header .fc button, .fc .dropdown-header button {
+  .dropdown-header .btn, .dropdown-header .fc button, .fc .dropdown-header button, .dropdown-header .well.well-sm.bg-faded .btn-sm, .well.well-sm.bg-faded .dropdown-header .btn-sm, .dropdown-header .well.well-sm.bg-faded .btn-group-sm > .btn, .well.well-sm.bg-faded .dropdown-header .btn-group-sm > .btn {
     margin-top: -7px;
     color: #c0cadd; }
-    .dropdown-header .btn:hover, .dropdown-header .fc button:hover, .fc .dropdown-header button:hover {
+    .dropdown-header .btn:hover, .dropdown-header .fc button:hover, .fc .dropdown-header button:hover, .dropdown-header .well.well-sm.bg-faded .btn-sm:hover, .well.well-sm.bg-faded .dropdown-header .btn-sm:hover, .dropdown-header .well.well-sm.bg-faded .btn-group-sm > .btn:hover, .well.well-sm.bg-faded .dropdown-header .btn-group-sm > .btn:hover {
       color: #374767; }
-    .dropdown-header .btn.pull-right, .dropdown-header .fc button.pull-right, .fc .dropdown-header button.pull-right {
+    .dropdown-header .btn.pull-right, .dropdown-header .fc button.pull-right, .fc .dropdown-header button.pull-right, .dropdown-header .well.well-sm.bg-faded .pull-right.btn-sm, .well.well-sm.bg-faded .dropdown-header .pull-right.btn-sm, .dropdown-header .well.well-sm.bg-faded .btn-group-sm > .pull-right.btn, .well.well-sm.bg-faded .dropdown-header .btn-group-sm > .pull-right.btn {
       margin-right: -20px; }
+
+.dropdown-menu-lg {
+  width: 250px; }
 
 .btn-group, .fc-button-group,
 .btn-group-vertical {
   position: relative;
   display: inline-block;
   vertical-align: middle; }
-  .btn-group > .btn, .fc-button-group > .btn, .fc .btn-group > button, .fc .fc-button-group > button,
+  .btn-group > .btn, .fc-button-group > .btn, .fc .btn-group > button, .fc .fc-button-group > button, .well.well-sm.bg-faded .btn-group > .btn-sm, .well.well-sm.bg-faded .fc-button-group > .btn-sm, .well.well-sm.bg-faded .btn-group-sm.btn-group > .btn, .well.well-sm.bg-faded .btn-group-sm.fc-button-group > .btn,
   .btn-group-vertical > .btn, .fc
-  .btn-group-vertical > button {
+  .btn-group-vertical > button, .well.well-sm.bg-faded
+  .btn-group-vertical > .btn-sm, .well.well-sm.bg-faded
+  .btn-group-sm.btn-group-vertical > .btn {
     position: relative;
     float: left;
     margin-bottom: 0; }
-    .btn-group > .btn:focus, .fc-button-group > .btn:focus, .fc .btn-group > button:focus, .fc .fc-button-group > button:focus, .btn-group > .btn:active, .fc-button-group > .btn:active, .fc .btn-group > button:active, .fc .fc-button-group > button:active, .btn-group > .btn.active, .fc-button-group > .btn.active, .fc .btn-group > button.active, .fc .fc-button-group > button.active,
+    .btn-group > .btn:focus, .fc-button-group > .btn:focus, .fc .btn-group > button:focus, .fc .fc-button-group > button:focus, .well.well-sm.bg-faded .btn-group > .btn-sm:focus, .well.well-sm.bg-faded .fc-button-group > .btn-sm:focus, .well.well-sm.bg-faded .btn-group-sm.btn-group > .btn:focus, .well.well-sm.bg-faded .btn-group-sm.fc-button-group > .btn:focus, .btn-group > .btn:active, .fc-button-group > .btn:active, .fc .btn-group > button:active, .fc .fc-button-group > button:active, .well.well-sm.bg-faded .btn-group > .btn-sm:active, .well.well-sm.bg-faded .fc-button-group > .btn-sm:active, .well.well-sm.bg-faded .btn-group-sm.btn-group > .btn:active, .well.well-sm.bg-faded .btn-group-sm.fc-button-group > .btn:active, .btn-group > .btn.active, .fc-button-group > .btn.active, .fc .btn-group > button.active, .fc .fc-button-group > button.active, .well.well-sm.bg-faded .btn-group > .active.btn-sm, .well.well-sm.bg-faded .fc-button-group > .active.btn-sm, .well.well-sm.bg-faded .btn-group-sm.btn-group > .active.btn, .well.well-sm.bg-faded .btn-group-sm.fc-button-group > .active.btn,
     .btn-group-vertical > .btn:focus, .fc
-    .btn-group-vertical > button:focus,
+    .btn-group-vertical > button:focus, .well.well-sm.bg-faded
+    .btn-group-vertical > .btn-sm:focus, .well.well-sm.bg-faded
+    .btn-group-sm.btn-group-vertical > .btn:focus,
     .btn-group-vertical > .btn:active, .fc
-    .btn-group-vertical > button:active,
+    .btn-group-vertical > button:active, .well.well-sm.bg-faded
+    .btn-group-vertical > .btn-sm:active, .well.well-sm.bg-faded
+    .btn-group-sm.btn-group-vertical > .btn:active,
     .btn-group-vertical > .btn.active, .fc
-    .btn-group-vertical > button.active {
+    .btn-group-vertical > button.active, .well.well-sm.bg-faded
+    .btn-group-vertical > .active.btn-sm, .well.well-sm.bg-faded
+    .btn-group-sm.btn-group-vertical > .active.btn {
       z-index: 2; }
-    .btn-group > .btn:hover, .fc-button-group > .btn:hover, .fc .btn-group > button:hover, .fc .fc-button-group > button:hover,
+    .btn-group > .btn:hover, .fc-button-group > .btn:hover, .fc .btn-group > button:hover, .fc .fc-button-group > button:hover, .well.well-sm.bg-faded .btn-group > .btn-sm:hover, .well.well-sm.bg-faded .fc-button-group > .btn-sm:hover, .well.well-sm.bg-faded .btn-group-sm.btn-group > .btn:hover, .well.well-sm.bg-faded .btn-group-sm.fc-button-group > .btn:hover,
     .btn-group-vertical > .btn:hover, .fc
-    .btn-group-vertical > button:hover {
+    .btn-group-vertical > button:hover, .well.well-sm.bg-faded
+    .btn-group-vertical > .btn-sm:hover, .well.well-sm.bg-faded
+    .btn-group-sm.btn-group-vertical > .btn:hover {
       z-index: 2; }
 
-.btn-group .btn + .btn, .fc-button-group .btn + .btn, .btn-group .fc button + .btn, .fc .btn-group button + .btn, .fc-button-group .fc button + .btn, .fc .fc-button-group button + .btn, .btn-group .fc .btn + button, .fc .btn-group .btn + button, .fc-button-group .fc .btn + button, .fc .fc-button-group .btn + button, .btn-group .fc button + button, .fc .btn-group button + button, .fc-button-group .fc button + button, .fc .fc-button-group button + button,
+.btn-group .btn + .btn, .fc-button-group .btn + .btn, .btn-group .fc button + .btn, .fc .btn-group button + .btn, .fc-button-group .fc button + .btn, .fc .fc-button-group button + .btn, .btn-group .well.well-sm.bg-faded .btn-sm + .btn, .well.well-sm.bg-faded .btn-group .btn-sm + .btn, .fc-button-group .well.well-sm.bg-faded .btn-sm + .btn, .well.well-sm.bg-faded .fc-button-group .btn-sm + .btn, .btn-group .fc .btn + button, .fc .btn-group .btn + button, .fc-button-group .fc .btn + button, .fc .fc-button-group .btn + button, .btn-group .fc button + button, .fc .btn-group button + button, .fc-button-group .fc button + button, .fc .fc-button-group button + button, .btn-group .well.well-sm.bg-faded .fc .btn-sm + button, .fc .btn-group .well.well-sm.bg-faded .btn-sm + button, .well.well-sm.bg-faded .btn-group .fc .btn-sm + button, .fc .well.well-sm.bg-faded .btn-group .btn-sm + button, .fc-button-group .well.well-sm.bg-faded .fc .btn-sm + button, .fc .fc-button-group .well.well-sm.bg-faded .btn-sm + button, .well.well-sm.bg-faded .fc-button-group .fc .btn-sm + button, .fc .well.well-sm.bg-faded .fc-button-group .btn-sm + button, .btn-group .well.well-sm.bg-faded .fc .btn-group-sm > .btn + button, .fc .btn-group .well.well-sm.bg-faded .btn-group-sm > .btn + button, .well.well-sm.bg-faded .btn-group .fc .btn-group-sm > .btn + button, .fc .well.well-sm.bg-faded .btn-group .btn-group-sm > .btn + button, .fc-button-group .well.well-sm.bg-faded .fc .btn-group-sm > .btn + button, .fc .fc-button-group .well.well-sm.bg-faded .btn-group-sm > .btn + button, .well.well-sm.bg-faded .fc-button-group .fc .btn-group-sm > .btn + button, .fc .well.well-sm.bg-faded .fc-button-group .btn-group-sm > .btn + button, .btn-group .well.well-sm.bg-faded .btn + .btn-sm, .well.well-sm.bg-faded .btn-group .btn + .btn-sm, .fc-button-group .well.well-sm.bg-faded .btn + .btn-sm, .well.well-sm.bg-faded .fc-button-group .btn + .btn-sm, .btn-group .fc .well.well-sm.bg-faded button + .btn-sm, .well.well-sm.bg-faded .btn-group .fc button + .btn-sm, .fc .btn-group .well.well-sm.bg-faded button + .btn-sm, .well.well-sm.bg-faded .fc .btn-group button + .btn-sm, .fc-button-group .fc .well.well-sm.bg-faded button + .btn-sm, .well.well-sm.bg-faded .fc-button-group .fc button + .btn-sm, .fc .fc-button-group .well.well-sm.bg-faded button + .btn-sm, .well.well-sm.bg-faded .fc .fc-button-group button + .btn-sm, .btn-group .well.well-sm.bg-faded .btn-sm + .btn-sm, .well.well-sm.bg-faded .btn-group .btn-sm + .btn-sm, .fc-button-group .well.well-sm.bg-faded .btn-sm + .btn-sm, .well.well-sm.bg-faded .fc-button-group .btn-sm + .btn-sm, .btn-group .well.well-sm.bg-faded .btn-group-sm > .btn + .btn-sm, .well.well-sm.bg-faded .btn-group .btn-group-sm > .btn + .btn-sm, .fc-button-group .well.well-sm.bg-faded .btn-group-sm > .btn + .btn-sm, .well.well-sm.bg-faded .fc-button-group .btn-group-sm > .btn + .btn-sm, .btn-group .fc .well.well-sm.bg-faded .btn-group-sm > button + .btn, .well.well-sm.bg-faded .btn-group .fc .btn-group-sm > button + .btn, .fc .btn-group .well.well-sm.bg-faded .btn-group-sm > button + .btn, .well.well-sm.bg-faded .fc .btn-group .btn-group-sm > button + .btn, .fc-button-group .fc .well.well-sm.bg-faded .btn-group-sm > button + .btn, .well.well-sm.bg-faded .fc-button-group .fc .btn-group-sm > button + .btn, .fc .fc-button-group .well.well-sm.bg-faded .btn-group-sm > button + .btn, .well.well-sm.bg-faded .fc .fc-button-group .btn-group-sm > button + .btn, .btn-group .well.well-sm.bg-faded .btn-group-sm > .btn-sm + .btn, .well.well-sm.bg-faded .btn-group .btn-group-sm > .btn-sm + .btn, .fc-button-group .well.well-sm.bg-faded .btn-group-sm > .btn-sm + .btn, .well.well-sm.bg-faded .fc-button-group .btn-group-sm > .btn-sm + .btn, .btn-group .well.well-sm.bg-faded .btn-group-sm > .btn + .btn, .well.well-sm.bg-faded .btn-group .btn-group-sm > .btn + .btn, .fc-button-group .well.well-sm.bg-faded .btn-group-sm > .btn + .btn, .well.well-sm.bg-faded .fc-button-group .btn-group-sm > .btn + .btn,
 .btn-group .btn + .btn-group, .fc-button-group .btn + .btn-group,
 .btn-group .fc button + .btn-group, .fc
 .btn-group button + .btn-group, .fc-button-group .fc button + .btn-group, .fc .fc-button-group button + .btn-group,
+.btn-group .well.well-sm.bg-faded .btn-sm + .btn-group, .well.well-sm.bg-faded
+.btn-group .btn-sm + .btn-group, .fc-button-group .well.well-sm.bg-faded .btn-sm + .btn-group, .well.well-sm.bg-faded .fc-button-group .btn-sm + .btn-group,
+.btn-group .well.well-sm.bg-faded .btn-group-sm > .btn + .btn-group, .well.well-sm.bg-faded
+.btn-group .btn-group-sm > .btn + .btn-group, .fc-button-group .well.well-sm.bg-faded .btn-group-sm > .btn + .btn-group, .well.well-sm.bg-faded .fc-button-group .btn-group-sm > .btn + .btn-group,
 .btn-group .btn + .fc-button-group, .fc-button-group .btn + .fc-button-group,
 .btn-group .fc button + .fc-button-group, .fc
 .btn-group button + .fc-button-group, .fc-button-group .fc button + .fc-button-group, .fc .fc-button-group button + .fc-button-group,
+.btn-group .well.well-sm.bg-faded .btn-sm + .fc-button-group, .well.well-sm.bg-faded
+.btn-group .btn-sm + .fc-button-group, .fc-button-group .well.well-sm.bg-faded .btn-sm + .fc-button-group, .well.well-sm.bg-faded .fc-button-group .btn-sm + .fc-button-group,
+.btn-group .well.well-sm.bg-faded .btn-group-sm > .btn + .fc-button-group, .well.well-sm.bg-faded
+.btn-group .btn-group-sm > .btn + .fc-button-group, .fc-button-group .well.well-sm.bg-faded .btn-group-sm > .btn + .fc-button-group, .well.well-sm.bg-faded .fc-button-group .btn-group-sm > .btn + .fc-button-group,
 .btn-group .btn-group + .btn, .fc-button-group .btn-group + .btn,
 .btn-group .fc-button-group + .btn, .fc-button-group .fc-button-group + .btn,
 .btn-group .fc .btn-group + button, .fc
 .btn-group .btn-group + button, .fc-button-group .fc .btn-group + button, .fc .fc-button-group .btn-group + button,
 .btn-group .fc .fc-button-group + button, .fc
 .btn-group .fc-button-group + button, .fc-button-group .fc .fc-button-group + button, .fc .fc-button-group .fc-button-group + button,
+.btn-group .well.well-sm.bg-faded .btn-group + .btn-sm, .well.well-sm.bg-faded
+.btn-group .btn-group + .btn-sm, .fc-button-group .well.well-sm.bg-faded .btn-group + .btn-sm, .well.well-sm.bg-faded .fc-button-group .btn-group + .btn-sm,
+.btn-group .well.well-sm.bg-faded .fc-button-group + .btn-sm, .well.well-sm.bg-faded
+.btn-group .fc-button-group + .btn-sm, .fc-button-group .well.well-sm.bg-faded .fc-button-group + .btn-sm, .well.well-sm.bg-faded .fc-button-group .fc-button-group + .btn-sm,
+.btn-group .well.well-sm.bg-faded .btn-group-sm > .btn-group + .btn, .well.well-sm.bg-faded
+.btn-group .btn-group-sm > .btn-group + .btn, .fc-button-group .well.well-sm.bg-faded .btn-group-sm > .btn-group + .btn, .well.well-sm.bg-faded .fc-button-group .btn-group-sm > .btn-group + .btn,
+.btn-group .well.well-sm.bg-faded .btn-group-sm > .fc-button-group + .btn, .well.well-sm.bg-faded
+.btn-group .btn-group-sm > .fc-button-group + .btn, .fc-button-group .well.well-sm.bg-faded .btn-group-sm > .fc-button-group + .btn, .well.well-sm.bg-faded .fc-button-group .btn-group-sm > .fc-button-group + .btn,
 .btn-group .btn-group + .btn-group, .fc-button-group .btn-group + .btn-group,
 .btn-group .fc-button-group + .btn-group, .fc-button-group .fc-button-group + .btn-group,
 .btn-group .btn-group + .fc-button-group, .fc-button-group .btn-group + .fc-button-group,
@@ -2373,59 +2448,63 @@ tbody.collapse.in {
   .btn-toolbar .btn-group, .btn-toolbar .fc-button-group,
   .btn-toolbar .input-group {
     float: left; }
-  .btn-toolbar > .btn, .fc .btn-toolbar > button,
+  .btn-toolbar > .btn, .fc .btn-toolbar > button, .well.well-sm.bg-faded .btn-toolbar > .btn-sm, .well.well-sm.bg-faded .btn-group-sm.btn-toolbar > .btn,
   .btn-toolbar > .btn-group,
   .btn-toolbar > .fc-button-group,
   .btn-toolbar > .input-group {
     margin-left: 0.5rem; }
 
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .fc-button-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .fc .btn-group > button:not(:first-child):not(:last-child):not(.dropdown-toggle), .fc .fc-button-group > button:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .fc-button-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .fc .btn-group > button:not(:first-child):not(:last-child):not(.dropdown-toggle), .fc .fc-button-group > button:not(:first-child):not(:last-child):not(.dropdown-toggle), .well.well-sm.bg-faded .btn-group > .btn-sm:not(:first-child):not(:last-child):not(.dropdown-toggle), .well.well-sm.bg-faded .fc-button-group > .btn-sm:not(:first-child):not(:last-child):not(.dropdown-toggle), .well.well-sm.bg-faded .btn-group-sm.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .well.well-sm.bg-faded .btn-group-sm.fc-button-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0; }
 
-.btn-group > .btn:first-child, .fc-button-group > .btn:first-child, .fc .btn-group > button:first-child, .fc .fc-button-group > button:first-child {
+.btn-group > .btn:first-child, .fc-button-group > .btn:first-child, .fc .btn-group > button:first-child, .fc .fc-button-group > button:first-child, .well.well-sm.bg-faded .btn-group > .btn-sm:first-child, .well.well-sm.bg-faded .fc-button-group > .btn-sm:first-child, .well.well-sm.bg-faded .btn-group-sm.btn-group > .btn:first-child, .well.well-sm.bg-faded .btn-group-sm.fc-button-group > .btn:first-child {
   margin-left: 0; }
 
 .btn-group > .btn-group, .fc-button-group > .btn-group, .btn-group > .fc-button-group, .fc-button-group > .fc-button-group {
   float: left; }
 
-.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .fc-button-group > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group > .fc-button-group:not(:first-child):not(:last-child) > .btn, .fc-button-group > .fc-button-group:not(:first-child):not(:last-child) > .btn, .fc .btn-group > .btn-group:not(:first-child):not(:last-child) > button, .fc .fc-button-group > .btn-group:not(:first-child):not(:last-child) > button, .fc .btn-group > .fc-button-group:not(:first-child):not(:last-child) > button, .fc .fc-button-group > .fc-button-group:not(:first-child):not(:last-child) > button {
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .fc-button-group > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group > .fc-button-group:not(:first-child):not(:last-child) > .btn, .fc-button-group > .fc-button-group:not(:first-child):not(:last-child) > .btn, .fc .btn-group > .btn-group:not(:first-child):not(:last-child) > button, .fc .fc-button-group > .btn-group:not(:first-child):not(:last-child) > button, .fc .btn-group > .fc-button-group:not(:first-child):not(:last-child) > button, .fc .fc-button-group > .fc-button-group:not(:first-child):not(:last-child) > button, .well.well-sm.bg-faded .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn-sm, .well.well-sm.bg-faded .fc-button-group > .btn-group:not(:first-child):not(:last-child) > .btn-sm, .well.well-sm.bg-faded .btn-group > .fc-button-group:not(:first-child):not(:last-child) > .btn-sm, .well.well-sm.bg-faded .fc-button-group > .fc-button-group:not(:first-child):not(:last-child) > .btn-sm, .well.well-sm.bg-faded .btn-group > .btn-group-sm.btn-group:not(:first-child):not(:last-child) > .btn, .well.well-sm.bg-faded .fc-button-group > .btn-group-sm.btn-group:not(:first-child):not(:last-child) > .btn, .well.well-sm.bg-faded .btn-group > .btn-group-sm.fc-button-group:not(:first-child):not(:last-child) > .btn, .well.well-sm.bg-faded .fc-button-group > .btn-group-sm.fc-button-group:not(:first-child):not(:last-child) > .btn {
   border-radius: 0; }
 
 .btn-group .dropdown-toggle:active, .fc-button-group .dropdown-toggle:active,
 .btn-group.open .dropdown-toggle, .open.fc-button-group .dropdown-toggle {
   outline: 0; }
 
-.btn + .dropdown-toggle-split, .fc button + .dropdown-toggle-split {
+.btn + .dropdown-toggle-split, .fc button + .dropdown-toggle-split, .well.well-sm.bg-faded .btn-sm + .dropdown-toggle-split, .well.well-sm.bg-faded .btn-group-sm > .btn + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem; }
-  .btn + .dropdown-toggle-split::after, .fc button + .dropdown-toggle-split::after {
+  .btn + .dropdown-toggle-split::after, .fc button + .dropdown-toggle-split::after, .well.well-sm.bg-faded .btn-sm + .dropdown-toggle-split::after, .well.well-sm.bg-faded .btn-group-sm > .btn + .dropdown-toggle-split::after {
     margin-left: 0; }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .fc .btn-group-sm > button + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .fc .btn-group-sm > button + .dropdown-toggle-split, .well.well-sm.bg-faded .btn-group-sm > .btn-sm + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem; }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .fc .btn-group-lg > button + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .fc .btn-group-lg > button + .dropdown-toggle-split, .well.well-sm.bg-faded .btn-group-lg > .btn-sm + .dropdown-toggle-split, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn + .dropdown-toggle-split {
   padding-right: 1.125rem;
   padding-left: 1.125rem; }
 
-.btn .caret, .fc button .caret {
+.btn .caret, .fc button .caret, .well.well-sm.bg-faded .btn-sm .caret, .well.well-sm.bg-faded .btn-group-sm > .btn .caret {
   margin-left: 0; }
 
-.btn-lg .caret, .btn-group-lg > .btn .caret, .fc .btn-group-lg > button .caret {
+.btn-lg .caret, .btn-group-lg > .btn .caret, .fc .btn-group-lg > button .caret, .well.well-sm.bg-faded .btn-group-lg > .btn-sm .caret, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn .caret {
   border-width: 0.3em 0.3em 0;
   border-bottom-width: 0; }
 
-.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup .fc .btn-group-lg > button .caret, .fc .dropup .btn-group-lg > button .caret {
+.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup .fc .btn-group-lg > button .caret, .fc .dropup .btn-group-lg > button .caret, .dropup .well.well-sm.bg-faded .btn-group-lg > .btn-sm .caret, .well.well-sm.bg-faded .dropup .btn-group-lg > .btn-sm .caret, .dropup .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn .caret {
   border-width: 0 0.3em 0.3em; }
 
-.btn-group-vertical > .btn, .fc .btn-group-vertical > button,
+.btn-group-vertical > .btn, .fc .btn-group-vertical > button, .well.well-sm.bg-faded .btn-group-vertical > .btn-sm, .well.well-sm.bg-faded .btn-group-sm.btn-group-vertical > .btn,
 .btn-group-vertical > .btn-group,
 .btn-group-vertical > .fc-button-group,
 .btn-group-vertical > .btn-group > .btn,
 .btn-group-vertical > .fc-button-group > .btn, .fc
 .btn-group-vertical > .btn-group > button, .fc
-.btn-group-vertical > .fc-button-group > button {
+.btn-group-vertical > .fc-button-group > button, .well.well-sm.bg-faded
+.btn-group-vertical > .btn-group > .btn-sm, .well.well-sm.bg-faded
+.btn-group-vertical > .fc-button-group > .btn-sm, .well.well-sm.bg-faded
+.btn-group-vertical > .btn-group-sm.btn-group > .btn, .well.well-sm.bg-faded
+.btn-group-vertical > .btn-group-sm.fc-button-group > .btn {
   display: block;
   float: none;
   width: 100%;
@@ -2436,18 +2515,26 @@ tbody.collapse.in {
   display: table;
   clear: both; }
 
-.btn-group-vertical > .btn-group > .btn, .btn-group-vertical > .fc-button-group > .btn, .fc .btn-group-vertical > .btn-group > button, .fc .btn-group-vertical > .fc-button-group > button {
+.btn-group-vertical > .btn-group > .btn, .btn-group-vertical > .fc-button-group > .btn, .fc .btn-group-vertical > .btn-group > button, .fc .btn-group-vertical > .fc-button-group > button, .well.well-sm.bg-faded .btn-group-vertical > .btn-group > .btn-sm, .well.well-sm.bg-faded .btn-group-vertical > .fc-button-group > .btn-sm, .well.well-sm.bg-faded .btn-group-vertical > .btn-group-sm.btn-group > .btn, .well.well-sm.bg-faded .btn-group-vertical > .btn-group-sm.fc-button-group > .btn {
   float: none; }
 
-.btn-group-vertical > .btn + .btn, .fc .btn-group-vertical > button + .btn, .fc .btn-group-vertical > .btn + button, .fc .btn-group-vertical > button + button,
+.btn-group-vertical > .btn + .btn, .fc .btn-group-vertical > button + .btn, .well.well-sm.bg-faded .btn-group-vertical > .btn-sm + .btn, .fc .btn-group-vertical > .btn + button, .fc .btn-group-vertical > button + button, .well.well-sm.bg-faded .fc .btn-group-vertical > .btn-sm + button, .fc .well.well-sm.bg-faded .btn-group-vertical > .btn-sm + button, .well.well-sm.bg-faded .fc .btn-group-sm.btn-group-vertical > .btn + button, .fc .well.well-sm.bg-faded .btn-group-sm.btn-group-vertical > .btn + button, .well.well-sm.bg-faded .btn-group-vertical > .btn + .btn-sm, .fc .well.well-sm.bg-faded .btn-group-vertical > button + .btn-sm, .well.well-sm.bg-faded .fc .btn-group-vertical > button + .btn-sm, .well.well-sm.bg-faded .btn-group-vertical > .btn-sm + .btn-sm, .fc .well.well-sm.bg-faded .btn-group-sm.btn-group-vertical > button + .btn, .well.well-sm.bg-faded .fc .btn-group-sm.btn-group-vertical > button + .btn, .well.well-sm.bg-faded .btn-group-sm.btn-group-vertical > .btn + .btn,
 .btn-group-vertical > .btn + .btn-group, .fc
-.btn-group-vertical > button + .btn-group,
+.btn-group-vertical > button + .btn-group, .well.well-sm.bg-faded
+.btn-group-vertical > .btn-sm + .btn-group, .well.well-sm.bg-faded
+.btn-group-sm.btn-group-vertical > .btn + .btn-group,
 .btn-group-vertical > .btn + .fc-button-group, .fc
-.btn-group-vertical > button + .fc-button-group,
+.btn-group-vertical > button + .fc-button-group, .well.well-sm.bg-faded
+.btn-group-vertical > .btn-sm + .fc-button-group, .well.well-sm.bg-faded
+.btn-group-sm.btn-group-vertical > .btn + .fc-button-group,
 .btn-group-vertical > .btn-group + .btn,
 .btn-group-vertical > .fc-button-group + .btn, .fc
 .btn-group-vertical > .btn-group + button, .fc
-.btn-group-vertical > .fc-button-group + button,
+.btn-group-vertical > .fc-button-group + button, .well.well-sm.bg-faded
+.btn-group-vertical > .btn-group + .btn-sm, .well.well-sm.bg-faded
+.btn-group-vertical > .fc-button-group + .btn-sm, .well.well-sm.bg-faded
+.btn-group-sm.btn-group-vertical > .btn-group + .btn, .well.well-sm.bg-faded
+.btn-group-sm.btn-group-vertical > .fc-button-group + .btn,
 .btn-group-vertical > .btn-group + .btn-group,
 .btn-group-vertical > .fc-button-group + .btn-group,
 .btn-group-vertical > .btn-group + .fc-button-group,
@@ -2455,23 +2542,33 @@ tbody.collapse.in {
   margin-top: -1px;
   margin-left: 0; }
 
-.btn-group-vertical > .btn:not(:first-child):not(:last-child), .fc .btn-group-vertical > button:not(:first-child):not(:last-child) {
+.btn-group-vertical > .btn:not(:first-child):not(:last-child), .fc .btn-group-vertical > button:not(:first-child):not(:last-child), .well.well-sm.bg-faded .btn-group-vertical > .btn-sm:not(:first-child):not(:last-child), .well.well-sm.bg-faded .btn-group-sm.btn-group-vertical > .btn:not(:first-child):not(:last-child) {
   border-radius: 0; }
 
-.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group-vertical > .fc-button-group:not(:first-child):not(:last-child) > .btn, .fc .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > button, .fc .btn-group-vertical > .fc-button-group:not(:first-child):not(:last-child) > button {
+.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group-vertical > .fc-button-group:not(:first-child):not(:last-child) > .btn, .fc .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > button, .fc .btn-group-vertical > .fc-button-group:not(:first-child):not(:last-child) > button, .well.well-sm.bg-faded .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn-sm, .well.well-sm.bg-faded .btn-group-vertical > .fc-button-group:not(:first-child):not(:last-child) > .btn-sm, .well.well-sm.bg-faded .btn-group-vertical > .btn-group-sm.btn-group:not(:first-child):not(:last-child) > .btn, .well.well-sm.bg-faded .btn-group-vertical > .btn-group-sm.fc-button-group:not(:first-child):not(:last-child) > .btn {
   border-radius: 0; }
 
-[data-toggle="buttons"] > .btn input[type="radio"], .fc [data-toggle="buttons"] > button input[type="radio"],
+[data-toggle="buttons"] > .btn input[type="radio"], .fc [data-toggle="buttons"] > button input[type="radio"], .well.well-sm.bg-faded [data-toggle="buttons"] > .btn-sm input[type="radio"], .well.well-sm.bg-faded .btn-group-sm[data-toggle="buttons"] > .btn input[type="radio"],
 [data-toggle="buttons"] > .btn input[type="checkbox"], .fc
-[data-toggle="buttons"] > button input[type="checkbox"],
+[data-toggle="buttons"] > button input[type="checkbox"], .well.well-sm.bg-faded
+[data-toggle="buttons"] > .btn-sm input[type="checkbox"], .well.well-sm.bg-faded
+.btn-group-sm[data-toggle="buttons"] > .btn input[type="checkbox"],
 [data-toggle="buttons"] > .btn-group > .btn input[type="radio"],
 [data-toggle="buttons"] > .fc-button-group > .btn input[type="radio"], .fc
 [data-toggle="buttons"] > .btn-group > button input[type="radio"], .fc
-[data-toggle="buttons"] > .fc-button-group > button input[type="radio"],
+[data-toggle="buttons"] > .fc-button-group > button input[type="radio"], .well.well-sm.bg-faded
+[data-toggle="buttons"] > .btn-group > .btn-sm input[type="radio"], .well.well-sm.bg-faded
+[data-toggle="buttons"] > .fc-button-group > .btn-sm input[type="radio"], .well.well-sm.bg-faded
+[data-toggle="buttons"] > .btn-group-sm.btn-group > .btn input[type="radio"], .well.well-sm.bg-faded
+[data-toggle="buttons"] > .btn-group-sm.fc-button-group > .btn input[type="radio"],
 [data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"],
 [data-toggle="buttons"] > .fc-button-group > .btn input[type="checkbox"], .fc
 [data-toggle="buttons"] > .btn-group > button input[type="checkbox"], .fc
-[data-toggle="buttons"] > .fc-button-group > button input[type="checkbox"] {
+[data-toggle="buttons"] > .fc-button-group > button input[type="checkbox"], .well.well-sm.bg-faded
+[data-toggle="buttons"] > .btn-group > .btn-sm input[type="checkbox"], .well.well-sm.bg-faded
+[data-toggle="buttons"] > .fc-button-group > .btn-sm input[type="checkbox"], .well.well-sm.bg-faded
+[data-toggle="buttons"] > .btn-group-sm.btn-group > .btn input[type="checkbox"], .well.well-sm.bg-faded
+[data-toggle="buttons"] > .btn-group-sm.fc-button-group > .btn input[type="checkbox"] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none; }
@@ -2516,13 +2613,17 @@ tbody.collapse.in {
   .input-group-addon.form-control-sm, .daterangepicker .input-group-sm > .input-group-addon.input-mini, .input-group > .ui-select-bootstrap.input-group-sm > input.input-group-addon.ui-select-search.form-control,
   .input-group-sm > .input-group-addon,
   .input-group-sm > .input-group-btn > .input-group-addon.btn, .fc
-  .input-group-sm > .input-group-btn > button.input-group-addon {
+  .input-group-sm > .input-group-btn > button.input-group-addon, .well.well-sm.bg-faded
+  .input-group-sm > .input-group-btn > .input-group-addon.btn-sm, .well.well-sm.bg-faded
+  .input-group-sm > .btn-group-sm.input-group-btn > .input-group-addon.btn {
     padding: 0.25rem 0.5rem;
     font-size: 0.875rem; }
   .input-group-addon.form-control-lg, .daterangepicker .input-group-lg > .input-group-addon.input-mini, .input-group > .ui-select-bootstrap.input-group-lg > input.input-group-addon.ui-select-search.form-control,
   .input-group-lg > .input-group-addon,
   .input-group-lg > .input-group-btn > .input-group-addon.btn, .fc
-  .input-group-lg > .input-group-btn > button.input-group-addon {
+  .input-group-lg > .input-group-btn > button.input-group-addon, .well.well-sm.bg-faded
+  .input-group-lg > .input-group-btn > .input-group-addon.btn-sm, .well.well-sm.bg-faded
+  .input-group-lg > .btn-group-sm.input-group-btn > .input-group-addon.btn {
     padding: 0.75rem 1.5rem;
     font-size: 1.25rem; }
   .input-group-addon input[type="radio"],
@@ -2539,22 +2640,22 @@ tbody.collapse.in {
   position: relative;
   font-size: 0;
   white-space: nowrap; }
-  .input-group-btn > .btn, .fc .input-group-btn > button {
+  .input-group-btn > .btn, .fc .input-group-btn > button, .well.well-sm.bg-faded .input-group-btn > .btn-sm, .well.well-sm.bg-faded .btn-group-sm.input-group-btn > .btn {
     position: relative; }
-    .input-group-btn > .btn + .btn, .fc .input-group-btn > button + .btn, .fc .input-group-btn > .btn + button, .fc .input-group-btn > button + button {
+    .input-group-btn > .btn + .btn, .fc .input-group-btn > button + .btn, .well.well-sm.bg-faded .input-group-btn > .btn-sm + .btn, .fc .input-group-btn > .btn + button, .fc .input-group-btn > button + button, .well.well-sm.bg-faded .fc .input-group-btn > .btn-sm + button, .fc .well.well-sm.bg-faded .input-group-btn > .btn-sm + button, .well.well-sm.bg-faded .fc .btn-group-sm.input-group-btn > .btn + button, .fc .well.well-sm.bg-faded .btn-group-sm.input-group-btn > .btn + button, .well.well-sm.bg-faded .input-group-btn > .btn + .btn-sm, .fc .well.well-sm.bg-faded .input-group-btn > button + .btn-sm, .well.well-sm.bg-faded .fc .input-group-btn > button + .btn-sm, .well.well-sm.bg-faded .input-group-btn > .btn-sm + .btn-sm, .fc .well.well-sm.bg-faded .btn-group-sm.input-group-btn > button + .btn, .well.well-sm.bg-faded .fc .btn-group-sm.input-group-btn > button + .btn, .well.well-sm.bg-faded .btn-group-sm.input-group-btn > .btn + .btn {
       margin-left: -1px; }
-    .input-group-btn > .btn:focus, .fc .input-group-btn > button:focus, .input-group-btn > .btn:active, .fc .input-group-btn > button:active, .input-group-btn > .btn:hover, .fc .input-group-btn > button:hover {
+    .input-group-btn > .btn:focus, .fc .input-group-btn > button:focus, .well.well-sm.bg-faded .input-group-btn > .btn-sm:focus, .well.well-sm.bg-faded .btn-group-sm.input-group-btn > .btn:focus, .input-group-btn > .btn:active, .fc .input-group-btn > button:active, .well.well-sm.bg-faded .input-group-btn > .btn-sm:active, .well.well-sm.bg-faded .btn-group-sm.input-group-btn > .btn:active, .input-group-btn > .btn:hover, .fc .input-group-btn > button:hover, .well.well-sm.bg-faded .input-group-btn > .btn-sm:hover, .well.well-sm.bg-faded .btn-group-sm.input-group-btn > .btn:hover {
       z-index: 3; }
-  .input-group-btn:not(:last-child) > .btn, .fc .input-group-btn:not(:last-child) > button,
+  .input-group-btn:not(:last-child) > .btn, .fc .input-group-btn:not(:last-child) > button, .well.well-sm.bg-faded .input-group-btn:not(:last-child) > .btn-sm, .well.well-sm.bg-faded .btn-group-sm.input-group-btn:not(:last-child) > .btn,
   .input-group-btn:not(:last-child) > .btn-group,
   .input-group-btn:not(:last-child) > .fc-button-group {
     margin-right: -1px; }
-  .input-group-btn:not(:first-child) > .btn, .fc .input-group-btn:not(:first-child) > button,
+  .input-group-btn:not(:first-child) > .btn, .fc .input-group-btn:not(:first-child) > button, .well.well-sm.bg-faded .input-group-btn:not(:first-child) > .btn-sm, .well.well-sm.bg-faded .btn-group-sm.input-group-btn:not(:first-child) > .btn,
   .input-group-btn:not(:first-child) > .btn-group,
   .input-group-btn:not(:first-child) > .fc-button-group {
     z-index: 2;
     margin-left: -1px; }
-    .input-group-btn:not(:first-child) > .btn:focus, .fc .input-group-btn:not(:first-child) > button:focus, .input-group-btn:not(:first-child) > .btn:active, .fc .input-group-btn:not(:first-child) > button:active, .input-group-btn:not(:first-child) > .btn:hover, .fc .input-group-btn:not(:first-child) > button:hover,
+    .input-group-btn:not(:first-child) > .btn:focus, .fc .input-group-btn:not(:first-child) > button:focus, .well.well-sm.bg-faded .input-group-btn:not(:first-child) > .btn-sm:focus, .well.well-sm.bg-faded .btn-group-sm.input-group-btn:not(:first-child) > .btn:focus, .input-group-btn:not(:first-child) > .btn:active, .fc .input-group-btn:not(:first-child) > button:active, .well.well-sm.bg-faded .input-group-btn:not(:first-child) > .btn-sm:active, .well.well-sm.bg-faded .btn-group-sm.input-group-btn:not(:first-child) > .btn:active, .input-group-btn:not(:first-child) > .btn:hover, .fc .input-group-btn:not(:first-child) > button:hover, .well.well-sm.bg-faded .input-group-btn:not(:first-child) > .btn-sm:hover, .well.well-sm.bg-faded .btn-group-sm.input-group-btn:not(:first-child) > .btn:hover,
     .input-group-btn:not(:first-child) > .btn-group:focus,
     .input-group-btn:not(:first-child) > .fc-button-group:focus,
     .input-group-btn:not(:first-child) > .btn-group:active,
@@ -3000,7 +3101,7 @@ header.navbar {
       position: absolute;
       top: 9px;
       right: 7px; }
-  header.navbar .img-avatar {
+  header.navbar .nav-link > .img-avatar {
     height: 40px;
     margin: 0 10px; }
   header.navbar .dropdown-menu {
@@ -3308,13 +3409,13 @@ header.navbar .navbar-nav .nav-link {
   background: #ff5454;
   border-bottom: 1px solid #ff5454; }
 
-.card-header .btn, .card-header .fc button, .fc .card-header button {
+.card-header .btn, .card-header .fc button, .fc .card-header button, .card-header .well.well-sm.bg-faded .btn-sm, .well.well-sm.bg-faded .card-header .btn-sm, .card-header .well.well-sm.bg-faded .btn-group-sm > .btn, .well.well-sm.bg-faded .card-header .btn-group-sm > .btn {
   margin-top: -0.5rem; }
 
-.card-header .btn-sm, .card-header .btn-group-sm > .btn, .card-header .fc .btn-group-sm > button, .fc .card-header .btn-group-sm > button {
+.card-header .btn-sm, .card-header .btn-group-sm > .btn, .card-header .fc .btn-group-sm > button, .fc .card-header .btn-group-sm > button, .card-header .well.well-sm.bg-faded .btn-group-sm > .btn-sm, .well.well-sm.bg-faded .card-header .btn-group-sm > .btn-sm {
   margin-top: -0.25rem; }
 
-.card-header .btn-lg, .card-header .btn-group-lg > .btn, .card-header .fc .btn-group-lg > button, .fc .card-header .btn-group-lg > button {
+.card-header .btn-lg, .card-header .btn-group-lg > .btn, .card-header .fc .btn-group-lg > button, .fc .card-header .btn-group-lg > button, .card-header .well.well-sm.bg-faded .btn-group-lg > .btn-sm, .well.well-sm.bg-faded .card-header .btn-group-lg > .btn-sm, .card-header .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn, .well.well-sm.bg-faded .card-header .btn-group-sm.btn-group-lg > .btn {
   margin-top: -0.75rem; }
 
 .card-footer ul {
@@ -3576,7 +3677,7 @@ header.navbar .navbar-nav .nav-link {
   .tag:empty {
     display: none; }
 
-.btn .tag, .fc button .tag {
+.btn .tag, .fc button .tag, .well.well-sm.bg-faded .btn-sm .tag, .well.well-sm.bg-faded .btn-group-sm > .btn .tag {
   position: relative;
   top: -1px; }
 
@@ -4474,7 +4575,7 @@ button.close {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
-  .carousel-caption .btn, .carousel-caption .fc button, .fc .carousel-caption button {
+  .carousel-caption .btn, .carousel-caption .fc button, .fc .carousel-caption button, .carousel-caption .well.well-sm.bg-faded .btn-sm, .well.well-sm.bg-faded .carousel-caption .btn-sm, .carousel-caption .well.well-sm.bg-faded .btn-group-sm > .btn, .well.well-sm.bg-faded .carousel-caption .btn-group-sm > .btn {
     text-shadow: none; }
 
 @media (min-width: 576px) {
@@ -4944,7 +5045,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {
 .text-xs-right {
   text-align: right !important; }
 
-.text-xs-center {
+.text-xs-center, .well.well-sm.bg-faded .text-center {
   text-align: center !important; }
 
 @media (min-width: 576px) {
@@ -5112,6 +5213,221 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-print {
     display: none !important; } }
 
+.cal-month-view .cal-header {
+  text-align: center;
+  font-weight: bolder; }
+
+.cal-month-view .cal-cell-row:hover {
+  background-color: #f9f9fa; }
+
+.cal-month-view .cal-header .cal-cell {
+  padding: 5px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  white-space: nowrap; }
+
+.cal-month-view .cal-cell-row .cal-cell:hover,
+.cal-month-view .cal-cell.cal-has-events.cal-open {
+  background-color: #f9f9fa; }
+
+.cal-month-view .cal-days {
+  border: 1px solid #e1e6ef;
+  border-bottom: 0; }
+
+.cal-month-view .cal-cell-top {
+  min-height: 62px; }
+
+.cal-month-view .cal-cell-row {
+  display: flex; }
+
+.cal-month-view .cal-cell {
+  float: left;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; }
+
+.cal-month-view .cal-day-cell {
+  min-height: 100px; }
+
+.cal-month-view .cal-day-cell:not(:last-child) {
+  border-right: 1px solid #e1e6ef; }
+
+.cal-month-view .cal-days .cal-cell-row {
+  border-bottom: 1px solid #e1e6ef; }
+
+.cal-month-view .cal-day-badge {
+  margin-top: 18px;
+  margin-left: 10px;
+  background-color: #ff5454;
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 10px; }
+
+.cal-month-view .cal-day-number {
+  font-size: 1.2em;
+  font-weight: 400;
+  opacity: 0.5;
+  margin-top: 15px;
+  margin-right: 15px;
+  float: right;
+  margin-bottom: 10px; }
+
+.cal-month-view .cal-events {
+  flex: 1;
+  align-items: flex-end;
+  margin: 3px;
+  line-height: 10px;
+  display: flex;
+  flex-wrap: wrap; }
+
+.cal-month-view .cal-event {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 2px; }
+
+.cal-month-view .cal-day-cell.cal-in-month.cal-has-events {
+  cursor: pointer; }
+
+.cal-month-view .cal-day-cell.cal-out-month .cal-day-number {
+  opacity: 0.1;
+  cursor: default; }
+
+.cal-month-view .cal-day-cell.cal-weekend .cal-day-number {
+  color: darkred; }
+
+.cal-month-view .cal-day-cell.cal-today {
+  background-color: e8fde7; }
+
+.cal-month-view .cal-day-cell.cal-today .cal-day-number {
+  font-size: 1.9em; }
+
+.cal-month-view .cal-open-day-events {
+  padding: 15px;
+  color: white;
+  background-color: #9faecb; }
+
+.cal-month-view .cal-open-day-events .cal-event {
+  position: relative;
+  top: 2px; }
+
+.cal-month-view .cal-event-title {
+  color: white; }
+
+.cal-month-view .cal-out-month .cal-day-badge,
+.cal-month-view .cal-out-month .cal-event {
+  opacity: 0.3; }
+
+.cal-week-view .cal-day-headers {
+  display: flex;
+  margin-bottom: 3px;
+  border: 1px solid #e1e6ef;
+  margin-left: 2px;
+  margin-right: 2px; }
+
+.cal-week-view .cal-day-headers .cal-header {
+  flex: 1;
+  text-align: center;
+  padding: 5px; }
+
+.cal-week-view .cal-day-headers .cal-header:not(:last-child) {
+  border-right: 1px solid #e1e6ef; }
+
+.cal-week-view .cal-day-headers .cal-header:hover {
+  background-color: #f9f9fa; }
+
+.cal-week-view .cal-day-headers span {
+  font-weight: 400;
+  opacity: 0.5; }
+
+.cal-week-view .cal-event-container {
+  display: inline-block; }
+
+.cal-week-view .cal-event {
+  padding: 0 10px;
+  font-size: 12px;
+  margin-left: 2px;
+  margin-right: 2px;
+  height: 30px;
+  line-height: 30px; }
+
+.cal-week-view .cal-event.cal-starts-within-week {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px; }
+
+.cal-week-view .cal-event.cal-ends-within-week {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px; }
+
+.cal-week-view .cal-header.cal-today {
+  background-color: #bfe3a8; }
+
+.cal-week-view .cal-header.cal-weekend span {
+  color: #ff5454; }
+
+.cal-week-view .cal-event,
+.cal-week-view .cal-header {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.cal-day-view .cal-hour-rows {
+  width: 100%;
+  border: solid 1px #e1e6ef;
+  overflow-x: scroll;
+  position: relative; }
+
+.cal-day-view .cal-hour:nth-child(odd) {
+  background-color: #f9f9fa; }
+
+.cal-day-view .cal-hour-segment {
+  height: 30px; }
+
+.cal-day-view .cal-hour:not(:last-child) .cal-hour-segment,
+.cal-day-view .cal-hour:last-child :not(:last-child) .cal-hour-segment {
+  border-bottom: thin dashed #e1e6ef; }
+
+.cal-day-view .cal-time {
+  font-weight: bold;
+  padding-top: 5px;
+  width: 70px;
+  text-align: center; }
+
+.cal-day-view .cal-hour-segment:hover {
+  background-color: #e1e6ef; }
+
+.cal-day-view .cal-event {
+  position: absolute;
+  border: solid 1px;
+  padding: 5px;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.cal-day-view .cal-event.cal-starts-within-day {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
+
+.cal-day-view .cal-event.cal-ends-within-day {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; }
+
+.cal-day-view .cal-all-day-event {
+  padding: 8px;
+  border: solid 1px; }
+
 .chart-legend,
 .bar-legend,
 .line-legend,
@@ -5260,10 +5576,10 @@ div.dataTables_scrollFoot table {
 table.DTTT_selectable tbody tr {
   cursor: pointer; }
 
-div.DTTT .btn, div.DTTT .fc button, .fc div.DTTT button {
+div.DTTT .btn, div.DTTT .fc button, .fc div.DTTT button, div.DTTT .well.well-sm.bg-faded .btn-sm, .well.well-sm.bg-faded div.DTTT .btn-sm, div.DTTT .well.well-sm.bg-faded .btn-group-sm > .btn, .well.well-sm.bg-faded div.DTTT .btn-group-sm > .btn {
   color: #333 !important; }
 
-div.DTTT .btn:hover, div.DTTT .fc button:hover, .fc div.DTTT button:hover {
+div.DTTT .btn:hover, div.DTTT .fc button:hover, .fc div.DTTT button:hover, div.DTTT .well.well-sm.bg-faded .btn-sm:hover, .well.well-sm.bg-faded div.DTTT .btn-sm:hover, div.DTTT .well.well-sm.bg-faded .btn-group-sm > .btn:hover, .well.well-sm.bg-faded div.DTTT .btn-group-sm > .btn:hover {
   text-decoration: none !important; }
 
 ul.DTTT_dropdown.dropdown-menu {
@@ -6817,6 +7133,347 @@ be a descendant of the grid when it is being dragged.
   bottom: 12px;
   color: #e1e6ef; }
 
+/*!
+ * Ladda
+ * http://lab.hakim.se/ladda
+ * MIT licensed
+ *
+ * Copyright (C) 2016 Hakim El Hattab, http://hakim.se
+ */
+/*************************************
+ * CONFIG
+ */
+/*************************************
+ * MIXINS
+ */
+/*************************************
+ * BUTTON BASE
+ */
+.ladda-button {
+  position: relative; }
+
+/* Spinner animation */
+.ladda-button .ladda-spinner {
+  position: absolute;
+  z-index: 2;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  top: 50%;
+  margin-top: 0;
+  opacity: 0;
+  pointer-events: none; }
+
+/* Button label */
+.ladda-button .ladda-label {
+  position: relative;
+  z-index: 3; }
+
+/* Progress bar */
+.ladda-button .ladda-progress {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.2);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.1s linear all !important;
+  -moz-transition: 0.1s linear all !important;
+  -ms-transition: 0.1s linear all !important;
+  -o-transition: 0.1s linear all !important;
+  transition: 0.1s linear all !important; }
+
+.ladda-button[data-loading] .ladda-progress {
+  opacity: 1;
+  visibility: visible; }
+
+/*************************************
+ * EASING
+ */
+.ladda-button,
+.ladda-button .ladda-spinner,
+.ladda-button .ladda-label {
+  -webkit-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+  -moz-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+  -ms-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+  -o-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;
+  transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important; }
+
+.ladda-button[data-style=zoom-in],
+.ladda-button[data-style=zoom-in] .ladda-spinner,
+.ladda-button[data-style=zoom-in] .ladda-label,
+.ladda-button[data-style=zoom-out],
+.ladda-button[data-style=zoom-out] .ladda-spinner,
+.ladda-button[data-style=zoom-out] .ladda-label {
+  -webkit-transition: 0.3s ease all !important;
+  -moz-transition: 0.3s ease all !important;
+  -ms-transition: 0.3s ease all !important;
+  -o-transition: 0.3s ease all !important;
+  transition: 0.3s ease all !important; }
+
+/*************************************
+ * EXPAND LEFT
+ */
+.ladda-button[data-style=expand-right] .ladda-spinner {
+  right: -6px; }
+
+.ladda-button[data-style=expand-right][data-size="s"] .ladda-spinner,
+.ladda-button[data-style=expand-right][data-size="xs"] .ladda-spinner {
+  right: -12px; }
+
+.ladda-button[data-style=expand-right][data-loading] {
+  padding-right: 56px; }
+  .ladda-button[data-style=expand-right][data-loading] .ladda-spinner {
+    opacity: 1; }
+  .ladda-button[data-style=expand-right][data-loading][data-size="s"], .ladda-button[data-style=expand-right][data-loading][data-size="xs"] {
+    padding-right: 40px; }
+
+/*************************************
+ * EXPAND RIGHT
+ */
+.ladda-button[data-style=expand-left] .ladda-spinner {
+  left: 26px; }
+
+.ladda-button[data-style=expand-left][data-size="s"] .ladda-spinner,
+.ladda-button[data-style=expand-left][data-size="xs"] .ladda-spinner {
+  left: 4px; }
+
+.ladda-button[data-style=expand-left][data-loading] {
+  padding-left: 56px; }
+  .ladda-button[data-style=expand-left][data-loading] .ladda-spinner {
+    opacity: 1; }
+  .ladda-button[data-style=expand-left][data-loading][data-size="s"], .ladda-button[data-style=expand-left][data-loading][data-size="xs"] {
+    padding-left: 40px; }
+
+/*************************************
+ * EXPAND UP
+ */
+.ladda-button[data-style=expand-up] {
+  overflow: hidden; }
+  .ladda-button[data-style=expand-up] .ladda-spinner {
+    top: -32px;
+    left: 50%;
+    margin-left: 0; }
+  .ladda-button[data-style=expand-up][data-loading] {
+    padding-top: 54px; }
+    .ladda-button[data-style=expand-up][data-loading] .ladda-spinner {
+      opacity: 1;
+      top: 26px;
+      margin-top: 0; }
+    .ladda-button[data-style=expand-up][data-loading][data-size="s"], .ladda-button[data-style=expand-up][data-loading][data-size="xs"] {
+      padding-top: 32px; }
+      .ladda-button[data-style=expand-up][data-loading][data-size="s"] .ladda-spinner, .ladda-button[data-style=expand-up][data-loading][data-size="xs"] .ladda-spinner {
+        top: 4px; }
+
+/*************************************
+ * EXPAND DOWN
+ */
+.ladda-button[data-style=expand-down] {
+  overflow: hidden; }
+  .ladda-button[data-style=expand-down] .ladda-spinner {
+    top: 62px;
+    left: 50%;
+    margin-left: 0; }
+  .ladda-button[data-style=expand-down][data-size="s"] .ladda-spinner,
+  .ladda-button[data-style=expand-down][data-size="xs"] .ladda-spinner {
+    top: 40px; }
+  .ladda-button[data-style=expand-down][data-loading] {
+    padding-bottom: 54px; }
+    .ladda-button[data-style=expand-down][data-loading] .ladda-spinner {
+      opacity: 1; }
+    .ladda-button[data-style=expand-down][data-loading][data-size="s"], .ladda-button[data-style=expand-down][data-loading][data-size="xs"] {
+      padding-bottom: 32px; }
+
+/*************************************
+ * SLIDE LEFT
+ */
+.ladda-button[data-style=slide-left] {
+  overflow: hidden; }
+  .ladda-button[data-style=slide-left] .ladda-label {
+    position: relative; }
+  .ladda-button[data-style=slide-left] .ladda-spinner {
+    left: 100%;
+    margin-left: 0; }
+  .ladda-button[data-style=slide-left][data-loading] .ladda-label {
+    opacity: 0;
+    left: -100%; }
+  .ladda-button[data-style=slide-left][data-loading] .ladda-spinner {
+    opacity: 1;
+    left: 50%; }
+
+/*************************************
+ * SLIDE RIGHT
+ */
+.ladda-button[data-style=slide-right] {
+  overflow: hidden; }
+  .ladda-button[data-style=slide-right] .ladda-label {
+    position: relative; }
+  .ladda-button[data-style=slide-right] .ladda-spinner {
+    right: 100%;
+    margin-left: 0;
+    left: 16px; }
+  .ladda-button[data-style=slide-right][data-loading] .ladda-label {
+    opacity: 0;
+    left: 100%; }
+  .ladda-button[data-style=slide-right][data-loading] .ladda-spinner {
+    opacity: 1;
+    left: 50%; }
+
+/*************************************
+ * SLIDE UP
+ */
+.ladda-button[data-style=slide-up] {
+  overflow: hidden; }
+  .ladda-button[data-style=slide-up] .ladda-label {
+    position: relative; }
+  .ladda-button[data-style=slide-up] .ladda-spinner {
+    left: 50%;
+    margin-left: 0;
+    margin-top: 1em; }
+  .ladda-button[data-style=slide-up][data-loading] .ladda-label {
+    opacity: 0;
+    top: -1em; }
+  .ladda-button[data-style=slide-up][data-loading] .ladda-spinner {
+    opacity: 1;
+    margin-top: 0; }
+
+/*************************************
+ * SLIDE DOWN
+ */
+.ladda-button[data-style=slide-down] {
+  overflow: hidden; }
+  .ladda-button[data-style=slide-down] .ladda-label {
+    position: relative; }
+  .ladda-button[data-style=slide-down] .ladda-spinner {
+    left: 50%;
+    margin-left: 0;
+    margin-top: -2em; }
+  .ladda-button[data-style=slide-down][data-loading] .ladda-label {
+    opacity: 0;
+    top: 1em; }
+  .ladda-button[data-style=slide-down][data-loading] .ladda-spinner {
+    opacity: 1;
+    margin-top: 0; }
+
+/*************************************
+ * ZOOM-OUT
+ */
+.ladda-button[data-style=zoom-out] {
+  overflow: hidden; }
+
+.ladda-button[data-style=zoom-out] .ladda-spinner {
+  left: 50%;
+  margin-left: 32px;
+  -webkit-transform: scale(2.5);
+  -moz-transform: scale(2.5);
+  -ms-transform: scale(2.5);
+  -o-transform: scale(2.5);
+  transform: scale(2.5); }
+
+.ladda-button[data-style=zoom-out] .ladda-label {
+  position: relative;
+  display: inline-block; }
+
+.ladda-button[data-style=zoom-out][data-loading] .ladda-label {
+  opacity: 0;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5); }
+
+.ladda-button[data-style=zoom-out][data-loading] .ladda-spinner {
+  opacity: 1;
+  margin-left: 0;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none; }
+
+/*************************************
+ * ZOOM-IN
+ */
+.ladda-button[data-style=zoom-in] {
+  overflow: hidden; }
+
+.ladda-button[data-style=zoom-in] .ladda-spinner {
+  left: 50%;
+  margin-left: -16px;
+  -webkit-transform: scale(0.2);
+  -moz-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  -o-transform: scale(0.2);
+  transform: scale(0.2); }
+
+.ladda-button[data-style=zoom-in] .ladda-label {
+  position: relative;
+  display: inline-block; }
+
+.ladda-button[data-style=zoom-in][data-loading] .ladda-label {
+  opacity: 0;
+  -webkit-transform: scale(2.2);
+  -moz-transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -o-transform: scale(2.2);
+  transform: scale(2.2); }
+
+.ladda-button[data-style=zoom-in][data-loading] .ladda-spinner {
+  opacity: 1;
+  margin-left: 0;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none; }
+
+/*************************************
+ * CONTRACT
+ */
+.ladda-button[data-style=contract] {
+  overflow: hidden;
+  width: 100px; }
+
+.ladda-button[data-style=contract] .ladda-spinner {
+  left: 50%;
+  margin-left: 0; }
+
+.ladda-button[data-style=contract][data-loading] {
+  border-radius: 50%;
+  width: 52px; }
+
+.ladda-button[data-style=contract][data-loading] .ladda-label {
+  opacity: 0; }
+
+.ladda-button[data-style=contract][data-loading] .ladda-spinner {
+  opacity: 1; }
+
+/*************************************
+ * OVERLAY
+ */
+.ladda-button[data-style=contract-overlay] {
+  overflow: hidden;
+  width: 100px;
+  box-shadow: 0px 0px 0px 2000px transparent; }
+
+.ladda-button[data-style=contract-overlay] .ladda-spinner {
+  left: 50%;
+  margin-left: 0; }
+
+.ladda-button[data-style=contract-overlay][data-loading] {
+  border-radius: 50%;
+  width: 52px;
+  /*outline: 10000px solid rgba( 0, 0, 0, 0.5 );*/
+  box-shadow: 0px 0px 0px 2000px rgba(0, 0, 0, 0.8); }
+
+.ladda-button[data-style=contract-overlay][data-loading] .ladda-label {
+  opacity: 0; }
+
+.ladda-button[data-style=contract-overlay][data-loading] .ladda-spinner {
+  opacity: 1; }
+
 /*
 Version: 3.5.4 Timestamp: Sun Aug 30 13:30:32 EDT 2015
 */
@@ -7414,7 +8071,6 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .select2-container.form-control, .daterangepicker .select2-container.input-mini, .input-group > .ui-select-bootstrap > input.select2-container.ui-select-search.form-control {
   background: transparent;
   box-shadow: none;
-  border: none;
   display: block;
   /* 1 */
   margin: 0;
@@ -7433,9 +8089,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   color: #555555;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: white;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); }
 
 .select2-search input {
   border-color: #cccccc;
@@ -7499,11 +8153,6 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
  */
 .select2-container-multi .select2-choices .select2-search-field input {
   margin: 0; }
-
-.select2-chosen,
-.select2-choice > span:first-child,
-.select2-container .select2-choices .select2-search-field input {
-  padding: 6px 12px; }
 
 .input-sm .select2-chosen,
 .input-group-sm .select2-chosen,
@@ -7737,11 +8386,19 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .select2-bootstrap-append .input-group-btn .btn,
 .select2-bootstrap-append .input-group-btn .fc button, .fc
 .select2-bootstrap-append .input-group-btn button,
+.select2-bootstrap-append .input-group-btn .well.well-sm.bg-faded .btn-sm, .well.well-sm.bg-faded
+.select2-bootstrap-append .input-group-btn .btn-sm,
+.select2-bootstrap-append .input-group-btn .well.well-sm.bg-faded .btn-group-sm > .btn, .well.well-sm.bg-faded
+.select2-bootstrap-append .input-group-btn .btn-group-sm > .btn,
 .select2-bootstrap-prepend .select2-container-multiple,
 .select2-bootstrap-prepend .input-group-btn,
 .select2-bootstrap-prepend .input-group-btn .btn,
 .select2-bootstrap-prepend .input-group-btn .fc button, .fc
-.select2-bootstrap-prepend .input-group-btn button {
+.select2-bootstrap-prepend .input-group-btn button,
+.select2-bootstrap-prepend .input-group-btn .well.well-sm.bg-faded .btn-sm, .well.well-sm.bg-faded
+.select2-bootstrap-prepend .input-group-btn .btn-sm,
+.select2-bootstrap-prepend .input-group-btn .well.well-sm.bg-faded .btn-group-sm > .btn, .well.well-sm.bg-faded
+.select2-bootstrap-prepend .input-group-btn .btn-group-sm > .btn {
   vertical-align: top; }
 
 /**
@@ -7958,7 +8615,7 @@ body > .select2-container.open {
   border-top-right-radius: 0 !important;
   border-bottom-right-radius: 0; }
 
-.ui-select-bootstrap > .ui-select-match > .btn, .fc .ui-select-bootstrap > .ui-select-match > button {
+.ui-select-bootstrap > .ui-select-match > .btn, .fc .ui-select-bootstrap > .ui-select-match > button, .well.well-sm.bg-faded .ui-select-bootstrap > .ui-select-match > .btn-sm, .well.well-sm.bg-faded .ui-select-bootstrap > .btn-group-sm.ui-select-match > .btn {
   /* Instead of center because of .btn */
   text-align: left !important; }
 
@@ -8052,7 +8709,7 @@ body > .ui-select-bootstrap.open {
   display: none !important; }
 
 /* Mark invalid Bootstrap */
-.ui-select-bootstrap.ng-dirty.ng-invalid > button.btn.ui-select-match, .fc .ui-select-bootstrap.ng-dirty.ng-invalid > button.ui-select-match {
+.ui-select-bootstrap.ng-dirty.ng-invalid > button.btn.ui-select-match, .fc .ui-select-bootstrap.ng-dirty.ng-invalid > button.ui-select-match, .well.well-sm.bg-faded .ui-select-bootstrap.ng-dirty.ng-invalid > button.ui-select-match.btn-sm, .well.well-sm.bg-faded .btn-group-sm.ui-select-bootstrap.ng-dirty.ng-invalid > button.ui-select-match.btn {
   border-color: #D44950; }
 
 /* Handle up direction Bootstrap */
@@ -8090,13 +8747,12 @@ select {
 
 .select2-container .select2-choice {
   height: 32px;
-  padding: 3px 0 0 12px;
-  border: none;
-  background: #f9f9fa; }
+  padding: 6px 0 0 12px;
+  border: none; }
 
 .select2-container .select2-choice .select2-arrow {
-  right: 5px;
-  top: 4px;
+  right: 0px;
+  top: 0px;
   background: #f9f9fa;
   border: none; }
 
@@ -8117,7 +8773,7 @@ select {
 .select2-container-multi .select2-choices {
   box-shadow: none;
   border-radius: 0 !important;
-  border: 1px solid #e1e6ef !important;
+  border: 0;
   background: white; }
 
 .select2-default {
@@ -8152,6 +8808,528 @@ select {
   .select2-container .select2-choice abbr,
   .select2-container .select2-choice .select2-arrow b {
     background-image: url("../img/select2x2.png") !important; } }
+
+/*
+ *  Usage:
+ *
+      <div class="sk-rotating-plane"></div>
+ *
+ */
+.sk-rotating-plane {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  margin: 40px auto;
+  animation: sk-rotatePlane 1.2s infinite ease-in-out; }
+
+@keyframes sk-rotatePlane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+  50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+
+/*
+ *  Usage:
+ *
+      <div class="sk-double-bounce">
+        <div class="sk-child sk-double-bounce1"></div>
+        <div class="sk-child sk-double-bounce2"></div>
+      </div>
+ *
+ */
+.sk-double-bounce {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin: 40px auto; }
+  .sk-double-bounce .sk-child {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #333;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: sk-doubleBounce 2.0s infinite ease-in-out; }
+  .sk-double-bounce .sk-double-bounce2 {
+    animation-delay: -1.0s; }
+
+@keyframes sk-doubleBounce {
+  0%, 100% {
+    transform: scale(0); }
+  50% {
+    transform: scale(1); } }
+
+/*
+ *  Usage:
+ *
+      <div class="sk-wave">
+        <div class="sk-rect sk-rect1"></div>
+        <div class="sk-rect sk-rect2"></div>
+        <div class="sk-rect sk-rect3"></div>
+        <div class="sk-rect sk-rect4"></div>
+        <div class="sk-rect sk-rect5"></div>
+      </div>
+ *
+ */
+.sk-wave {
+  margin: 40px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px; }
+  .sk-wave .sk-rect {
+    background-color: #333;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    animation: sk-waveStretchDelay 1.2s infinite ease-in-out; }
+  .sk-wave .sk-rect1 {
+    animation-delay: -1.2s; }
+  .sk-wave .sk-rect2 {
+    animation-delay: -1.1s; }
+  .sk-wave .sk-rect3 {
+    animation-delay: -1s; }
+  .sk-wave .sk-rect4 {
+    animation-delay: -0.9s; }
+  .sk-wave .sk-rect5 {
+    animation-delay: -0.8s; }
+
+@keyframes sk-waveStretchDelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4); }
+  20% {
+    transform: scaleY(1); } }
+
+/*
+ *  Usage:
+ *
+      <div class="sk-wandering-cubes">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+      </div>
+ *
+ */
+.sk-wandering-cubes {
+  margin: 40px auto;
+  width: 40px;
+  height: 40px;
+  position: relative; }
+  .sk-wandering-cubes .sk-cube {
+    background-color: #333;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: sk-wanderingCube 1.8s ease-in-out -1.8s infinite both; }
+  .sk-wandering-cubes .sk-cube2 {
+    animation-delay: -0.9s; }
+
+@keyframes sk-wanderingCube {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: translateX(30px) rotate(-90deg) scale(0.5); }
+  50% {
+    /* Hack to make FF rotate in the right direction */
+    transform: translateX(30px) translateY(30px) rotate(-179deg); }
+  50.1% {
+    transform: translateX(30px) translateY(30px) rotate(-180deg); }
+  75% {
+    transform: translateX(0) translateY(30px) rotate(-270deg) scale(0.5); }
+  100% {
+    transform: rotate(-360deg); } }
+
+/*
+ *  Usage:
+ *
+      <div class="sk-spinner sk-spinner-pulse"></div>
+ *
+ */
+.sk-spinner-pulse {
+  width: 40px;
+  height: 40px;
+  margin: 40px auto;
+  background-color: #333;
+  border-radius: 100%;
+  animation: sk-pulseScaleOut 1.0s infinite ease-in-out; }
+
+@keyframes sk-pulseScaleOut {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1);
+    opacity: 0; } }
+
+/*
+ *  Usage:
+ *
+      <div class="sk-chasing-dots">
+        <div class="sk-child sk-dot1"></div>
+        <div class="sk-child sk-dot2"></div>
+      </div>
+ *
+ */
+.sk-chasing-dots {
+  margin: 40px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  animation: sk-chasingDotsRotate 2s infinite linear; }
+  .sk-chasing-dots .sk-child {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background-color: #333;
+    border-radius: 100%;
+    animation: sk-chasingDotsBounce 2s infinite ease-in-out; }
+  .sk-chasing-dots .sk-dot2 {
+    top: auto;
+    bottom: 0;
+    animation-delay: -1s; }
+
+@keyframes sk-chasingDotsRotate {
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes sk-chasingDotsBounce {
+  0%, 100% {
+    transform: scale(0); }
+  50% {
+    transform: scale(1); } }
+
+/*
+ *  Usage:
+ *
+      <div class="sk-three-bounce">
+        <div class="sk-child sk-bounce1"></div>
+        <div class="sk-child sk-bounce2"></div>
+        <div class="sk-child sk-bounce3"></div>
+      </div>
+ *
+ */
+.sk-three-bounce {
+  margin: 40px auto;
+  width: 80px;
+  text-align: center; }
+  .sk-three-bounce .sk-child {
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 100%;
+    display: inline-block;
+    animation: sk-three-bounce 1.4s ease-in-out 0s infinite both; }
+  .sk-three-bounce .sk-bounce1 {
+    animation-delay: -0.32s; }
+  .sk-three-bounce .sk-bounce2 {
+    animation-delay: -0.16s; }
+
+@keyframes sk-three-bounce {
+  0%, 80%, 100% {
+    transform: scale(0); }
+  40% {
+    transform: scale(1); } }
+
+/*
+ *  Usage:
+ *
+      <div class="sk-circle">
+        <div class="sk-circle1 sk-child"></div>
+        <div class="sk-circle2 sk-child"></div>
+        <div class="sk-circle3 sk-child"></div>
+        <div class="sk-circle4 sk-child"></div>
+        <div class="sk-circle5 sk-child"></div>
+        <div class="sk-circle6 sk-child"></div>
+        <div class="sk-circle7 sk-child"></div>
+        <div class="sk-circle8 sk-child"></div>
+        <div class="sk-circle9 sk-child"></div>
+        <div class="sk-circle10 sk-child"></div>
+        <div class="sk-circle11 sk-child"></div>
+        <div class="sk-circle12 sk-child"></div>
+      </div>
+ *
+ */
+.sk-circle {
+  margin: 40px auto;
+  width: 40px;
+  height: 40px;
+  position: relative; }
+  .sk-circle .sk-child {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .sk-circle .sk-child:before {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 15%;
+    height: 15%;
+    background-color: #333;
+    border-radius: 100%;
+    animation: sk-circleBounceDelay 1.2s infinite ease-in-out both; }
+  .sk-circle .sk-circle2 {
+    transform: rotate(30deg); }
+  .sk-circle .sk-circle3 {
+    transform: rotate(60deg); }
+  .sk-circle .sk-circle4 {
+    transform: rotate(90deg); }
+  .sk-circle .sk-circle5 {
+    transform: rotate(120deg); }
+  .sk-circle .sk-circle6 {
+    transform: rotate(150deg); }
+  .sk-circle .sk-circle7 {
+    transform: rotate(180deg); }
+  .sk-circle .sk-circle8 {
+    transform: rotate(210deg); }
+  .sk-circle .sk-circle9 {
+    transform: rotate(240deg); }
+  .sk-circle .sk-circle10 {
+    transform: rotate(270deg); }
+  .sk-circle .sk-circle11 {
+    transform: rotate(300deg); }
+  .sk-circle .sk-circle12 {
+    transform: rotate(330deg); }
+  .sk-circle .sk-circle2:before {
+    animation-delay: -1.1s; }
+  .sk-circle .sk-circle3:before {
+    animation-delay: -1s; }
+  .sk-circle .sk-circle4:before {
+    animation-delay: -0.9s; }
+  .sk-circle .sk-circle5:before {
+    animation-delay: -0.8s; }
+  .sk-circle .sk-circle6:before {
+    animation-delay: -0.7s; }
+  .sk-circle .sk-circle7:before {
+    animation-delay: -0.6s; }
+  .sk-circle .sk-circle8:before {
+    animation-delay: -0.5s; }
+  .sk-circle .sk-circle9:before {
+    animation-delay: -0.4s; }
+  .sk-circle .sk-circle10:before {
+    animation-delay: -0.3s; }
+  .sk-circle .sk-circle11:before {
+    animation-delay: -0.2s; }
+  .sk-circle .sk-circle12:before {
+    animation-delay: -0.1s; }
+
+@keyframes sk-circleBounceDelay {
+  0%, 80%, 100% {
+    transform: scale(0); }
+  40% {
+    transform: scale(1); } }
+
+/*
+ *  Usage:
+ *
+      <div class="sk-cube-grid">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+      </div>
+ *
+ */
+.sk-cube-grid {
+  width: 40px;
+  height: 40px;
+  margin: 40px auto;
+  /*
+   * Spinner positions
+   * 1 2 3
+   * 4 5 6
+   * 7 8 9
+   */ }
+  .sk-cube-grid .sk-cube {
+    width: 33.33%;
+    height: 33.33%;
+    background-color: #333;
+    float: left;
+    animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; }
+  .sk-cube-grid .sk-cube1 {
+    animation-delay: 0.2s; }
+  .sk-cube-grid .sk-cube2 {
+    animation-delay: 0.3s; }
+  .sk-cube-grid .sk-cube3 {
+    animation-delay: 0.4s; }
+  .sk-cube-grid .sk-cube4 {
+    animation-delay: 0.1s; }
+  .sk-cube-grid .sk-cube5 {
+    animation-delay: 0.2s; }
+  .sk-cube-grid .sk-cube6 {
+    animation-delay: 0.3s; }
+  .sk-cube-grid .sk-cube7 {
+    animation-delay: 0.0s; }
+  .sk-cube-grid .sk-cube8 {
+    animation-delay: 0.1s; }
+  .sk-cube-grid .sk-cube9 {
+    animation-delay: 0.2s; }
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    transform: scale3D(1, 1, 1); }
+  35% {
+    transform: scale3D(0, 0, 1); } }
+
+/*
+ *  Usage:
+ *
+      <div class="sk-fading-circle">
+        <div class="sk-circle1 sk-circle"></div>
+        <div class="sk-circle2 sk-circle"></div>
+        <div class="sk-circle3 sk-circle"></div>
+        <div class="sk-circle4 sk-circle"></div>
+        <div class="sk-circle5 sk-circle"></div>
+        <div class="sk-circle6 sk-circle"></div>
+        <div class="sk-circle7 sk-circle"></div>
+        <div class="sk-circle8 sk-circle"></div>
+        <div class="sk-circle9 sk-circle"></div>
+        <div class="sk-circle10 sk-circle"></div>
+        <div class="sk-circle11 sk-circle"></div>
+        <div class="sk-circle12 sk-circle"></div>
+      </div>
+ *
+ */
+.sk-fading-circle {
+  margin: 40px auto;
+  width: 40px;
+  height: 40px;
+  position: relative; }
+  .sk-fading-circle .sk-circle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .sk-fading-circle .sk-circle:before {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 15%;
+    height: 15%;
+    background-color: #333;
+    border-radius: 100%;
+    animation: sk-circleFadeDelay 1.2s infinite ease-in-out both; }
+  .sk-fading-circle .sk-circle2 {
+    transform: rotate(30deg); }
+  .sk-fading-circle .sk-circle3 {
+    transform: rotate(60deg); }
+  .sk-fading-circle .sk-circle4 {
+    transform: rotate(90deg); }
+  .sk-fading-circle .sk-circle5 {
+    transform: rotate(120deg); }
+  .sk-fading-circle .sk-circle6 {
+    transform: rotate(150deg); }
+  .sk-fading-circle .sk-circle7 {
+    transform: rotate(180deg); }
+  .sk-fading-circle .sk-circle8 {
+    transform: rotate(210deg); }
+  .sk-fading-circle .sk-circle9 {
+    transform: rotate(240deg); }
+  .sk-fading-circle .sk-circle10 {
+    transform: rotate(270deg); }
+  .sk-fading-circle .sk-circle11 {
+    transform: rotate(300deg); }
+  .sk-fading-circle .sk-circle12 {
+    transform: rotate(330deg); }
+  .sk-fading-circle .sk-circle2:before {
+    animation-delay: -1.1s; }
+  .sk-fading-circle .sk-circle3:before {
+    animation-delay: -1s; }
+  .sk-fading-circle .sk-circle4:before {
+    animation-delay: -0.9s; }
+  .sk-fading-circle .sk-circle5:before {
+    animation-delay: -0.8s; }
+  .sk-fading-circle .sk-circle6:before {
+    animation-delay: -0.7s; }
+  .sk-fading-circle .sk-circle7:before {
+    animation-delay: -0.6s; }
+  .sk-fading-circle .sk-circle8:before {
+    animation-delay: -0.5s; }
+  .sk-fading-circle .sk-circle9:before {
+    animation-delay: -0.4s; }
+  .sk-fading-circle .sk-circle10:before {
+    animation-delay: -0.3s; }
+  .sk-fading-circle .sk-circle11:before {
+    animation-delay: -0.2s; }
+  .sk-fading-circle .sk-circle12:before {
+    animation-delay: -0.1s; }
+
+@keyframes sk-circleFadeDelay {
+  0%, 39%, 100% {
+    opacity: 0; }
+  40% {
+    opacity: 1; } }
+
+/*
+ *  Usage:
+ *
+      <div class="sk-folding-cube">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+      </div>
+ *
+ */
+.sk-folding-cube {
+  margin: 40px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  transform: rotateZ(45deg); }
+  .sk-folding-cube .sk-cube {
+    float: left;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    transform: scale(1.1); }
+  .sk-folding-cube .sk-cube:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    animation: sk-foldCubeAngle 2.4s infinite linear both;
+    transform-origin: 100% 100%; }
+  .sk-folding-cube .sk-cube2 {
+    transform: scale(1.1) rotateZ(90deg); }
+  .sk-folding-cube .sk-cube3 {
+    transform: scale(1.1) rotateZ(180deg); }
+  .sk-folding-cube .sk-cube4 {
+    transform: scale(1.1) rotateZ(270deg); }
+  .sk-folding-cube .sk-cube2:before {
+    animation-delay: 0.3s; }
+  .sk-folding-cube .sk-cube3:before {
+    animation-delay: 0.6s; }
+  .sk-folding-cube .sk-cube4:before {
+    animation-delay: 0.9s; }
+
+@keyframes sk-foldCubeAngle {
+  0%, 10% {
+    transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; }
+  25%, 75% {
+    transform: perspective(140px) rotateX(0deg);
+    opacity: 1; }
+  90%, 100% {
+    transform: perspective(140px) rotateY(180deg);
+    opacity: 0; } }
 
 .toast-title {
   font-weight: bold; }
@@ -8372,221 +9550,6 @@ div[toast].ng-leave.ng-leave-active,
 
 .toaster-icon.icon-info {
   display: none; }
-
-.cal-month-view .cal-header {
-  text-align: center;
-  font-weight: bolder; }
-
-.cal-month-view .cal-cell-row:hover {
-  background-color: #f9f9fa; }
-
-.cal-month-view .cal-header .cal-cell {
-  padding: 5px 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: block;
-  white-space: nowrap; }
-
-.cal-month-view .cal-cell-row .cal-cell:hover,
-.cal-month-view .cal-cell.cal-has-events.cal-open {
-  background-color: #f9f9fa; }
-
-.cal-month-view .cal-days {
-  border: 1px solid #e1e6ef;
-  border-bottom: 0; }
-
-.cal-month-view .cal-cell-top {
-  min-height: 62px; }
-
-.cal-month-view .cal-cell-row {
-  display: flex; }
-
-.cal-month-view .cal-cell {
-  float: left;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch; }
-
-.cal-month-view .cal-day-cell {
-  min-height: 100px; }
-
-.cal-month-view .cal-day-cell:not(:last-child) {
-  border-right: 1px solid #e1e6ef; }
-
-.cal-month-view .cal-days .cal-cell-row {
-  border-bottom: 1px solid #e1e6ef; }
-
-.cal-month-view .cal-day-badge {
-  margin-top: 18px;
-  margin-left: 10px;
-  background-color: #ff5454;
-  display: inline-block;
-  min-width: 10px;
-  padding: 3px 7px;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1;
-  color: white;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  border-radius: 10px; }
-
-.cal-month-view .cal-day-number {
-  font-size: 1.2em;
-  font-weight: 400;
-  opacity: 0.5;
-  margin-top: 15px;
-  margin-right: 15px;
-  float: right;
-  margin-bottom: 10px; }
-
-.cal-month-view .cal-events {
-  flex: 1;
-  align-items: flex-end;
-  margin: 3px;
-  line-height: 10px;
-  display: flex;
-  flex-wrap: wrap; }
-
-.cal-month-view .cal-event {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 2px; }
-
-.cal-month-view .cal-day-cell.cal-in-month.cal-has-events {
-  cursor: pointer; }
-
-.cal-month-view .cal-day-cell.cal-out-month .cal-day-number {
-  opacity: 0.1;
-  cursor: default; }
-
-.cal-month-view .cal-day-cell.cal-weekend .cal-day-number {
-  color: darkred; }
-
-.cal-month-view .cal-day-cell.cal-today {
-  background-color: e8fde7; }
-
-.cal-month-view .cal-day-cell.cal-today .cal-day-number {
-  font-size: 1.9em; }
-
-.cal-month-view .cal-open-day-events {
-  padding: 15px;
-  color: white;
-  background-color: #9faecb; }
-
-.cal-month-view .cal-open-day-events .cal-event {
-  position: relative;
-  top: 2px; }
-
-.cal-month-view .cal-event-title {
-  color: white; }
-
-.cal-month-view .cal-out-month .cal-day-badge,
-.cal-month-view .cal-out-month .cal-event {
-  opacity: 0.3; }
-
-.cal-week-view .cal-day-headers {
-  display: flex;
-  margin-bottom: 3px;
-  border: 1px solid #e1e6ef;
-  margin-left: 2px;
-  margin-right: 2px; }
-
-.cal-week-view .cal-day-headers .cal-header {
-  flex: 1;
-  text-align: center;
-  padding: 5px; }
-
-.cal-week-view .cal-day-headers .cal-header:not(:last-child) {
-  border-right: 1px solid #e1e6ef; }
-
-.cal-week-view .cal-day-headers .cal-header:hover {
-  background-color: #f9f9fa; }
-
-.cal-week-view .cal-day-headers span {
-  font-weight: 400;
-  opacity: 0.5; }
-
-.cal-week-view .cal-event-container {
-  display: inline-block; }
-
-.cal-week-view .cal-event {
-  padding: 0 10px;
-  font-size: 12px;
-  margin-left: 2px;
-  margin-right: 2px;
-  height: 30px;
-  line-height: 30px; }
-
-.cal-week-view .cal-event.cal-starts-within-week {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px; }
-
-.cal-week-view .cal-event.cal-ends-within-week {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px; }
-
-.cal-week-view .cal-header.cal-today {
-  background-color: #bfe3a8; }
-
-.cal-week-view .cal-header.cal-weekend span {
-  color: #ff5454; }
-
-.cal-week-view .cal-event,
-.cal-week-view .cal-header {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap; }
-
-.cal-day-view .cal-hour-rows {
-  width: 100%;
-  border: solid 1px #e1e6ef;
-  overflow-x: scroll;
-  position: relative; }
-
-.cal-day-view .cal-hour:nth-child(odd) {
-  background-color: #f9f9fa; }
-
-.cal-day-view .cal-hour-segment {
-  height: 30px; }
-
-.cal-day-view .cal-hour:not(:last-child) .cal-hour-segment,
-.cal-day-view .cal-hour:last-child :not(:last-child) .cal-hour-segment {
-  border-bottom: thin dashed #e1e6ef; }
-
-.cal-day-view .cal-time {
-  font-weight: bold;
-  padding-top: 5px;
-  width: 70px;
-  text-align: center; }
-
-.cal-day-view .cal-hour-segment:hover {
-  background-color: #e1e6ef; }
-
-.cal-day-view .cal-event {
-  position: absolute;
-  border: solid 1px;
-  padding: 5px;
-  font-size: 12px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap; }
-
-.cal-day-view .cal-event.cal-starts-within-day {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px; }
-
-.cal-day-view .cal-event.cal-ends-within-day {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px; }
-
-.cal-day-view .cal-all-day-event {
-  padding: 8px;
-  border: solid 1px; }
 
 body {
   -moz-osx-font-smoothing: grayscale;
@@ -9493,7 +10456,7 @@ footer.footer {
     background-color: transparent;
     border-color: transparent; }
 
-.btn [class^="icon-"], .fc button [class^="icon-"], .btn [class*=" icon-"], .fc button [class*=" icon-"] {
+.btn [class^="icon-"], .fc button [class^="icon-"], .well.well-sm.bg-faded .btn-sm [class^="icon-"], .well.well-sm.bg-faded .btn-group-sm > .btn [class^="icon-"], .btn [class*=" icon-"], .fc button [class*=" icon-"], .well.well-sm.bg-faded .btn-sm [class*=" icon-"], .well.well-sm.bg-faded .btn-group-sm > .btn [class*=" icon-"] {
   display: inline-block;
   margin-top: -2px;
   vertical-align: middle; }
@@ -9752,516 +10715,732 @@ footer.footer {
   .btn-vimeo.icon {
     width: 2.3125rem;
     height: 2.3125rem; }
-  .btn-facebook.btn-lg, .btn-group-lg > .btn-facebook.btn, .fc .btn-group-lg > button.btn-facebook,
+  .btn-facebook.btn-lg, .btn-group-lg > .btn-facebook.btn, .fc .btn-group-lg > button.btn-facebook, .well.well-sm.bg-faded .btn-group-lg > .btn-facebook.btn-sm, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-facebook.btn,
   .btn-twitter.btn-lg,
   .btn-group-lg > .btn-twitter.btn,
   .fc .btn-group-lg > button.btn-twitter,
+  .well.well-sm.bg-faded .btn-group-lg > .btn-twitter.btn-sm,
+  .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-twitter.btn,
   .btn-linkedin.btn-lg,
   .btn-group-lg > .btn-linkedin.btn,
   .fc .btn-group-lg > button.btn-linkedin,
+  .well.well-sm.bg-faded .btn-group-lg > .btn-linkedin.btn-sm,
+  .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-linkedin.btn,
   .btn-flickr.btn-lg,
   .btn-group-lg > .btn-flickr.btn,
   .fc .btn-group-lg > button.btn-flickr,
+  .well.well-sm.bg-faded .btn-group-lg > .btn-flickr.btn-sm,
+  .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-flickr.btn,
   .btn-tumblr.btn-lg,
   .btn-group-lg > .btn-tumblr.btn,
   .fc .btn-group-lg > button.btn-tumblr,
+  .well.well-sm.bg-faded .btn-group-lg > .btn-tumblr.btn-sm,
+  .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-tumblr.btn,
   .btn-xing.btn-lg,
   .btn-group-lg > .btn-xing.btn,
   .fc .btn-group-lg > button.btn-xing,
+  .well.well-sm.bg-faded .btn-group-lg > .btn-xing.btn-sm,
+  .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-xing.btn,
   .btn-github.btn-lg,
   .btn-group-lg > .btn-github.btn,
   .fc .btn-group-lg > button.btn-github,
+  .well.well-sm.bg-faded .btn-group-lg > .btn-github.btn-sm,
+  .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-github.btn,
   .btn-html5.btn-lg,
   .btn-group-lg > .btn-html5.btn,
   .fc .btn-group-lg > button.btn-html5,
+  .well.well-sm.bg-faded .btn-group-lg > .btn-html5.btn-sm,
+  .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-html5.btn,
   .btn-openid.btn-lg,
   .btn-group-lg > .btn-openid.btn,
   .fc .btn-group-lg > button.btn-openid,
+  .well.well-sm.bg-faded .btn-group-lg > .btn-openid.btn-sm,
+  .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-openid.btn,
   .btn-stack-overflow.btn-lg,
   .btn-group-lg > .btn-stack-overflow.btn,
   .fc .btn-group-lg > button.btn-stack-overflow,
+  .well.well-sm.bg-faded .btn-group-lg > .btn-stack-overflow.btn-sm,
+  .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-stack-overflow.btn,
   .btn-youtube.btn-lg,
   .btn-group-lg > .btn-youtube.btn,
   .fc .btn-group-lg > button.btn-youtube,
+  .well.well-sm.bg-faded .btn-group-lg > .btn-youtube.btn-sm,
+  .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-youtube.btn,
   .btn-css3.btn-lg,
   .btn-group-lg > .btn-css3.btn,
   .fc .btn-group-lg > button.btn-css3,
+  .well.well-sm.bg-faded .btn-group-lg > .btn-css3.btn-sm,
+  .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-css3.btn,
   .btn-dribbble.btn-lg,
   .btn-group-lg > .btn-dribbble.btn,
   .fc .btn-group-lg > button.btn-dribbble,
+  .well.well-sm.bg-faded .btn-group-lg > .btn-dribbble.btn-sm,
+  .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-dribbble.btn,
   .btn-google-plus.btn-lg,
   .btn-group-lg > .btn-google-plus.btn,
   .fc .btn-group-lg > button.btn-google-plus,
+  .well.well-sm.bg-faded .btn-group-lg > .btn-google-plus.btn-sm,
+  .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-google-plus.btn,
   .btn-instagram.btn-lg,
   .btn-group-lg > .btn-instagram.btn,
   .fc .btn-group-lg > button.btn-instagram,
+  .well.well-sm.bg-faded .btn-group-lg > .btn-instagram.btn-sm,
+  .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-instagram.btn,
   .btn-pinterest.btn-lg,
   .btn-group-lg > .btn-pinterest.btn,
   .fc .btn-group-lg > button.btn-pinterest,
+  .well.well-sm.bg-faded .btn-group-lg > .btn-pinterest.btn-sm,
+  .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-pinterest.btn,
   .btn-vk.btn-lg,
   .btn-group-lg > .btn-vk.btn,
   .fc .btn-group-lg > button.btn-vk,
+  .well.well-sm.bg-faded .btn-group-lg > .btn-vk.btn-sm,
+  .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-vk.btn,
   .btn-yahoo.btn-lg,
   .btn-group-lg > .btn-yahoo.btn,
   .fc .btn-group-lg > button.btn-yahoo,
+  .well.well-sm.bg-faded .btn-group-lg > .btn-yahoo.btn-sm,
+  .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-yahoo.btn,
   .btn-behance.btn-lg,
   .btn-group-lg > .btn-behance.btn,
   .fc .btn-group-lg > button.btn-behance,
+  .well.well-sm.bg-faded .btn-group-lg > .btn-behance.btn-sm,
+  .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-behance.btn,
   .btn-dropbox.btn-lg,
   .btn-group-lg > .btn-dropbox.btn,
   .fc .btn-group-lg > button.btn-dropbox,
+  .well.well-sm.bg-faded .btn-group-lg > .btn-dropbox.btn-sm,
+  .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-dropbox.btn,
   .btn-reddit.btn-lg,
   .btn-group-lg > .btn-reddit.btn,
   .fc .btn-group-lg > button.btn-reddit,
+  .well.well-sm.bg-faded .btn-group-lg > .btn-reddit.btn-sm,
+  .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-reddit.btn,
   .btn-spotify.btn-lg,
   .btn-group-lg > .btn-spotify.btn,
   .fc .btn-group-lg > button.btn-spotify,
+  .well.well-sm.bg-faded .btn-group-lg > .btn-spotify.btn-sm,
+  .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-spotify.btn,
   .btn-vine.btn-lg,
   .btn-group-lg > .btn-vine.btn,
   .fc .btn-group-lg > button.btn-vine,
+  .well.well-sm.bg-faded .btn-group-lg > .btn-vine.btn-sm,
+  .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-vine.btn,
   .btn-foursquare.btn-lg,
   .btn-group-lg > .btn-foursquare.btn,
   .fc .btn-group-lg > button.btn-foursquare,
+  .well.well-sm.bg-faded .btn-group-lg > .btn-foursquare.btn-sm,
+  .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-foursquare.btn,
   .btn-vimeo.btn-lg,
   .btn-group-lg > .btn-vimeo.btn,
-  .fc .btn-group-lg > button.btn-vimeo {
+  .fc .btn-group-lg > button.btn-vimeo,
+  .well.well-sm.bg-faded .btn-group-lg > .btn-vimeo.btn-sm,
+  .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-vimeo.btn {
     padding: 0.75rem 1.5rem;
     font-size: 1.25rem;
     line-height: 1.33333;
     border: 0; }
-    .btn-facebook.btn-lg::before, .btn-group-lg > .btn-facebook.btn::before, .fc .btn-group-lg > button.btn-facebook::before,
+    .btn-facebook.btn-lg::before, .btn-group-lg > .btn-facebook.btn::before, .fc .btn-group-lg > button.btn-facebook::before, .well.well-sm.bg-faded .btn-group-lg > .btn-facebook.btn-sm::before, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-facebook.btn::before,
     .btn-twitter.btn-lg::before,
     .btn-group-lg > .btn-twitter.btn::before,
     .fc .btn-group-lg > button.btn-twitter::before,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-twitter.btn-sm::before,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-twitter.btn::before,
     .btn-linkedin.btn-lg::before,
     .btn-group-lg > .btn-linkedin.btn::before,
     .fc .btn-group-lg > button.btn-linkedin::before,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-linkedin.btn-sm::before,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-linkedin.btn::before,
     .btn-flickr.btn-lg::before,
     .btn-group-lg > .btn-flickr.btn::before,
     .fc .btn-group-lg > button.btn-flickr::before,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-flickr.btn-sm::before,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-flickr.btn::before,
     .btn-tumblr.btn-lg::before,
     .btn-group-lg > .btn-tumblr.btn::before,
     .fc .btn-group-lg > button.btn-tumblr::before,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-tumblr.btn-sm::before,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-tumblr.btn::before,
     .btn-xing.btn-lg::before,
     .btn-group-lg > .btn-xing.btn::before,
     .fc .btn-group-lg > button.btn-xing::before,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-xing.btn-sm::before,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-xing.btn::before,
     .btn-github.btn-lg::before,
     .btn-group-lg > .btn-github.btn::before,
     .fc .btn-group-lg > button.btn-github::before,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-github.btn-sm::before,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-github.btn::before,
     .btn-html5.btn-lg::before,
     .btn-group-lg > .btn-html5.btn::before,
     .fc .btn-group-lg > button.btn-html5::before,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-html5.btn-sm::before,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-html5.btn::before,
     .btn-openid.btn-lg::before,
     .btn-group-lg > .btn-openid.btn::before,
     .fc .btn-group-lg > button.btn-openid::before,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-openid.btn-sm::before,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-openid.btn::before,
     .btn-stack-overflow.btn-lg::before,
     .btn-group-lg > .btn-stack-overflow.btn::before,
     .fc .btn-group-lg > button.btn-stack-overflow::before,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-stack-overflow.btn-sm::before,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-stack-overflow.btn::before,
     .btn-youtube.btn-lg::before,
     .btn-group-lg > .btn-youtube.btn::before,
     .fc .btn-group-lg > button.btn-youtube::before,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-youtube.btn-sm::before,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-youtube.btn::before,
     .btn-css3.btn-lg::before,
     .btn-group-lg > .btn-css3.btn::before,
     .fc .btn-group-lg > button.btn-css3::before,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-css3.btn-sm::before,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-css3.btn::before,
     .btn-dribbble.btn-lg::before,
     .btn-group-lg > .btn-dribbble.btn::before,
     .fc .btn-group-lg > button.btn-dribbble::before,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-dribbble.btn-sm::before,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-dribbble.btn::before,
     .btn-google-plus.btn-lg::before,
     .btn-group-lg > .btn-google-plus.btn::before,
     .fc .btn-group-lg > button.btn-google-plus::before,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-google-plus.btn-sm::before,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-google-plus.btn::before,
     .btn-instagram.btn-lg::before,
     .btn-group-lg > .btn-instagram.btn::before,
     .fc .btn-group-lg > button.btn-instagram::before,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-instagram.btn-sm::before,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-instagram.btn::before,
     .btn-pinterest.btn-lg::before,
     .btn-group-lg > .btn-pinterest.btn::before,
     .fc .btn-group-lg > button.btn-pinterest::before,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-pinterest.btn-sm::before,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-pinterest.btn::before,
     .btn-vk.btn-lg::before,
     .btn-group-lg > .btn-vk.btn::before,
     .fc .btn-group-lg > button.btn-vk::before,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-vk.btn-sm::before,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-vk.btn::before,
     .btn-yahoo.btn-lg::before,
     .btn-group-lg > .btn-yahoo.btn::before,
     .fc .btn-group-lg > button.btn-yahoo::before,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-yahoo.btn-sm::before,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-yahoo.btn::before,
     .btn-behance.btn-lg::before,
     .btn-group-lg > .btn-behance.btn::before,
     .fc .btn-group-lg > button.btn-behance::before,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-behance.btn-sm::before,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-behance.btn::before,
     .btn-dropbox.btn-lg::before,
     .btn-group-lg > .btn-dropbox.btn::before,
     .fc .btn-group-lg > button.btn-dropbox::before,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-dropbox.btn-sm::before,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-dropbox.btn::before,
     .btn-reddit.btn-lg::before,
     .btn-group-lg > .btn-reddit.btn::before,
     .fc .btn-group-lg > button.btn-reddit::before,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-reddit.btn-sm::before,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-reddit.btn::before,
     .btn-spotify.btn-lg::before,
     .btn-group-lg > .btn-spotify.btn::before,
     .fc .btn-group-lg > button.btn-spotify::before,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-spotify.btn-sm::before,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-spotify.btn::before,
     .btn-vine.btn-lg::before,
     .btn-group-lg > .btn-vine.btn::before,
     .fc .btn-group-lg > button.btn-vine::before,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-vine.btn-sm::before,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-vine.btn::before,
     .btn-foursquare.btn-lg::before,
     .btn-group-lg > .btn-foursquare.btn::before,
     .fc .btn-group-lg > button.btn-foursquare::before,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-foursquare.btn-sm::before,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-foursquare.btn::before,
     .btn-vimeo.btn-lg::before,
     .btn-group-lg > .btn-vimeo.btn::before,
-    .fc .btn-group-lg > button.btn-vimeo::before {
+    .fc .btn-group-lg > button.btn-vimeo::before,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-vimeo.btn-sm::before,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-vimeo.btn::before {
       width: 3.16667rem;
       height: 3.16667rem;
       padding: 0.75rem 0;
       font-size: 1.25rem;
       line-height: 1.33333; }
-    .btn-facebook.btn-lg span, .btn-group-lg > .btn-facebook.btn span, .fc .btn-group-lg > button.btn-facebook span,
-    .btn-twitter.btn-lg span, .btn-group-lg > .btn-twitter.btn span, .fc .btn-group-lg > button.btn-twitter span,
-    .btn-linkedin.btn-lg span, .btn-group-lg > .btn-linkedin.btn span, .fc .btn-group-lg > button.btn-linkedin span,
-    .btn-flickr.btn-lg span, .btn-group-lg > .btn-flickr.btn span, .fc .btn-group-lg > button.btn-flickr span,
-    .btn-tumblr.btn-lg span, .btn-group-lg > .btn-tumblr.btn span, .fc .btn-group-lg > button.btn-tumblr span,
-    .btn-xing.btn-lg span, .btn-group-lg > .btn-xing.btn span, .fc .btn-group-lg > button.btn-xing span,
-    .btn-github.btn-lg span, .btn-group-lg > .btn-github.btn span, .fc .btn-group-lg > button.btn-github span,
-    .btn-html5.btn-lg span, .btn-group-lg > .btn-html5.btn span, .fc .btn-group-lg > button.btn-html5 span,
-    .btn-openid.btn-lg span, .btn-group-lg > .btn-openid.btn span, .fc .btn-group-lg > button.btn-openid span,
-    .btn-stack-overflow.btn-lg span, .btn-group-lg > .btn-stack-overflow.btn span, .fc .btn-group-lg > button.btn-stack-overflow span,
-    .btn-youtube.btn-lg span, .btn-group-lg > .btn-youtube.btn span, .fc .btn-group-lg > button.btn-youtube span,
-    .btn-css3.btn-lg span, .btn-group-lg > .btn-css3.btn span, .fc .btn-group-lg > button.btn-css3 span,
-    .btn-dribbble.btn-lg span, .btn-group-lg > .btn-dribbble.btn span, .fc .btn-group-lg > button.btn-dribbble span,
-    .btn-google-plus.btn-lg span, .btn-group-lg > .btn-google-plus.btn span, .fc .btn-group-lg > button.btn-google-plus span,
-    .btn-instagram.btn-lg span, .btn-group-lg > .btn-instagram.btn span, .fc .btn-group-lg > button.btn-instagram span,
-    .btn-pinterest.btn-lg span, .btn-group-lg > .btn-pinterest.btn span, .fc .btn-group-lg > button.btn-pinterest span,
-    .btn-vk.btn-lg span, .btn-group-lg > .btn-vk.btn span, .fc .btn-group-lg > button.btn-vk span,
-    .btn-yahoo.btn-lg span, .btn-group-lg > .btn-yahoo.btn span, .fc .btn-group-lg > button.btn-yahoo span,
-    .btn-behance.btn-lg span, .btn-group-lg > .btn-behance.btn span, .fc .btn-group-lg > button.btn-behance span,
-    .btn-dropbox.btn-lg span, .btn-group-lg > .btn-dropbox.btn span, .fc .btn-group-lg > button.btn-dropbox span,
-    .btn-reddit.btn-lg span, .btn-group-lg > .btn-reddit.btn span, .fc .btn-group-lg > button.btn-reddit span,
-    .btn-spotify.btn-lg span, .btn-group-lg > .btn-spotify.btn span, .fc .btn-group-lg > button.btn-spotify span,
-    .btn-vine.btn-lg span, .btn-group-lg > .btn-vine.btn span, .fc .btn-group-lg > button.btn-vine span,
-    .btn-foursquare.btn-lg span, .btn-group-lg > .btn-foursquare.btn span, .fc .btn-group-lg > button.btn-foursquare span,
-    .btn-vimeo.btn-lg span, .btn-group-lg > .btn-vimeo.btn span, .fc .btn-group-lg > button.btn-vimeo span {
+    .btn-facebook.btn-lg span, .btn-group-lg > .btn-facebook.btn span, .fc .btn-group-lg > button.btn-facebook span, .well.well-sm.bg-faded .btn-group-lg > .btn-facebook.btn-sm span, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-facebook.btn span,
+    .btn-twitter.btn-lg span, .btn-group-lg > .btn-twitter.btn span, .fc .btn-group-lg > button.btn-twitter span, .well.well-sm.bg-faded .btn-group-lg > .btn-twitter.btn-sm span, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-twitter.btn span,
+    .btn-linkedin.btn-lg span, .btn-group-lg > .btn-linkedin.btn span, .fc .btn-group-lg > button.btn-linkedin span, .well.well-sm.bg-faded .btn-group-lg > .btn-linkedin.btn-sm span, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-linkedin.btn span,
+    .btn-flickr.btn-lg span, .btn-group-lg > .btn-flickr.btn span, .fc .btn-group-lg > button.btn-flickr span, .well.well-sm.bg-faded .btn-group-lg > .btn-flickr.btn-sm span, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-flickr.btn span,
+    .btn-tumblr.btn-lg span, .btn-group-lg > .btn-tumblr.btn span, .fc .btn-group-lg > button.btn-tumblr span, .well.well-sm.bg-faded .btn-group-lg > .btn-tumblr.btn-sm span, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-tumblr.btn span,
+    .btn-xing.btn-lg span, .btn-group-lg > .btn-xing.btn span, .fc .btn-group-lg > button.btn-xing span, .well.well-sm.bg-faded .btn-group-lg > .btn-xing.btn-sm span, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-xing.btn span,
+    .btn-github.btn-lg span, .btn-group-lg > .btn-github.btn span, .fc .btn-group-lg > button.btn-github span, .well.well-sm.bg-faded .btn-group-lg > .btn-github.btn-sm span, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-github.btn span,
+    .btn-html5.btn-lg span, .btn-group-lg > .btn-html5.btn span, .fc .btn-group-lg > button.btn-html5 span, .well.well-sm.bg-faded .btn-group-lg > .btn-html5.btn-sm span, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-html5.btn span,
+    .btn-openid.btn-lg span, .btn-group-lg > .btn-openid.btn span, .fc .btn-group-lg > button.btn-openid span, .well.well-sm.bg-faded .btn-group-lg > .btn-openid.btn-sm span, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-openid.btn span,
+    .btn-stack-overflow.btn-lg span, .btn-group-lg > .btn-stack-overflow.btn span, .fc .btn-group-lg > button.btn-stack-overflow span, .well.well-sm.bg-faded .btn-group-lg > .btn-stack-overflow.btn-sm span, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-stack-overflow.btn span,
+    .btn-youtube.btn-lg span, .btn-group-lg > .btn-youtube.btn span, .fc .btn-group-lg > button.btn-youtube span, .well.well-sm.bg-faded .btn-group-lg > .btn-youtube.btn-sm span, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-youtube.btn span,
+    .btn-css3.btn-lg span, .btn-group-lg > .btn-css3.btn span, .fc .btn-group-lg > button.btn-css3 span, .well.well-sm.bg-faded .btn-group-lg > .btn-css3.btn-sm span, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-css3.btn span,
+    .btn-dribbble.btn-lg span, .btn-group-lg > .btn-dribbble.btn span, .fc .btn-group-lg > button.btn-dribbble span, .well.well-sm.bg-faded .btn-group-lg > .btn-dribbble.btn-sm span, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-dribbble.btn span,
+    .btn-google-plus.btn-lg span, .btn-group-lg > .btn-google-plus.btn span, .fc .btn-group-lg > button.btn-google-plus span, .well.well-sm.bg-faded .btn-group-lg > .btn-google-plus.btn-sm span, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-google-plus.btn span,
+    .btn-instagram.btn-lg span, .btn-group-lg > .btn-instagram.btn span, .fc .btn-group-lg > button.btn-instagram span, .well.well-sm.bg-faded .btn-group-lg > .btn-instagram.btn-sm span, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-instagram.btn span,
+    .btn-pinterest.btn-lg span, .btn-group-lg > .btn-pinterest.btn span, .fc .btn-group-lg > button.btn-pinterest span, .well.well-sm.bg-faded .btn-group-lg > .btn-pinterest.btn-sm span, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-pinterest.btn span,
+    .btn-vk.btn-lg span, .btn-group-lg > .btn-vk.btn span, .fc .btn-group-lg > button.btn-vk span, .well.well-sm.bg-faded .btn-group-lg > .btn-vk.btn-sm span, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-vk.btn span,
+    .btn-yahoo.btn-lg span, .btn-group-lg > .btn-yahoo.btn span, .fc .btn-group-lg > button.btn-yahoo span, .well.well-sm.bg-faded .btn-group-lg > .btn-yahoo.btn-sm span, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-yahoo.btn span,
+    .btn-behance.btn-lg span, .btn-group-lg > .btn-behance.btn span, .fc .btn-group-lg > button.btn-behance span, .well.well-sm.bg-faded .btn-group-lg > .btn-behance.btn-sm span, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-behance.btn span,
+    .btn-dropbox.btn-lg span, .btn-group-lg > .btn-dropbox.btn span, .fc .btn-group-lg > button.btn-dropbox span, .well.well-sm.bg-faded .btn-group-lg > .btn-dropbox.btn-sm span, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-dropbox.btn span,
+    .btn-reddit.btn-lg span, .btn-group-lg > .btn-reddit.btn span, .fc .btn-group-lg > button.btn-reddit span, .well.well-sm.bg-faded .btn-group-lg > .btn-reddit.btn-sm span, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-reddit.btn span,
+    .btn-spotify.btn-lg span, .btn-group-lg > .btn-spotify.btn span, .fc .btn-group-lg > button.btn-spotify span, .well.well-sm.bg-faded .btn-group-lg > .btn-spotify.btn-sm span, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-spotify.btn span,
+    .btn-vine.btn-lg span, .btn-group-lg > .btn-vine.btn span, .fc .btn-group-lg > button.btn-vine span, .well.well-sm.bg-faded .btn-group-lg > .btn-vine.btn-sm span, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-vine.btn span,
+    .btn-foursquare.btn-lg span, .btn-group-lg > .btn-foursquare.btn span, .fc .btn-group-lg > button.btn-foursquare span, .well.well-sm.bg-faded .btn-group-lg > .btn-foursquare.btn-sm span, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-foursquare.btn span,
+    .btn-vimeo.btn-lg span, .btn-group-lg > .btn-vimeo.btn span, .fc .btn-group-lg > button.btn-vimeo span, .well.well-sm.bg-faded .btn-group-lg > .btn-vimeo.btn-sm span, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-vimeo.btn span {
       margin-left: 3.16667rem; }
-    .btn-facebook.btn-lg.icon, .btn-group-lg > .btn-facebook.icon.btn, .fc .btn-group-lg > button.btn-facebook.icon,
+    .btn-facebook.btn-lg.icon, .btn-group-lg > .btn-facebook.icon.btn, .fc .btn-group-lg > button.btn-facebook.icon, .well.well-sm.bg-faded .btn-group-lg > .btn-facebook.icon.btn-sm, .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-facebook.icon.btn,
     .btn-twitter.btn-lg.icon,
     .btn-group-lg > .btn-twitter.icon.btn,
     .fc .btn-group-lg > button.btn-twitter.icon,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-twitter.icon.btn-sm,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-twitter.icon.btn,
     .btn-linkedin.btn-lg.icon,
     .btn-group-lg > .btn-linkedin.icon.btn,
     .fc .btn-group-lg > button.btn-linkedin.icon,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-linkedin.icon.btn-sm,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-linkedin.icon.btn,
     .btn-flickr.btn-lg.icon,
     .btn-group-lg > .btn-flickr.icon.btn,
     .fc .btn-group-lg > button.btn-flickr.icon,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-flickr.icon.btn-sm,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-flickr.icon.btn,
     .btn-tumblr.btn-lg.icon,
     .btn-group-lg > .btn-tumblr.icon.btn,
     .fc .btn-group-lg > button.btn-tumblr.icon,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-tumblr.icon.btn-sm,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-tumblr.icon.btn,
     .btn-xing.btn-lg.icon,
     .btn-group-lg > .btn-xing.icon.btn,
     .fc .btn-group-lg > button.btn-xing.icon,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-xing.icon.btn-sm,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-xing.icon.btn,
     .btn-github.btn-lg.icon,
     .btn-group-lg > .btn-github.icon.btn,
     .fc .btn-group-lg > button.btn-github.icon,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-github.icon.btn-sm,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-github.icon.btn,
     .btn-html5.btn-lg.icon,
     .btn-group-lg > .btn-html5.icon.btn,
     .fc .btn-group-lg > button.btn-html5.icon,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-html5.icon.btn-sm,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-html5.icon.btn,
     .btn-openid.btn-lg.icon,
     .btn-group-lg > .btn-openid.icon.btn,
     .fc .btn-group-lg > button.btn-openid.icon,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-openid.icon.btn-sm,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-openid.icon.btn,
     .btn-stack-overflow.btn-lg.icon,
     .btn-group-lg > .btn-stack-overflow.icon.btn,
     .fc .btn-group-lg > button.btn-stack-overflow.icon,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-stack-overflow.icon.btn-sm,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-stack-overflow.icon.btn,
     .btn-youtube.btn-lg.icon,
     .btn-group-lg > .btn-youtube.icon.btn,
     .fc .btn-group-lg > button.btn-youtube.icon,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-youtube.icon.btn-sm,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-youtube.icon.btn,
     .btn-css3.btn-lg.icon,
     .btn-group-lg > .btn-css3.icon.btn,
     .fc .btn-group-lg > button.btn-css3.icon,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-css3.icon.btn-sm,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-css3.icon.btn,
     .btn-dribbble.btn-lg.icon,
     .btn-group-lg > .btn-dribbble.icon.btn,
     .fc .btn-group-lg > button.btn-dribbble.icon,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-dribbble.icon.btn-sm,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-dribbble.icon.btn,
     .btn-google-plus.btn-lg.icon,
     .btn-group-lg > .btn-google-plus.icon.btn,
     .fc .btn-group-lg > button.btn-google-plus.icon,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-google-plus.icon.btn-sm,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-google-plus.icon.btn,
     .btn-instagram.btn-lg.icon,
     .btn-group-lg > .btn-instagram.icon.btn,
     .fc .btn-group-lg > button.btn-instagram.icon,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-instagram.icon.btn-sm,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-instagram.icon.btn,
     .btn-pinterest.btn-lg.icon,
     .btn-group-lg > .btn-pinterest.icon.btn,
     .fc .btn-group-lg > button.btn-pinterest.icon,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-pinterest.icon.btn-sm,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-pinterest.icon.btn,
     .btn-vk.btn-lg.icon,
     .btn-group-lg > .btn-vk.icon.btn,
     .fc .btn-group-lg > button.btn-vk.icon,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-vk.icon.btn-sm,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-vk.icon.btn,
     .btn-yahoo.btn-lg.icon,
     .btn-group-lg > .btn-yahoo.icon.btn,
     .fc .btn-group-lg > button.btn-yahoo.icon,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-yahoo.icon.btn-sm,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-yahoo.icon.btn,
     .btn-behance.btn-lg.icon,
     .btn-group-lg > .btn-behance.icon.btn,
     .fc .btn-group-lg > button.btn-behance.icon,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-behance.icon.btn-sm,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-behance.icon.btn,
     .btn-dropbox.btn-lg.icon,
     .btn-group-lg > .btn-dropbox.icon.btn,
     .fc .btn-group-lg > button.btn-dropbox.icon,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-dropbox.icon.btn-sm,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-dropbox.icon.btn,
     .btn-reddit.btn-lg.icon,
     .btn-group-lg > .btn-reddit.icon.btn,
     .fc .btn-group-lg > button.btn-reddit.icon,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-reddit.icon.btn-sm,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-reddit.icon.btn,
     .btn-spotify.btn-lg.icon,
     .btn-group-lg > .btn-spotify.icon.btn,
     .fc .btn-group-lg > button.btn-spotify.icon,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-spotify.icon.btn-sm,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-spotify.icon.btn,
     .btn-vine.btn-lg.icon,
     .btn-group-lg > .btn-vine.icon.btn,
     .fc .btn-group-lg > button.btn-vine.icon,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-vine.icon.btn-sm,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-vine.icon.btn,
     .btn-foursquare.btn-lg.icon,
     .btn-group-lg > .btn-foursquare.icon.btn,
     .fc .btn-group-lg > button.btn-foursquare.icon,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-foursquare.icon.btn-sm,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-foursquare.icon.btn,
     .btn-vimeo.btn-lg.icon,
     .btn-group-lg > .btn-vimeo.icon.btn,
-    .fc .btn-group-lg > button.btn-vimeo.icon {
+    .fc .btn-group-lg > button.btn-vimeo.icon,
+    .well.well-sm.bg-faded .btn-group-lg > .btn-vimeo.icon.btn-sm,
+    .well.well-sm.bg-faded .btn-group-sm.btn-group-lg > .btn-vimeo.icon.btn {
       width: 3.16667rem;
       height: 3.16667rem; }
-  .btn-facebook.btn-sm, .btn-group-sm > .btn-facebook.btn, .fc .btn-group-sm > button.btn-facebook,
+  .btn-facebook.btn-sm, .btn-group-sm > .btn-facebook.btn, .fc .btn-group-sm > button.btn-facebook, .well.well-sm.bg-faded .btn-group-sm > .btn-facebook.btn-sm,
   .btn-twitter.btn-sm,
   .btn-group-sm > .btn-twitter.btn,
   .fc .btn-group-sm > button.btn-twitter,
+  .well.well-sm.bg-faded .btn-group-sm > .btn-twitter.btn-sm,
   .btn-linkedin.btn-sm,
   .btn-group-sm > .btn-linkedin.btn,
   .fc .btn-group-sm > button.btn-linkedin,
+  .well.well-sm.bg-faded .btn-group-sm > .btn-linkedin.btn-sm,
   .btn-flickr.btn-sm,
   .btn-group-sm > .btn-flickr.btn,
   .fc .btn-group-sm > button.btn-flickr,
+  .well.well-sm.bg-faded .btn-group-sm > .btn-flickr.btn-sm,
   .btn-tumblr.btn-sm,
   .btn-group-sm > .btn-tumblr.btn,
   .fc .btn-group-sm > button.btn-tumblr,
+  .well.well-sm.bg-faded .btn-group-sm > .btn-tumblr.btn-sm,
   .btn-xing.btn-sm,
   .btn-group-sm > .btn-xing.btn,
   .fc .btn-group-sm > button.btn-xing,
+  .well.well-sm.bg-faded .btn-group-sm > .btn-xing.btn-sm,
   .btn-github.btn-sm,
   .btn-group-sm > .btn-github.btn,
   .fc .btn-group-sm > button.btn-github,
+  .well.well-sm.bg-faded .btn-group-sm > .btn-github.btn-sm,
   .btn-html5.btn-sm,
   .btn-group-sm > .btn-html5.btn,
   .fc .btn-group-sm > button.btn-html5,
+  .well.well-sm.bg-faded .btn-group-sm > .btn-html5.btn-sm,
   .btn-openid.btn-sm,
   .btn-group-sm > .btn-openid.btn,
   .fc .btn-group-sm > button.btn-openid,
+  .well.well-sm.bg-faded .btn-group-sm > .btn-openid.btn-sm,
   .btn-stack-overflow.btn-sm,
   .btn-group-sm > .btn-stack-overflow.btn,
   .fc .btn-group-sm > button.btn-stack-overflow,
+  .well.well-sm.bg-faded .btn-group-sm > .btn-stack-overflow.btn-sm,
   .btn-youtube.btn-sm,
   .btn-group-sm > .btn-youtube.btn,
   .fc .btn-group-sm > button.btn-youtube,
+  .well.well-sm.bg-faded .btn-group-sm > .btn-youtube.btn-sm,
   .btn-css3.btn-sm,
   .btn-group-sm > .btn-css3.btn,
   .fc .btn-group-sm > button.btn-css3,
+  .well.well-sm.bg-faded .btn-group-sm > .btn-css3.btn-sm,
   .btn-dribbble.btn-sm,
   .btn-group-sm > .btn-dribbble.btn,
   .fc .btn-group-sm > button.btn-dribbble,
+  .well.well-sm.bg-faded .btn-group-sm > .btn-dribbble.btn-sm,
   .btn-google-plus.btn-sm,
   .btn-group-sm > .btn-google-plus.btn,
   .fc .btn-group-sm > button.btn-google-plus,
+  .well.well-sm.bg-faded .btn-group-sm > .btn-google-plus.btn-sm,
   .btn-instagram.btn-sm,
   .btn-group-sm > .btn-instagram.btn,
   .fc .btn-group-sm > button.btn-instagram,
+  .well.well-sm.bg-faded .btn-group-sm > .btn-instagram.btn-sm,
   .btn-pinterest.btn-sm,
   .btn-group-sm > .btn-pinterest.btn,
   .fc .btn-group-sm > button.btn-pinterest,
+  .well.well-sm.bg-faded .btn-group-sm > .btn-pinterest.btn-sm,
   .btn-vk.btn-sm,
   .btn-group-sm > .btn-vk.btn,
   .fc .btn-group-sm > button.btn-vk,
+  .well.well-sm.bg-faded .btn-group-sm > .btn-vk.btn-sm,
   .btn-yahoo.btn-sm,
   .btn-group-sm > .btn-yahoo.btn,
   .fc .btn-group-sm > button.btn-yahoo,
+  .well.well-sm.bg-faded .btn-group-sm > .btn-yahoo.btn-sm,
   .btn-behance.btn-sm,
   .btn-group-sm > .btn-behance.btn,
   .fc .btn-group-sm > button.btn-behance,
+  .well.well-sm.bg-faded .btn-group-sm > .btn-behance.btn-sm,
   .btn-dropbox.btn-sm,
   .btn-group-sm > .btn-dropbox.btn,
   .fc .btn-group-sm > button.btn-dropbox,
+  .well.well-sm.bg-faded .btn-group-sm > .btn-dropbox.btn-sm,
   .btn-reddit.btn-sm,
   .btn-group-sm > .btn-reddit.btn,
   .fc .btn-group-sm > button.btn-reddit,
+  .well.well-sm.bg-faded .btn-group-sm > .btn-reddit.btn-sm,
   .btn-spotify.btn-sm,
   .btn-group-sm > .btn-spotify.btn,
   .fc .btn-group-sm > button.btn-spotify,
+  .well.well-sm.bg-faded .btn-group-sm > .btn-spotify.btn-sm,
   .btn-vine.btn-sm,
   .btn-group-sm > .btn-vine.btn,
   .fc .btn-group-sm > button.btn-vine,
+  .well.well-sm.bg-faded .btn-group-sm > .btn-vine.btn-sm,
   .btn-foursquare.btn-sm,
   .btn-group-sm > .btn-foursquare.btn,
   .fc .btn-group-sm > button.btn-foursquare,
+  .well.well-sm.bg-faded .btn-group-sm > .btn-foursquare.btn-sm,
   .btn-vimeo.btn-sm,
   .btn-group-sm > .btn-vimeo.btn,
-  .fc .btn-group-sm > button.btn-vimeo {
+  .fc .btn-group-sm > button.btn-vimeo,
+  .well.well-sm.bg-faded .btn-group-sm > .btn-vimeo.btn-sm {
     padding: 0.25rem 0.5rem;
     font-size: 0.875rem;
     line-height: 1.5;
     border: 0; }
-    .btn-facebook.btn-sm::before, .btn-group-sm > .btn-facebook.btn::before, .fc .btn-group-sm > button.btn-facebook::before,
+    .btn-facebook.btn-sm::before, .btn-group-sm > .btn-facebook.btn::before, .fc .btn-group-sm > button.btn-facebook::before, .well.well-sm.bg-faded .btn-group-sm > .btn-facebook.btn-sm::before,
     .btn-twitter.btn-sm::before,
     .btn-group-sm > .btn-twitter.btn::before,
     .fc .btn-group-sm > button.btn-twitter::before,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-twitter.btn-sm::before,
     .btn-linkedin.btn-sm::before,
     .btn-group-sm > .btn-linkedin.btn::before,
     .fc .btn-group-sm > button.btn-linkedin::before,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-linkedin.btn-sm::before,
     .btn-flickr.btn-sm::before,
     .btn-group-sm > .btn-flickr.btn::before,
     .fc .btn-group-sm > button.btn-flickr::before,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-flickr.btn-sm::before,
     .btn-tumblr.btn-sm::before,
     .btn-group-sm > .btn-tumblr.btn::before,
     .fc .btn-group-sm > button.btn-tumblr::before,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-tumblr.btn-sm::before,
     .btn-xing.btn-sm::before,
     .btn-group-sm > .btn-xing.btn::before,
     .fc .btn-group-sm > button.btn-xing::before,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-xing.btn-sm::before,
     .btn-github.btn-sm::before,
     .btn-group-sm > .btn-github.btn::before,
     .fc .btn-group-sm > button.btn-github::before,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-github.btn-sm::before,
     .btn-html5.btn-sm::before,
     .btn-group-sm > .btn-html5.btn::before,
     .fc .btn-group-sm > button.btn-html5::before,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-html5.btn-sm::before,
     .btn-openid.btn-sm::before,
     .btn-group-sm > .btn-openid.btn::before,
     .fc .btn-group-sm > button.btn-openid::before,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-openid.btn-sm::before,
     .btn-stack-overflow.btn-sm::before,
     .btn-group-sm > .btn-stack-overflow.btn::before,
     .fc .btn-group-sm > button.btn-stack-overflow::before,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-stack-overflow.btn-sm::before,
     .btn-youtube.btn-sm::before,
     .btn-group-sm > .btn-youtube.btn::before,
     .fc .btn-group-sm > button.btn-youtube::before,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-youtube.btn-sm::before,
     .btn-css3.btn-sm::before,
     .btn-group-sm > .btn-css3.btn::before,
     .fc .btn-group-sm > button.btn-css3::before,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-css3.btn-sm::before,
     .btn-dribbble.btn-sm::before,
     .btn-group-sm > .btn-dribbble.btn::before,
     .fc .btn-group-sm > button.btn-dribbble::before,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-dribbble.btn-sm::before,
     .btn-google-plus.btn-sm::before,
     .btn-group-sm > .btn-google-plus.btn::before,
     .fc .btn-group-sm > button.btn-google-plus::before,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-google-plus.btn-sm::before,
     .btn-instagram.btn-sm::before,
     .btn-group-sm > .btn-instagram.btn::before,
     .fc .btn-group-sm > button.btn-instagram::before,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-instagram.btn-sm::before,
     .btn-pinterest.btn-sm::before,
     .btn-group-sm > .btn-pinterest.btn::before,
     .fc .btn-group-sm > button.btn-pinterest::before,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-pinterest.btn-sm::before,
     .btn-vk.btn-sm::before,
     .btn-group-sm > .btn-vk.btn::before,
     .fc .btn-group-sm > button.btn-vk::before,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-vk.btn-sm::before,
     .btn-yahoo.btn-sm::before,
     .btn-group-sm > .btn-yahoo.btn::before,
     .fc .btn-group-sm > button.btn-yahoo::before,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-yahoo.btn-sm::before,
     .btn-behance.btn-sm::before,
     .btn-group-sm > .btn-behance.btn::before,
     .fc .btn-group-sm > button.btn-behance::before,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-behance.btn-sm::before,
     .btn-dropbox.btn-sm::before,
     .btn-group-sm > .btn-dropbox.btn::before,
     .fc .btn-group-sm > button.btn-dropbox::before,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-dropbox.btn-sm::before,
     .btn-reddit.btn-sm::before,
     .btn-group-sm > .btn-reddit.btn::before,
     .fc .btn-group-sm > button.btn-reddit::before,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-reddit.btn-sm::before,
     .btn-spotify.btn-sm::before,
     .btn-group-sm > .btn-spotify.btn::before,
     .fc .btn-group-sm > button.btn-spotify::before,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-spotify.btn-sm::before,
     .btn-vine.btn-sm::before,
     .btn-group-sm > .btn-vine.btn::before,
     .fc .btn-group-sm > button.btn-vine::before,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-vine.btn-sm::before,
     .btn-foursquare.btn-sm::before,
     .btn-group-sm > .btn-foursquare.btn::before,
     .fc .btn-group-sm > button.btn-foursquare::before,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-foursquare.btn-sm::before,
     .btn-vimeo.btn-sm::before,
     .btn-group-sm > .btn-vimeo.btn::before,
-    .fc .btn-group-sm > button.btn-vimeo::before {
+    .fc .btn-group-sm > button.btn-vimeo::before,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-vimeo.btn-sm::before {
       width: 1.8125rem;
       height: 1.8125rem;
       padding: 0.25rem 0;
       font-size: 0.875rem;
       line-height: 1.5; }
-    .btn-facebook.btn-sm span, .btn-group-sm > .btn-facebook.btn span, .fc .btn-group-sm > button.btn-facebook span,
-    .btn-twitter.btn-sm span, .btn-group-sm > .btn-twitter.btn span, .fc .btn-group-sm > button.btn-twitter span,
-    .btn-linkedin.btn-sm span, .btn-group-sm > .btn-linkedin.btn span, .fc .btn-group-sm > button.btn-linkedin span,
-    .btn-flickr.btn-sm span, .btn-group-sm > .btn-flickr.btn span, .fc .btn-group-sm > button.btn-flickr span,
-    .btn-tumblr.btn-sm span, .btn-group-sm > .btn-tumblr.btn span, .fc .btn-group-sm > button.btn-tumblr span,
-    .btn-xing.btn-sm span, .btn-group-sm > .btn-xing.btn span, .fc .btn-group-sm > button.btn-xing span,
-    .btn-github.btn-sm span, .btn-group-sm > .btn-github.btn span, .fc .btn-group-sm > button.btn-github span,
-    .btn-html5.btn-sm span, .btn-group-sm > .btn-html5.btn span, .fc .btn-group-sm > button.btn-html5 span,
-    .btn-openid.btn-sm span, .btn-group-sm > .btn-openid.btn span, .fc .btn-group-sm > button.btn-openid span,
-    .btn-stack-overflow.btn-sm span, .btn-group-sm > .btn-stack-overflow.btn span, .fc .btn-group-sm > button.btn-stack-overflow span,
-    .btn-youtube.btn-sm span, .btn-group-sm > .btn-youtube.btn span, .fc .btn-group-sm > button.btn-youtube span,
-    .btn-css3.btn-sm span, .btn-group-sm > .btn-css3.btn span, .fc .btn-group-sm > button.btn-css3 span,
-    .btn-dribbble.btn-sm span, .btn-group-sm > .btn-dribbble.btn span, .fc .btn-group-sm > button.btn-dribbble span,
-    .btn-google-plus.btn-sm span, .btn-group-sm > .btn-google-plus.btn span, .fc .btn-group-sm > button.btn-google-plus span,
-    .btn-instagram.btn-sm span, .btn-group-sm > .btn-instagram.btn span, .fc .btn-group-sm > button.btn-instagram span,
-    .btn-pinterest.btn-sm span, .btn-group-sm > .btn-pinterest.btn span, .fc .btn-group-sm > button.btn-pinterest span,
-    .btn-vk.btn-sm span, .btn-group-sm > .btn-vk.btn span, .fc .btn-group-sm > button.btn-vk span,
-    .btn-yahoo.btn-sm span, .btn-group-sm > .btn-yahoo.btn span, .fc .btn-group-sm > button.btn-yahoo span,
-    .btn-behance.btn-sm span, .btn-group-sm > .btn-behance.btn span, .fc .btn-group-sm > button.btn-behance span,
-    .btn-dropbox.btn-sm span, .btn-group-sm > .btn-dropbox.btn span, .fc .btn-group-sm > button.btn-dropbox span,
-    .btn-reddit.btn-sm span, .btn-group-sm > .btn-reddit.btn span, .fc .btn-group-sm > button.btn-reddit span,
-    .btn-spotify.btn-sm span, .btn-group-sm > .btn-spotify.btn span, .fc .btn-group-sm > button.btn-spotify span,
-    .btn-vine.btn-sm span, .btn-group-sm > .btn-vine.btn span, .fc .btn-group-sm > button.btn-vine span,
-    .btn-foursquare.btn-sm span, .btn-group-sm > .btn-foursquare.btn span, .fc .btn-group-sm > button.btn-foursquare span,
-    .btn-vimeo.btn-sm span, .btn-group-sm > .btn-vimeo.btn span, .fc .btn-group-sm > button.btn-vimeo span {
+    .btn-facebook.btn-sm span, .btn-group-sm > .btn-facebook.btn span, .fc .btn-group-sm > button.btn-facebook span, .well.well-sm.bg-faded .btn-group-sm > .btn-facebook.btn-sm span,
+    .btn-twitter.btn-sm span, .btn-group-sm > .btn-twitter.btn span, .fc .btn-group-sm > button.btn-twitter span, .well.well-sm.bg-faded .btn-group-sm > .btn-twitter.btn-sm span,
+    .btn-linkedin.btn-sm span, .btn-group-sm > .btn-linkedin.btn span, .fc .btn-group-sm > button.btn-linkedin span, .well.well-sm.bg-faded .btn-group-sm > .btn-linkedin.btn-sm span,
+    .btn-flickr.btn-sm span, .btn-group-sm > .btn-flickr.btn span, .fc .btn-group-sm > button.btn-flickr span, .well.well-sm.bg-faded .btn-group-sm > .btn-flickr.btn-sm span,
+    .btn-tumblr.btn-sm span, .btn-group-sm > .btn-tumblr.btn span, .fc .btn-group-sm > button.btn-tumblr span, .well.well-sm.bg-faded .btn-group-sm > .btn-tumblr.btn-sm span,
+    .btn-xing.btn-sm span, .btn-group-sm > .btn-xing.btn span, .fc .btn-group-sm > button.btn-xing span, .well.well-sm.bg-faded .btn-group-sm > .btn-xing.btn-sm span,
+    .btn-github.btn-sm span, .btn-group-sm > .btn-github.btn span, .fc .btn-group-sm > button.btn-github span, .well.well-sm.bg-faded .btn-group-sm > .btn-github.btn-sm span,
+    .btn-html5.btn-sm span, .btn-group-sm > .btn-html5.btn span, .fc .btn-group-sm > button.btn-html5 span, .well.well-sm.bg-faded .btn-group-sm > .btn-html5.btn-sm span,
+    .btn-openid.btn-sm span, .btn-group-sm > .btn-openid.btn span, .fc .btn-group-sm > button.btn-openid span, .well.well-sm.bg-faded .btn-group-sm > .btn-openid.btn-sm span,
+    .btn-stack-overflow.btn-sm span, .btn-group-sm > .btn-stack-overflow.btn span, .fc .btn-group-sm > button.btn-stack-overflow span, .well.well-sm.bg-faded .btn-group-sm > .btn-stack-overflow.btn-sm span,
+    .btn-youtube.btn-sm span, .btn-group-sm > .btn-youtube.btn span, .fc .btn-group-sm > button.btn-youtube span, .well.well-sm.bg-faded .btn-group-sm > .btn-youtube.btn-sm span,
+    .btn-css3.btn-sm span, .btn-group-sm > .btn-css3.btn span, .fc .btn-group-sm > button.btn-css3 span, .well.well-sm.bg-faded .btn-group-sm > .btn-css3.btn-sm span,
+    .btn-dribbble.btn-sm span, .btn-group-sm > .btn-dribbble.btn span, .fc .btn-group-sm > button.btn-dribbble span, .well.well-sm.bg-faded .btn-group-sm > .btn-dribbble.btn-sm span,
+    .btn-google-plus.btn-sm span, .btn-group-sm > .btn-google-plus.btn span, .fc .btn-group-sm > button.btn-google-plus span, .well.well-sm.bg-faded .btn-group-sm > .btn-google-plus.btn-sm span,
+    .btn-instagram.btn-sm span, .btn-group-sm > .btn-instagram.btn span, .fc .btn-group-sm > button.btn-instagram span, .well.well-sm.bg-faded .btn-group-sm > .btn-instagram.btn-sm span,
+    .btn-pinterest.btn-sm span, .btn-group-sm > .btn-pinterest.btn span, .fc .btn-group-sm > button.btn-pinterest span, .well.well-sm.bg-faded .btn-group-sm > .btn-pinterest.btn-sm span,
+    .btn-vk.btn-sm span, .btn-group-sm > .btn-vk.btn span, .fc .btn-group-sm > button.btn-vk span, .well.well-sm.bg-faded .btn-group-sm > .btn-vk.btn-sm span,
+    .btn-yahoo.btn-sm span, .btn-group-sm > .btn-yahoo.btn span, .fc .btn-group-sm > button.btn-yahoo span, .well.well-sm.bg-faded .btn-group-sm > .btn-yahoo.btn-sm span,
+    .btn-behance.btn-sm span, .btn-group-sm > .btn-behance.btn span, .fc .btn-group-sm > button.btn-behance span, .well.well-sm.bg-faded .btn-group-sm > .btn-behance.btn-sm span,
+    .btn-dropbox.btn-sm span, .btn-group-sm > .btn-dropbox.btn span, .fc .btn-group-sm > button.btn-dropbox span, .well.well-sm.bg-faded .btn-group-sm > .btn-dropbox.btn-sm span,
+    .btn-reddit.btn-sm span, .btn-group-sm > .btn-reddit.btn span, .fc .btn-group-sm > button.btn-reddit span, .well.well-sm.bg-faded .btn-group-sm > .btn-reddit.btn-sm span,
+    .btn-spotify.btn-sm span, .btn-group-sm > .btn-spotify.btn span, .fc .btn-group-sm > button.btn-spotify span, .well.well-sm.bg-faded .btn-group-sm > .btn-spotify.btn-sm span,
+    .btn-vine.btn-sm span, .btn-group-sm > .btn-vine.btn span, .fc .btn-group-sm > button.btn-vine span, .well.well-sm.bg-faded .btn-group-sm > .btn-vine.btn-sm span,
+    .btn-foursquare.btn-sm span, .btn-group-sm > .btn-foursquare.btn span, .fc .btn-group-sm > button.btn-foursquare span, .well.well-sm.bg-faded .btn-group-sm > .btn-foursquare.btn-sm span,
+    .btn-vimeo.btn-sm span, .btn-group-sm > .btn-vimeo.btn span, .fc .btn-group-sm > button.btn-vimeo span, .well.well-sm.bg-faded .btn-group-sm > .btn-vimeo.btn-sm span {
       margin-left: 1.8125rem; }
-    .btn-facebook.btn-sm.icon, .btn-group-sm > .btn-facebook.icon.btn, .fc .btn-group-sm > button.btn-facebook.icon,
+    .btn-facebook.btn-sm.icon, .btn-group-sm > .btn-facebook.icon.btn, .fc .btn-group-sm > button.btn-facebook.icon, .well.well-sm.bg-faded .btn-group-sm > .btn-facebook.icon.btn-sm,
     .btn-twitter.btn-sm.icon,
     .btn-group-sm > .btn-twitter.icon.btn,
     .fc .btn-group-sm > button.btn-twitter.icon,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-twitter.icon.btn-sm,
     .btn-linkedin.btn-sm.icon,
     .btn-group-sm > .btn-linkedin.icon.btn,
     .fc .btn-group-sm > button.btn-linkedin.icon,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-linkedin.icon.btn-sm,
     .btn-flickr.btn-sm.icon,
     .btn-group-sm > .btn-flickr.icon.btn,
     .fc .btn-group-sm > button.btn-flickr.icon,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-flickr.icon.btn-sm,
     .btn-tumblr.btn-sm.icon,
     .btn-group-sm > .btn-tumblr.icon.btn,
     .fc .btn-group-sm > button.btn-tumblr.icon,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-tumblr.icon.btn-sm,
     .btn-xing.btn-sm.icon,
     .btn-group-sm > .btn-xing.icon.btn,
     .fc .btn-group-sm > button.btn-xing.icon,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-xing.icon.btn-sm,
     .btn-github.btn-sm.icon,
     .btn-group-sm > .btn-github.icon.btn,
     .fc .btn-group-sm > button.btn-github.icon,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-github.icon.btn-sm,
     .btn-html5.btn-sm.icon,
     .btn-group-sm > .btn-html5.icon.btn,
     .fc .btn-group-sm > button.btn-html5.icon,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-html5.icon.btn-sm,
     .btn-openid.btn-sm.icon,
     .btn-group-sm > .btn-openid.icon.btn,
     .fc .btn-group-sm > button.btn-openid.icon,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-openid.icon.btn-sm,
     .btn-stack-overflow.btn-sm.icon,
     .btn-group-sm > .btn-stack-overflow.icon.btn,
     .fc .btn-group-sm > button.btn-stack-overflow.icon,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-stack-overflow.icon.btn-sm,
     .btn-youtube.btn-sm.icon,
     .btn-group-sm > .btn-youtube.icon.btn,
     .fc .btn-group-sm > button.btn-youtube.icon,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-youtube.icon.btn-sm,
     .btn-css3.btn-sm.icon,
     .btn-group-sm > .btn-css3.icon.btn,
     .fc .btn-group-sm > button.btn-css3.icon,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-css3.icon.btn-sm,
     .btn-dribbble.btn-sm.icon,
     .btn-group-sm > .btn-dribbble.icon.btn,
     .fc .btn-group-sm > button.btn-dribbble.icon,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-dribbble.icon.btn-sm,
     .btn-google-plus.btn-sm.icon,
     .btn-group-sm > .btn-google-plus.icon.btn,
     .fc .btn-group-sm > button.btn-google-plus.icon,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-google-plus.icon.btn-sm,
     .btn-instagram.btn-sm.icon,
     .btn-group-sm > .btn-instagram.icon.btn,
     .fc .btn-group-sm > button.btn-instagram.icon,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-instagram.icon.btn-sm,
     .btn-pinterest.btn-sm.icon,
     .btn-group-sm > .btn-pinterest.icon.btn,
     .fc .btn-group-sm > button.btn-pinterest.icon,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-pinterest.icon.btn-sm,
     .btn-vk.btn-sm.icon,
     .btn-group-sm > .btn-vk.icon.btn,
     .fc .btn-group-sm > button.btn-vk.icon,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-vk.icon.btn-sm,
     .btn-yahoo.btn-sm.icon,
     .btn-group-sm > .btn-yahoo.icon.btn,
     .fc .btn-group-sm > button.btn-yahoo.icon,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-yahoo.icon.btn-sm,
     .btn-behance.btn-sm.icon,
     .btn-group-sm > .btn-behance.icon.btn,
     .fc .btn-group-sm > button.btn-behance.icon,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-behance.icon.btn-sm,
     .btn-dropbox.btn-sm.icon,
     .btn-group-sm > .btn-dropbox.icon.btn,
     .fc .btn-group-sm > button.btn-dropbox.icon,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-dropbox.icon.btn-sm,
     .btn-reddit.btn-sm.icon,
     .btn-group-sm > .btn-reddit.icon.btn,
     .fc .btn-group-sm > button.btn-reddit.icon,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-reddit.icon.btn-sm,
     .btn-spotify.btn-sm.icon,
     .btn-group-sm > .btn-spotify.icon.btn,
     .fc .btn-group-sm > button.btn-spotify.icon,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-spotify.icon.btn-sm,
     .btn-vine.btn-sm.icon,
     .btn-group-sm > .btn-vine.icon.btn,
     .fc .btn-group-sm > button.btn-vine.icon,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-vine.icon.btn-sm,
     .btn-foursquare.btn-sm.icon,
     .btn-group-sm > .btn-foursquare.icon.btn,
     .fc .btn-group-sm > button.btn-foursquare.icon,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-foursquare.icon.btn-sm,
     .btn-vimeo.btn-sm.icon,
     .btn-group-sm > .btn-vimeo.icon.btn,
-    .fc .btn-group-sm > button.btn-vimeo.icon {
+    .fc .btn-group-sm > button.btn-vimeo.icon,
+    .well.well-sm.bg-faded .btn-group-sm > .btn-vimeo.icon.btn-sm {
       width: 1.8125rem;
       height: 1.8125rem; }
 
@@ -10532,16 +11711,16 @@ hr.transparent {
   right: 2rem; }
   .breadcrumb-menu::before {
     display: none; }
-  .breadcrumb-menu .btn, .breadcrumb-menu .fc button, .fc .breadcrumb-menu button {
+  .breadcrumb-menu .btn, .breadcrumb-menu .fc button, .fc .breadcrumb-menu button, .breadcrumb-menu .well.well-sm.bg-faded .btn-sm, .well.well-sm.bg-faded .breadcrumb-menu .btn-sm, .breadcrumb-menu .well.well-sm.bg-faded .btn-group-sm > .btn, .well.well-sm.bg-faded .breadcrumb-menu .btn-group-sm > .btn {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem; }
-  .breadcrumb-menu .btn.btn-secondary, .breadcrumb-menu .fc button, .fc .breadcrumb-menu button {
+  .breadcrumb-menu .btn.btn-secondary, .breadcrumb-menu .fc button, .fc .breadcrumb-menu button, .breadcrumb-menu .well.well-sm.bg-faded .btn-secondary.btn-sm, .well.well-sm.bg-faded .breadcrumb-menu .btn-secondary.btn-sm, .breadcrumb-menu .well.well-sm.bg-faded .btn-group-sm > .btn-secondary.btn, .well.well-sm.bg-faded .breadcrumb-menu .btn-group-sm > .btn-secondary.btn, .breadcrumb-menu .well.well-sm.bg-faded .fc .btn-group-sm > button, .well.well-sm.bg-faded .fc .breadcrumb-menu .btn-group-sm > button, .breadcrumb-menu .fc .well.well-sm.bg-faded .btn-group-sm > button, .fc .well.well-sm.bg-faded .breadcrumb-menu .btn-group-sm > button, .breadcrumb-menu .well.well-sm.bg-faded .fc button.btn-sm, .well.well-sm.bg-faded .fc .breadcrumb-menu button.btn-sm, .breadcrumb-menu .fc .well.well-sm.bg-faded button.btn-sm, .fc .well.well-sm.bg-faded .breadcrumb-menu button.btn-sm {
     color: #c0cadd;
     border: 0; }
-    .breadcrumb-menu .btn.btn-secondary:hover, .breadcrumb-menu .fc button:hover, .fc .breadcrumb-menu button:hover, .breadcrumb-menu .btn.btn-secondary.active, .breadcrumb-menu .fc button.active, .fc .breadcrumb-menu button.active {
+    .breadcrumb-menu .btn.btn-secondary:hover, .breadcrumb-menu .fc button:hover, .fc .breadcrumb-menu button:hover, .breadcrumb-menu .well.well-sm.bg-faded .btn-secondary.btn-sm:hover, .well.well-sm.bg-faded .breadcrumb-menu .btn-secondary.btn-sm:hover, .breadcrumb-menu .well.well-sm.bg-faded .fc .btn-group-sm > button:hover, .well.well-sm.bg-faded .fc .breadcrumb-menu .btn-group-sm > button:hover, .breadcrumb-menu .fc .well.well-sm.bg-faded .btn-group-sm > button:hover, .fc .well.well-sm.bg-faded .breadcrumb-menu .btn-group-sm > button:hover, .breadcrumb-menu .well.well-sm.bg-faded .fc button.btn-sm:hover, .well.well-sm.bg-faded .fc .breadcrumb-menu button.btn-sm:hover, .breadcrumb-menu .fc .well.well-sm.bg-faded button.btn-sm:hover, .fc .well.well-sm.bg-faded .breadcrumb-menu button.btn-sm:hover, .breadcrumb-menu .btn.btn-secondary.active, .breadcrumb-menu .fc button.active, .fc .breadcrumb-menu button.active, .breadcrumb-menu .well.well-sm.bg-faded .btn-secondary.active.btn-sm, .well.well-sm.bg-faded .breadcrumb-menu .btn-secondary.active.btn-sm, .breadcrumb-menu .well.well-sm.bg-faded .fc .btn-group-sm > button.active, .well.well-sm.bg-faded .fc .breadcrumb-menu .btn-group-sm > button.active, .breadcrumb-menu .fc .well.well-sm.bg-faded .btn-group-sm > button.active, .fc .well.well-sm.bg-faded .breadcrumb-menu .btn-group-sm > button.active, .breadcrumb-menu .well.well-sm.bg-faded .fc button.active.btn-sm, .well.well-sm.bg-faded .fc .breadcrumb-menu button.active.btn-sm, .breadcrumb-menu .fc .well.well-sm.bg-faded button.active.btn-sm, .fc .well.well-sm.bg-faded .breadcrumb-menu button.active.btn-sm {
       color: #374767;
       background: transparent; }
-  .breadcrumb-menu .open .btn.btn-secondary, .breadcrumb-menu .open .fc button, .fc .breadcrumb-menu .open button {
+  .breadcrumb-menu .open .btn.btn-secondary, .breadcrumb-menu .open .fc button, .fc .breadcrumb-menu .open button, .breadcrumb-menu .open .well.well-sm.bg-faded .btn-secondary.btn-sm, .well.well-sm.bg-faded .breadcrumb-menu .open .btn-secondary.btn-sm, .breadcrumb-menu .open .well.well-sm.bg-faded .fc .btn-group-sm > button, .well.well-sm.bg-faded .fc .breadcrumb-menu .open .btn-group-sm > button, .breadcrumb-menu .open .fc .well.well-sm.bg-faded .btn-group-sm > button, .fc .well.well-sm.bg-faded .breadcrumb-menu .open .btn-group-sm > button, .breadcrumb-menu .open .well.well-sm.bg-faded .fc button.btn-sm, .well.well-sm.bg-faded .fc .breadcrumb-menu .open button.btn-sm, .breadcrumb-menu .open .fc .well.well-sm.bg-faded button.btn-sm, .fc .well.well-sm.bg-faded .breadcrumb-menu .open button.btn-sm {
     color: #374767;
     background: transparent; }
   .breadcrumb-menu .dropdown-menu {
@@ -11277,6 +12456,29 @@ base-chart.chart {
 
 .label-pill {
   border-radius: 1rem !important; }
+
+.glyphicon {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.glyphicon-chevron-up:before {
+  content: "\f077"; }
+
+.glyphicon-chevron-down:before {
+  content: "\f078"; }
+
+.glyphicon-chevron-left:before {
+  content: "\f053"; }
+
+.glyphicon-chevron-right:before {
+  content: "\f054"; }
+
+.well.well-sm.bg-faded .btn-sm, .well.well-sm.bg-faded .btn-group-sm > .btn, .well.well-sm.bg-faded .fc .btn-group-sm > button, .fc .well.well-sm.bg-faded .btn-group-sm > button {
+  background: #fff; }
 
 @media (max-width: 991px) {
   body {

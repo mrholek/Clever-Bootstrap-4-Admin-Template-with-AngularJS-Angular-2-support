@@ -1,0 +1,66 @@
+<div class="animated fadeIn">
+    <div class="card-columns col-2">
+        <div class="card">
+            <div class="card-header">
+                <strong>Select 2</strong>
+            </div>
+            <div class="card-block">
+                <ng-select [multiple]=true [items]="items_multiple" placeholder="Please select"></ng-select>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <strong>Timepicker</strong>
+                <small>A lightweight &amp; configurable timepicker directive</small>
+            </div>
+            <div class="card-block">
+                <timepicker [(ngModel)]="mytime" (change)="changed()" [hourStep]="hstep" [minuteStep]="mstep" [showMeridian]="ismeridian" [readonlyInput]="!isEnabled"></timepicker>
+
+                <pre class="alert alert-info">Time is: {{mytime}}</pre>
+
+                <div class="row">
+                    <div class="col-xs-6">
+                        Hours step is:
+                        <select class="form-control" [(ngModel)]="hstep">
+                            <option *ngFor="let opt of options.hstep" [value]="opt">{{opt}}</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-6">
+                        Minutes step is:
+                        <select class="form-control" [(ngModel)]="mstep">
+                            <option *ngFor="let opt of options.mstep" [value]="opt">{{opt}}</option>
+                        </select>
+                    </div>
+                </div>
+
+                <hr>
+
+                <button type="button" class="btn btn-info" (click)="toggleMode()">12H / 24H</button>
+                <button type="button" class="btn btn-info" (click)="isEnabled=!isEnabled">Enable / Disable input</button>
+                <button type="button" class="btn btn-primary" (click)="update()">Set to 14:00</button>
+                <button type="button" class="btn btn-danger" (click)="clear()">Clear</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <strong>Datepicker</strong>
+                <small>A lightweight &amp; configurable datepicker component</small>
+            </div>
+            <div class="card-block">
+                <pre class="card card-block card-header">Selected date is:
+                    <em *ngIf="dt">{{ getDate() | date:'fullDate'}}</em>
+                </pre>
+                <div style="display:inline-block; min-height:290px;">
+                    <datepicker [(ngModel)]="dt" [minDate]="minDate" [showWeeks]="true"></datepicker>
+                </div>
+
+                <hr />
+                <button type="button" class="btn btn-info" (click)="today()">Today</button>
+                <button type="button" class="btn btn-danger" (click)="clearDate()">Clear</button>
+                <button type="button" class="btn btn-outline-secondary" (click)="toggleMin()" tooltip="After today restriction">Min date</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -32,6 +32,10 @@ export const routes: Routes = [
                 loadChildren: 'app/icons/icons.module#IconsModule'
             },
             {
+                path: 'forms',
+                loadChildren: 'app/forms/forms.module#FormsModule'
+            },
+            {
                 path: 'plugins',
                 loadChildren: 'app/plugins/plugins.module#PluginsModule'
             },
@@ -42,6 +46,10 @@ export const routes: Routes = [
             {
                 path: 'charts',
                 loadChildren: 'app/chartjs/chartjs.module#ChartJSModule'
+            },
+            {
+                path: 'uikits',
+                loadChildren: 'app/uikits/uikits.module#UIKitsModule'
             }
         ]
     },

@@ -7,8 +7,9 @@ import 'rxjs/add/operator/filter';
     template: `
     <template ngFor let-breadcrumb [ngForOf]="breadcrumbs" let-last = last>
         <li class="breadcrumb-item" *ngIf="breadcrumb.label.title" [ngClass]="{active: last}">
-        <a *ngIf="!last" [routerLink]="breadcrumb.url">{{breadcrumb.label.title}}</a>
-        <span *ngIf="last" [routerLink]="breadcrumb.url">{{breadcrumb.label.title}}</span>
+            <a *ngIf="!last" [routerLink]="breadcrumb.url">{{breadcrumb.label.title}}</a>
+            <span *ngIf="last" [routerLink]="breadcrumb.url">{{breadcrumb.label.title}}</span>
+        </li>    
     </template>`
 })
 export class BreadcrumbsComponent {
