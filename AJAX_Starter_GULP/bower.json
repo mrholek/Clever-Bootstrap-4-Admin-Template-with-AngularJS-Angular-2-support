@@ -1,15 +1,14 @@
 {
   "name": "genesis-ui",
-  "version": "1.5.11 (jQuery & Static Version)",
+  "version": "1.6.1 (jQuery & Static Version)",
   "dependencies": {
-    "bootstrap": "4.0.0-alpha.5",
+    "bootstrap": "4.0.0-alpha.6",
     "tether": "latest",
     "jquery": "^3.0.0",
     "fontawesome": "latest",
     "simple-line-icons": "latest",
     "pace": "latest",
     "chart.js": "^2.3.0",
-
     "momentjs": "latest",
     "datatables": "latest",
     "bootstrap-daterangepicker": "latest",
@@ -21,7 +20,8 @@
     "jquery.maskedinput": "latest",
     "ladda": "latest",
     "spinkit": "latest",
-    "jquery-validation": "latest"
+    "jquery-validation": "latest",
+    "jquery-ui": "^1.12.1"
   },
   "overrides": {
     "datatables": {
@@ -35,7 +35,7 @@
         "dist/fullcalendar.js",
         "dist/gcal.js"
       ]
-  },
+    },
     "ladda": {
       "main": [
         "js/ladda.js",

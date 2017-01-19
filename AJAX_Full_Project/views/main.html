@@ -1,12 +1,12 @@
 <script>
     var requireJS = [
-            "js/libs/toastr.min.js",
-            "js/libs/gauge.min.js",
-            "js/libs/moment.min.js",
-            "js/libs/daterangepicker.js"
-    	];
+      "js/libs/toastr.min.js",
+      "js/libs/gauge.min.js",
+      "js/libs/moment.min.js",
+      "js/libs/daterangepicker.js"
+    ];
     
-    	loadJS(requireJS, "js/views/main.js");
+    loadJS(requireJS, "js/views/main.js");
 </script>
 
 <div class="animated fadeIn">
@@ -16,9 +16,9 @@
         <div class="col-sm-6 col-lg-3">
             <div class="card">
                 <div class="card-block p-0 clearfix">
-                    <i class="fa fa-cogs bg-primary p-2 px-3 font-2xl mr-1 float-xs-left"></i>
-                    <div class="h5 mb-0 pt-1 text-xs-center">4.589</div>
-                    <div class="text-muted text-uppercase font-weight-bold font-xs text-xs-center">Clients</div>
+                    <i class="fa fa-cogs bg-primary p-2 px-3 font-2xl mr-1 float-left"></i>
+                    <div class="h5 mb-0 pt-1 text-center">4.589</div>
+                    <div class="text-muted text-uppercase font-weight-bold font-xs text-center">Clients</div>
                 </div>
             </div>
         </div>
@@ -27,9 +27,9 @@
         <div class="col-sm-6 col-lg-3">
             <div class="card">
                 <div class="card-block p-0 clearfix">
-                    <i class="fa fa-laptop bg-danger p-2 px-3 font-2xl mr-1 float-xs-left"></i>
-                    <div class="h5 mb-0 pt-1 text-xs-center">789</div>
-                    <div class="text-muted text-uppercase font-weight-bold font-xs text-xs-center">Deals</div>
+                    <i class="fa fa-laptop bg-danger p-2 px-3 font-2xl mr-1 float-left"></i>
+                    <div class="h5 mb-0 pt-1 text-center">789</div>
+                    <div class="text-muted text-uppercase font-weight-bold font-xs text-center">Deals</div>
                 </div>
             </div>
         </div>
@@ -38,9 +38,9 @@
         <div class="col-sm-6 col-lg-3">
             <div class="card">
                 <div class="card-block p-0 clearfix">
-                    <i class="fa fa-moon-o bg-success p-2 px-3 font-2xl mr-1 float-xs-left"></i>
-                    <div class="h5 mb-0 pt-1 text-xs-center">$1.999,50</div>
-                    <div class="text-muted text-uppercase font-weight-bold font-xs text-xs-center">Income</div>
+                    <i class="fa fa-moon-o bg-success p-2 px-3 font-2xl mr-1 float-left"></i>
+                    <div class="h5 mb-0 pt-1 text-center">$1.999,50</div>
+                    <div class="text-muted text-uppercase font-weight-bold font-xs text-center">Income</div>
                 </div>
             </div>
         </div>
@@ -49,9 +49,9 @@
         <div class="col-sm-6 col-lg-3">
             <div class="card">
                 <div class="card-block p-0 clearfix">
-                    <i class="fa fa-bell bg-info p-2 px-3 font-2xl mr-1 float-xs-left"></i>
-                    <div class="h5 mb-0 pt-1 text-xs-center">$19.999,50</div>
-                    <div class="text-muted text-uppercase font-weight-bold font-xs text-xs-center">Account</div>
+                    <i class="fa fa-bell bg-info p-2 px-3 font-2xl mr-1 float-left"></i>
+                    <div class="h5 mb-0 pt-1 text-center">$19.999,50</div>
+                    <div class="text-muted text-uppercase font-weight-bold font-xs text-center">Account</div>
                 </div>
             </div>
         </div>
@@ -76,20 +76,29 @@
                             <h4 class="card-title">Details</h4>
                             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
                             <br>
-                            <div class="mb-h">Visits (40% - 29.703 Users)</div>
-                            <progress class="progress progress-success progress-sm" value="40" max="100" aria-describedby="example-caption-1"></progress>
+                            <div>Visits (40% - 29.703 Users)</div>
+                            <div class="progress progress-sm mt-h mb-1">
+                                <div class="progress-bar bg-success" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
 
-                            <div class="mb-h">Unique (20% - 24.093 Unique Users)</div>
-                            <progress class="progress progress-info progress-sm" value="20" max="100" aria-describedby="example-caption-2"></progress>
+                            <div>Unique (20% - 24.093 Unique Users)</div>
+                            <div class="progress progress-sm mt-h mb-1">
+                                <div class="progress-bar bg-info" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
 
-                            <div class="mb-h">Pageviews (60% - 78.706 Views)</div>
-                            <progress class="progress progress-warning progress-sm" value="60" max="100" aria-describedby="example-caption-3"></progress>
+                            <div>Pageviews (60% - 78.706 Views)</div>
+                            <div class="progress progress-sm mt-h mb-1">
+                                <div class="progress-bar bg-warning" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div>New Users (80% - 22.123 Users)</div>
+                            <div class="progress progress-sm mt-h mb-1">
+                                <div class="progress-bar bg-danger" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
 
-                            <div class="mb-h">New Users (80% - 22.123 Users)</div>
-                            <progress class="progress progress-danger progress-sm" value="80" max="100" aria-describedby="example-caption-4"></progress>
-
-                            <div class="mb-h">Bounce Rate (40.15%)</div>
-                            <progress class="progress progress-success progress-sm" value="40" max="100" aria-describedby="example-caption-5"></progress>
+                            <div>Bounce Rate (40.15%)</div>
+                            <div class="progress progress-sm mt-h mb-1">
+                                <div class="progress-bar bg-success" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -118,12 +127,14 @@
                 <div class="col-sm-4">
                     <div class="card">
                         <div class="card-block">
-                            <div class="h1 text-muted text-xs-right mb-2">
+                            <div class="h1 text-muted text-right mb-2">
                                 <i class="icon-people"></i>
                             </div>
                             <div class="h4 mb-0">87.500</div>
                             <small class="text-muted text-uppercase font-weight-bold">Visitors</small>
-                            <progress class="progress progress-xs progress-info mt-1 mb-0" value="25" max="100">25%</progress>
+                            <div class="progress progress-xs mt-1 mb-0">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -131,12 +142,14 @@
                 <div class="col-sm-4">
                     <div class="card">
                         <div class="card-block">
-                            <div class="h1 text-muted text-xs-right mb-2">
+                            <div class="h1 text-muted text-right mb-2">
                                 <i class="icon-user-follow"></i>
                             </div>
                             <div class="h4 mb-0">385</div>
                             <small class="text-muted text-uppercase font-weight-bold">New Clients</small>
-                            <progress class="progress progress-xs progress-success mt-1 mb-0" value="25" max="100">25%</progress>
+                            <div class="progress progress-xs mt-1 mb-0">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -144,12 +157,14 @@
                 <div class="col-sm-4">
                     <div class="card">
                         <div class="card-block">
-                            <div class="h1 text-muted text-xs-right mb-2">
+                            <div class="h1 text-muted text-right mb-2">
                                 <i class="icon-basket-loaded"></i>
                             </div>
                             <div class="h4 mb-0">1238</div>
                             <small class="text-muted text-uppercase font-weight-bold">Products sold</small>
-                            <progress class="progress progress-xs progress-warning mt-1 mb-0" value="25" max="100">25%</progress>
+                            <div class="progress progress-xs mt-1 mb-0">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -157,7 +172,7 @@
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-block">
-                            <div class="card-title text-xs-center h6 mt-1">
+                            <div class="card-title text-center h6 mt-1">
                                 Revenue
                             </div>
                             <div class="gaugejs-wrap">
@@ -166,7 +181,7 @@
                         </div>
                         <div class="card-footer">
                             <strong>$11.234,00</strong>
-                            <span class="float-xs-right"><i class="fa fa-arrow-circle-o-up text-success"></i> 15%</span>
+                            <span class="float-right"><i class="fa fa-arrow-circle-o-up text-success"></i> 15%</span>
                         </div>
                     </div>
                 </div>
@@ -174,7 +189,7 @@
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-block">
-                            <div class="card-title text-xs-center h6 mt-1">
+                            <div class="card-title text-center h6 mt-1">
                                 Profit
                             </div>
                             <div class="gaugejs-wrap">
@@ -183,7 +198,7 @@
                         </div>
                         <div class="card-footer">
                             <strong>$3.733,00</strong>
-                            <span class="float-xs-right"><i class="fa fa-arrow-circle-o-down text-danger"></i> -25%</span>
+                            <span class="float-right"><i class="fa fa-arrow-circle-o-down text-danger"></i> -25%</span>
                         </div>
                     </div>
                 </div>
@@ -201,7 +216,7 @@
                         </div>
                         <div class="card-block">
                             <div class="row">
-                                <div class="col-md-6 text-info text-xs-right">
+                                <div class="col-md-6 text-info text-right">
                                     <i class="fa fa-male" style="width:12px;"></i>
                                     <i class="fa fa-male" style="width:12px;"></i>
                                     <i class="fa fa-male" style="width:12px;"></i>
@@ -365,48 +380,48 @@
                         <div class="card-header card-header-inverse card-header-info">
                             <div class="font-weight-bold">
                                 <span>SALE</span>
-                                <span class="float-xs-right">$1.890,65</span>
+                                <span class="float-right">$1.890,65</span>
                             </div>
                             <div>
                                 <span>
                                     <small>Today 6:43 AM</small>
                                 </span>
-                                <span class="float-xs-right">
+                                <span class="float-right">
                                     <small>+432,50 (15,78%)</small>
                                 </span>
                             </div>
-                            <div class="chart-wrapper">
+                            <div class="chart-wrapper" style="height:38px;">
                                 <canvas class="chart-7 chart chart-line" height="38"></canvas>
                             </div>
-                            <div class="chart-wrapper">
+                            <div class="chart-wrapper" style="height:38px;">
                                 <canvas class="chart-8 chart chart-bar" height="38"></canvas>
                             </div>
                         </div>
                         <div class="card-block py-1 px-2">
                             <div class="row">
-                                <div class="col-xs-5">
+                                <div class="col-5">
                                     <strong>+$780,98</strong>
                                     <br>
                                     <span class="text-muted">
                                         <small>Weekly change</small>
                                     </span>
                                 </div>
-                                <div class="col-xs-7 p-0">
-                                    <div class="chart-wrapper">
-                                        <canvas class="chart-9 chart chart-bar float-xs-right" height="44" width="130" style="margin-top:-7px;"></canvas>
+                                <div class="col-7 p-0">
+                                    <div class="chart-wrapper" style="height:44px;">
+                                        <canvas class="chart-9 chart chart-bar" height="44" style="margin-top:-4px;"></canvas>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="card-block py-0 px-2 b-t-1">
                             <div class="row">
-                                <div class="col-xs-6 b-r-1 py-1">
+                                <div class="col-6 b-r-1 py-1">
                                     <div class="font-weight-bold">9.127</div>
                                     <div class="text-muted">
                                         <small>Deals</small>
                                     </div>
                                 </div>
-                                <div class="col-xs-6 py-1 text-xs-right">
+                                <div class="col-6 py-1 text-right">
                                     <div class="font-weight-bold">$189.783,87</div>
                                     <div class="text-muted">
                                         <small>Total Income</small>
@@ -421,48 +436,48 @@
                         <div class="card-header card-header-inverse card-header-success">
                             <div class="font-weight-bold">
                                 <span>SALE</span>
-                                <span class="float-xs-right">$1.890,65</span>
+                                <span class="float-right">$1.890,65</span>
                             </div>
                             <div>
                                 <span>
                                     <small>Today 6:43 AM</small>
                                 </span>
-                                <span class="float-xs-right">
+                                <span class="float-right">
                                     <small>+432,50 (15,78%)</small>
                                 </span>
                             </div>
-                            <div class="chart-wrapper">
+                            <div class="chart-wrapper" style="height:38px;">
                                 <canvas class="chart-7-2 chart chart-line" height="38"></canvas>
                             </div>
-                            <div class="chart-wrapper">
+                            <div class="chart-wrapper" style="height:38px;">
                                 <canvas class="chart-8-2 chart chart-bar" height="38"></canvas>
                             </div>
                         </div>
                         <div class="card-block py-1 px-2">
                             <div class="row">
-                                <div class="col-xs-5">
+                                <div class="col-5">
                                     <strong>+$780,98</strong>
                                     <br>
                                     <span class="text-muted">
                                         <small>Weekly change</small>
                                     </span>
                                 </div>
-                                <div class="col-xs-7 p-0">
-                                    <div class="chart-wrapper">
-                                        <canvas class="chart-9-2 chart chart-bar float-xs-right" height="44" width="130" style="margin-top:-7px;"></canvas>
+                                <div class="col-7 p-0">
+                                    <div class="chart-wrapper" style="height:44px;">
+                                        <canvas class="chart-9-2 chart chart-bar" height="44" style="margin-top:-4px;"></canvas>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="card-block py-0 px-2 b-t-1">
                             <div class="row">
-                                <div class="col-xs-6 b-r-1 py-1">
+                                <div class="col-6 b-r-1 py-1">
                                     <div class="font-weight-bold">9.127</div>
                                     <div class="text-muted">
                                         <small>Deals</small>
                                     </div>
                                 </div>
-                                <div class="col-xs-6 py-1 text-xs-right">
+                                <div class="col-6 py-1 text-right">
                                     <div class="font-weight-bold">$189.783,87</div>
                                     <div class="text-muted">
                                         <small>Total Income</small>
@@ -488,9 +503,9 @@
                             <h3 class="card-title clearfix mb-0">Traffic &amp; Sales</h3>
                         </div>
                         <div class="col-sm-7">
-                            <button type="button" class="btn btn-outline-primary float-xs-right ml-1"><i class="icon-cloud-download"></i> &nbsp; Download</button>
-                            <fieldset class="form-group float-xs-right">
-                                <div class="input-group float-xs-right" style="width:240px;">
+                            <button type="button" class="btn btn-outline-primary float-right ml-1"><i class="icon-cloud-download"></i> &nbsp; Download</button>
+                            <fieldset class="form-group float-right">
+                                <div class="input-group float-right" style="width:240px;">
                                     <span class="input-group-addon"><i class="fa fa-calendar"></i>
                                     </span>
                                     <input name="daterange" class="form-control date-picker" type="text" />
@@ -533,8 +548,12 @@
                                         Monday
                                     </div>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-info" value="34" max="100" style="margin-bottom: 2px;">34%</progress>
-                                        <progress class="progress progress-xs progress-danger m-0" value="78" max="100">78%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 34%" aria-valuenow="34" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -542,8 +561,12 @@
                                         Tuesday
                                     </div>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-info" value="56" max="100" style="margin-bottom: 2px;">56%</progress>
-                                        <progress class="progress progress-xs progress-danger m-0" value="94" max="100">94%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 56%" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 94%" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -551,8 +574,12 @@
                                         Wednesday
                                     </div>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-info" value="12" max="100" style="margin-bottom: 2px;">12%</progress>
-                                        <progress class="progress progress-xs progress-danger m-0" value="67" max="100">67%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 12%" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 67%" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -560,8 +587,12 @@
                                         Thursday
                                     </div>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-info" value="43" max="100" style="margin-bottom: 2px;">43%</progress>
-                                        <progress class="progress progress-xs progress-danger m-0" value="91" max="100">91%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 43%" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 91%" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -569,8 +600,12 @@
                                         Friday
                                     </div>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-info" value="22" max="100" style="margin-bottom: 2px;">22%</progress>
-                                        <progress class="progress progress-xs progress-danger m-0" value="73" max="100">73%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 22%" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 73%" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -578,8 +613,12 @@
                                         Saturday
                                     </div>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-info" value="53" max="100" style="margin-bottom: 2px;">53%</progress>
-                                        <progress class="progress progress-xs progress-danger m-0" value="82" max="100">82%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 53%" aria-valuenow="53" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 82%" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -587,14 +626,18 @@
                                         Sunday
                                     </div>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-info" value="9" max="100" style="margin-bottom: 2px;">9%</progress>
-                                        <progress class="progress progress-xs progress-danger m-0" value="69" max="100">69%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 9%" aria-valuenow="9" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 69%" aria-valuenow="69" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li class="legend">
-                                    <span class="tag tag-pill tag-info"></span>
+                                    <span class="badge badge-pill badge-info"></span>
                                     <small>New clients</small>&nbsp;
-                                    <span class="tag tag-pill tag-danger"></span>
+                                    <span class="badge badge-pill badge-danger"></span>
                                     <small>Recurring clients</small>
                                 </li>
                             </ul>
@@ -633,7 +676,9 @@
                                     <span class="title">Male</span>
                                     <span class="value">43%</span>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-warning m-0" value="43" max="100">43%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 43%" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -641,7 +686,9 @@
                                     <span class="title">Female</span>
                                     <span class="value">37%</span>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-warning m-0" value="37" max="100">37%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 37%" aria-valuenow="37" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li class="divider"></li>
@@ -652,7 +699,9 @@
                                         <span class="text-muted small">(56%)</span>
                                     </span>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-success m-0" value="56" max="100">56%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 56%" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -662,7 +711,9 @@
                                         <span class="text-muted small">(15%)</span>
                                     </span>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-success m-0" value="15" max="100">15%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -672,7 +723,9 @@
                                         <span class="text-muted small">(11%)</span>
                                     </span>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-success m-0" value="11" max="100">11%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 11%" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -682,10 +735,12 @@
                                         <span class="text-muted small">(8%)</span>
                                     </span>
                                     <div class="bars">
-                                        <progress class="progress progress-xs progress-success m-0" value="8" max="100">8%</progress>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 8%" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                     </div>
                                 </li>
-                                <li class="divider text-xs-center">
+                                <li class="divider text-center">
                                     <button type="button" class="btn btn-sm btn-link text-muted" data-toggle="tooltip" data-placement="top" title="" data-original-title="show more"><i class="icon-options"></i>
                                     </button>
                                 </li>
@@ -825,7 +880,7 @@
                                         </button>
                                     </div>
                                 </li>
-                                <li class="divider text-xs-center">
+                                <li class="divider text-center">
                                     <button type="button" class="btn btn-sm btn-link text-muted" data-toggle="tooltip" data-placement="top" title="show more"><i class="icon-options"></i>
                                     </button>
                                 </li>
@@ -838,24 +893,24 @@
                     <table class="table table-hover table-outline mb-0 hidden-sm-down">
                         <thead class="thead-default">
                             <tr>
-                                <th class="text-xs-center"><i class="icon-people"></i>
+                                <th class="text-center"><i class="icon-people"></i>
                                 </th>
                                 <th>User</th>
-                                <th class="text-xs-center">Country</th>
+                                <th class="text-center">Country</th>
                                 <th>Usage</th>
-                                <th class="text-xs-center">Payment Method</th>
+                                <th class="text-center">Payment Method</th>
                                 <th>Activity</th>
-                                <th class="text-xs-center">Satisfaction</th>
-                                <th class="text-xs-center"><i class="icon-settings"></i>
+                                <th class="text-center">Satisfaction</th>
+                                <th class="text-center"><i class="icon-settings"></i>
                                 </th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <div class="avatar">
                                         <img src="img/avatars/1.jpg" class="img-avatar" alt="admin@bootstrapmaster.com" src="img/avatars/1.jpg">
-                                        <span class="avatar-status tag-success"></span>
+                                        <span class="avatar-status badge-success"></span>
                                     </div>
                                 </td>
                                 <td>
@@ -864,43 +919,45 @@
                                         <span>New</span>| Registered: Jan 1, 2015
                                     </div>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <img src="img/flags/USA.png" alt="USA" style="height:24px;" src="img/flags/USA.png">
                                 </td>
                                 <td>
                                     <div class="clearfix">
-                                        <div class="float-xs-left">
+                                        <div class="float-left">
                                             <strong>50%</strong>
                                         </div>
-                                        <div class="float-xs-right">
+                                        <div class="float-right">
                                             <small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
                                         </div>
                                     </div>
-                                    <progress class="progress progress-xs progress-success" value="50" max="100" style="margin:5px 0 0 0;">50%</progress>
+                                    <div class="progress progress-xs">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <i class="fa fa-cc-mastercard" style="font-size:24px"></i>
                                 </td>
                                 <td>
                                     <div class="small text-muted">Last login</div>
                                     <strong>10 sec ago</strong>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <div class="gaugejs-wrap sparkline" style="width:34px;height:34px">
                                         <canvas id="gauge-1" width="34" height="34"></canvas>
                                         <span class="value">48%</span>
                                     </div>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <button type="button" class="btn btn-link text-muted"><i class="icon-settings"></i>
                                     </button>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <div class="avatar">
                                         <img src="img/avatars/2.jpg" class="img-avatar" alt="admin@bootstrapmaster.com" src="img/avatars/2.jpg">
-                                        <span class="avatar-status tag-danger"></span>
+                                        <span class="avatar-status badge-danger"></span>
                                     </div>
                                 </td>
                                 <td>
@@ -910,181 +967,186 @@
                                         <span>Recurring</span>| Registered: Jan 1, 2015
                                     </div>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <img src="img/flags/Brazil.png" alt="Brazil" style="height:24px;" src="img/flags/Brazil.png">
                                 </td>
                                 <td>
                                     <div class="clearfix">
-                                        <div class="float-xs-left">
+                                        <div class="float-left">
                                             <strong>10%</strong>
                                         </div>
-                                        <div class="float-xs-right">
+                                        <div class="float-right">
                                             <small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
                                         </div>
                                     </div>
-                                    <progress class="progress progress-xs progress-info" value="10" max="100" style="margin:5px 0 0 0;">10%</progress>
+                                    <div class="progress progress-xs">
+                                        <div class="progress-bar bg-info" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <i class="fa fa-cc-visa" style="font-size:24px"></i>
                                 </td>
                                 <td>
                                     <div class="small text-muted">Last login</div>
                                     <strong>5 minutes ago</strong>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <div class="gaugejs-wrap sparkline" style="width:34px;height:34px">
                                         <canvas id="gauge-2" width="34" height="34"></canvas>
                                         <span class="value">61%</span>
                                     </div>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <button type="button" class="btn btn-link text-muted"><i class="icon-settings"></i>
                                     </button>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <div class="avatar">
                                         <img src="img/avatars/3.jpg" class="img-avatar" alt="admin@bootstrapmaster.com" src="img/avatars/3.jpg">
-                                        <span class="avatar-status tag-warning"></span>
+                                        <span class="avatar-status badge-warning"></span>
                                     </div>
                                 </td>
                                 <td>
                                     <div>Quintin Ed</div>
                                     <div class="small text-muted">
-                                        <span>New</span>| Registered: Jan 1, 2015</div>
+                                        <span>New</span>| Registered: Jan 1, 2015
+                                    </div>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <img src="img/flags/India.png" alt="India" style="height:24px;" src="img/flags/India.png">
                                 </td>
                                 <td>
                                     <div class="clearfix">
-                                        <div class="float-xs-left">
+                                        <div class="float-left">
                                             <strong>74%</strong>
                                         </div>
-                                        <div class="float-xs-right">
+                                        <div class="float-right">
                                             <small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
                                         </div>
                                     </div>
-                                    <progress class="progress progress-xs progress-warning" value="74" max="100" style="margin:5px 0 0 0;">74%</progress>
+                                    <div class="progress progress-xs">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 74%" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <i class="fa fa-cc-stripe" style="font-size:24px"></i>
                                 </td>
                                 <td>
                                     <div class="small text-muted">Last login</div>
                                     <strong>1 hour ago</strong>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <div class="gaugejs-wrap sparkline" style="width:34px;height:34px">
                                         <canvas id="gauge-3" width="34" height="34"></canvas>
                                         <span class="value">33%</span>
                                     </div>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <button type="button" class="btn btn-link text-muted"><i class="icon-settings"></i>
                                     </button>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <div class="avatar">
                                         <img src="img/avatars/4.jpg" class="img-avatar" alt="admin@bootstrapmaster.com" src="img/avatars/4.jpg">
-                                        <span class="avatar-status tag-default"></span>
+                                        <span class="avatar-status badge-default"></span>
                                     </div>
                                 </td>
                                 <td>
                                     <div>Enéas Kwadwo</div>
                                     <div class="small text-muted">
-                                        <span>New</span>
-
-                                        | Registered: Jan 1, 2015</div>
+                                        <span>New</span>| Registered: Jan 1, 2015
+                                    </div>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <img src="img/flags/France.png" alt="France" style="height:24px;" src="img/flags/France.png">
                                 </td>
                                 <td>
                                     <div class="clearfix">
-                                        <div class="float-xs-left">
+                                        <div class="float-left">
                                             <strong>98%</strong>
                                         </div>
-                                        <div class="float-xs-right">
+                                        <div class="float-right">
                                             <small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
                                         </div>
                                     </div>
-                                    <progress class="progress progress-xs progress-danger" value="98" max="100" style="margin:5px 0 0 0;">98%</progress>
+                                    <div class="progress progress-xs">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <i class="fa fa-paypal" style="font-size:24px"></i>
                                 </td>
                                 <td>
                                     <div class="small text-muted">Last login</div>
                                     <strong>Last month</strong>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <div class="gaugejs-wrap sparkline" style="width:34px;height:34px">
                                         <canvas id="gauge-4" width="34" height="34"></canvas>
                                         <span class="value">23%</span>
                                     </div>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <button type="button" class="btn btn-link text-muted"><i class="icon-settings"></i>
                                     </button>
                                 </td>
                             </tr>
-                            <!-- end ngRepeat: user in users -->
                             <tr>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <div class="avatar">
                                         <img src="img/avatars/5.jpg" class="img-avatar" alt="admin@bootstrapmaster.com" src="img/avatars/5.jpg">
-                                        <span class="avatar-status tag-success"></span>
+                                        <span class="avatar-status badge-success"></span>
                                     </div>
                                 </td>
                                 <td>
                                     <div>Agapetus Tadeáš</div>
                                     <div class="small text-muted">
-                                        <span>New</span>
-
-                                        | Registered: Jan 1, 2015</div>
+                                        <span>New</span>| Registered: Jan 1, 2015
+                                    </div>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <img src="img/flags/Spain.png" alt="Spain" style="height:24px;" src="img/flags/Spain.png">
                                 </td>
                                 <td>
                                     <div class="clearfix">
-                                        <div class="float-xs-left">
+                                        <div class="float-left">
                                             <strong>22%</strong>
                                         </div>
-                                        <div class="float-xs-right">
+                                        <div class="float-right">
                                             <small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
                                         </div>
                                     </div>
-                                    <progress class="progress progress-xs progress-info" value="22" max="100" style="margin:5px 0 0 0;">22%</progress>
+                                    <div class="progress progress-xs">
+                                        <div class="progress-bar bg-info" role="progressbar" style="width: 22%" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <i class="fa fa-google-wallet" style="font-size:24px"></i>
                                 </td>
                                 <td>
                                     <div class="small text-muted">Last login</div>
                                     <strong>Last week</strong>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <div class="gaugejs-wrap sparkline" style="width:34px;height:34px">
                                         <canvas id="gauge-5" width="34" height="34"></canvas>
                                         <span class="value">78%</span>
                                     </div>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <button type="button" class="btn btn-link text-muted"><i class="icon-settings"></i>
                                     </button>
                                 </td>
                             </tr>
-                            <!-- end ngRepeat: user in users -->
                             <tr>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <div class="avatar">
                                         <img src="img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com" src="img/avatars/6.jpg">
-                                        <span class="avatar-status tag-danger"></span>
+                                        <span class="avatar-status badge-danger"></span>
                                     </div>
                                 </td>
                                 <td>
@@ -1093,39 +1155,40 @@
                                         <span>New</span>| Registered: Jan 1, 2015
                                     </div>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <img src="img/flags/Poland.png" alt="Poland" style="height:24px;" src="img/flags/Poland.png">
                                 </td>
                                 <td>
                                     <div class="clearfix">
-                                        <div class="float-xs-left">
+                                        <div class="float-left">
                                             <strong>43%</strong>
                                         </div>
-                                        <div class="float-xs-right">
+                                        <div class="float-right">
                                             <small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
                                         </div>
                                     </div>
-                                    <progress class="progress progress-xs progress-success" value="43" max="100" style="margin:5px 0 0 0;">43%</progress>
+                                    <div class="progress progress-xs">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 43%" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <i class="fa fa-cc-amex" style="font-size:24px"></i>
                                 </td>
                                 <td>
                                     <div class="small text-muted">Last login</div>
                                     <strong>Yesterday</strong>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <div class="gaugejs-wrap sparkline" style="width:34px;height:34px">
                                         <canvas id="gauge-6" width="34" height="34"></canvas>
                                         <span class="value">11%</span>
                                     </div>
                                 </td>
-                                <td class="text-xs-center">
+                                <td class="text-center">
                                     <button type="button" class="btn btn-link text-muted"><i class="icon-settings"></i>
                                     </button>
                                 </td>
                             </tr>
-                            <!-- end ngRepeat: user in users -->
                         </tbody>
                     </table>
                 </div>

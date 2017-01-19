@@ -1,37 +1,37 @@
 /*!
- * Ladda
- * http://lab.hakim.se/ladda
- * MIT licensed
- *
- * Copyright (C) 2016 Hakim El Hattab, http://hakim.se
- */
+* Ladda
+* http://lab.hakim.se/ladda
+* MIT licensed
+*
+* Copyright (C) 2016 Hakim El Hattab, http://hakim.se
+*/
 
 
 /*************************************
- * CONFIG
- */
+* CONFIG
+*/
 
 $spinnerSize: 32px;
 
 
 /*************************************
- * MIXINS
- */
+* MIXINS
+*/
 
 @mixin prefix ( $property, $value ) {
 	-webkit-#{$property}: $value;
-	   -moz-#{$property}: $value;
-	    -ms-#{$property}: $value;
-	     -o-#{$property}: $value;
-	        #{$property}: $value;
+	-moz-#{$property}: $value;
+	-ms-#{$property}: $value;
+	-o-#{$property}: $value;
+	#{$property}: $value;
 }
 
 @mixin transition( $value ) {
 	-webkit-transition: $value !important; // important to override bootstrap
-	   -moz-transition: $value !important;
-	    -ms-transition: $value !important;
-	     -o-transition: $value !important;
-	        transition: $value !important;
+	-moz-transition: $value !important;
+	-ms-transition: $value !important;
+	-o-transition: $value !important;
+	transition: $value !important;
 }
 
 @mixin transform( $value ) {
@@ -54,8 +54,8 @@ $spinnerSize: 32px;
 
 
 /*************************************
- * BUTTON BASE
- */
+* BUTTON BASE
+*/
 
 .ladda-button {
 	position: relative;
@@ -95,15 +95,15 @@ $spinnerSize: 32px;
 
 	@include transition( 0.1s linear all );
 }
-	.ladda-button[data-loading] .ladda-progress {
-		opacity: 1;
-		visibility: visible;
-	}
+.ladda-button[data-loading] .ladda-progress {
+	opacity: 1;
+	visibility: visible;
+}
 
 
 /*************************************
- * EASING
- */
+* EASING
+*/
 
 .ladda-button,
 .ladda-button .ladda-spinner,
@@ -122,8 +122,8 @@ $spinnerSize: 32px;
 
 
 /*************************************
- * EXPAND LEFT
- */
+* EXPAND LEFT
+*/
 
 .ladda-button[data-style=expand-right] {
 	.ladda-spinner {
@@ -151,8 +151,8 @@ $spinnerSize: 32px;
 
 
 /*************************************
- * EXPAND RIGHT
- */
+* EXPAND RIGHT
+*/
 
 .ladda-button[data-style=expand-left] {
 	.ladda-spinner {
@@ -180,8 +180,8 @@ $spinnerSize: 32px;
 
 
 /*************************************
- * EXPAND UP
- */
+* EXPAND UP
+*/
 
 .ladda-button[data-style=expand-up] {
 	overflow: hidden;
@@ -214,41 +214,41 @@ $spinnerSize: 32px;
 
 
 /*************************************
- * EXPAND DOWN
- */
+* EXPAND DOWN
+*/
 
- .ladda-button[data-style=expand-down] {
- 	overflow: hidden;
+.ladda-button[data-style=expand-down] {
+	overflow: hidden;
 
- 	.ladda-spinner {
- 		top: 62px;
- 		left: 50%;
- 		margin-left: 0;
- 	}
+	.ladda-spinner {
+		top: 62px;
+		left: 50%;
+		margin-left: 0;
+	}
 
- 	&[data-size="s"] .ladda-spinner,
- 	&[data-size="xs"] .ladda-spinner {
- 		top: 40px;
- 	}
+	&[data-size="s"] .ladda-spinner,
+	&[data-size="xs"] .ladda-spinner {
+		top: 40px;
+	}
 
- 	&[data-loading] {
- 		padding-bottom: 54px;
+	&[data-loading] {
+		padding-bottom: 54px;
 
- 		.ladda-spinner {
- 			opacity: 1;
- 		}
+		.ladda-spinner {
+			opacity: 1;
+		}
 
- 		&[data-size="s"],
- 		&[data-size="xs"] {
- 			padding-bottom: 32px;
- 		}
- 	}
- }
+		&[data-size="s"],
+		&[data-size="xs"] {
+			padding-bottom: 32px;
+		}
+	}
+}
 
 
 /*************************************
- * SLIDE LEFT
- */
+* SLIDE LEFT
+*/
 .ladda-button[data-style=slide-left] {
 	overflow: hidden;
 
@@ -274,8 +274,8 @@ $spinnerSize: 32px;
 
 
 /*************************************
- * SLIDE RIGHT
- */
+* SLIDE RIGHT
+*/
 .ladda-button[data-style=slide-right] {
 	overflow: hidden;
 
@@ -302,8 +302,8 @@ $spinnerSize: 32px;
 
 
 /*************************************
- * SLIDE UP
- */
+* SLIDE UP
+*/
 .ladda-button[data-style=slide-up] {
 	overflow: hidden;
 
@@ -330,8 +330,8 @@ $spinnerSize: 32px;
 
 
 /*************************************
- * SLIDE DOWN
- */
+* SLIDE DOWN
+*/
 .ladda-button[data-style=slide-down] {
 	overflow: hidden;
 
@@ -358,22 +358,22 @@ $spinnerSize: 32px;
 
 
 /*************************************
- * ZOOM-OUT
- */
+* ZOOM-OUT
+*/
 
 .ladda-button[data-style=zoom-out] {
 	overflow: hidden;
 }
-	.ladda-button[data-style=zoom-out] .ladda-spinner {
-		left: 50%;
-		margin-left: $spinnerSize;
+.ladda-button[data-style=zoom-out] .ladda-spinner {
+	left: 50%;
+	margin-left: $spinnerSize;
 
-		@include transform( scale( 2.5 ) );
-	}
-	.ladda-button[data-style=zoom-out] .ladda-label {
-		position: relative;
-		display: inline-block;
-	}
+	@include transform( scale( 2.5 ) );
+}
+.ladda-button[data-style=zoom-out] .ladda-label {
+	position: relative;
+	display: inline-block;
+}
 
 .ladda-button[data-style=zoom-out][data-loading] .ladda-label {
 	opacity: 0;
@@ -389,22 +389,22 @@ $spinnerSize: 32px;
 
 
 /*************************************
- * ZOOM-IN
- */
+* ZOOM-IN
+*/
 
 .ladda-button[data-style=zoom-in] {
 	overflow: hidden;
 }
-	.ladda-button[data-style=zoom-in] .ladda-spinner {
-		left: 50%;
-		margin-left: $spinnerSize/-2;
+.ladda-button[data-style=zoom-in] .ladda-spinner {
+	left: 50%;
+	margin-left: $spinnerSize/-2;
 
-		@include transform( scale( 0.2 ) );
-	}
-	.ladda-button[data-style=zoom-in] .ladda-label {
-		position: relative;
-		display: inline-block;
-	}
+	@include transform( scale( 0.2 ) );
+}
+.ladda-button[data-style=zoom-in] .ladda-label {
+	position: relative;
+	display: inline-block;
+}
 
 .ladda-button[data-style=zoom-in][data-loading] .ladda-label {
 	opacity: 0;
@@ -420,34 +420,34 @@ $spinnerSize: 32px;
 
 
 /*************************************
- * CONTRACT
- */
+* CONTRACT
+*/
 
 .ladda-button[data-style=contract] {
 	overflow: hidden;
 	width: 100px;
 }
-	.ladda-button[data-style=contract] .ladda-spinner {
-		left: 50%;
-		margin-left: 0;
-	}
+.ladda-button[data-style=contract] .ladda-spinner {
+	left: 50%;
+	margin-left: 0;
+}
 
 .ladda-button[data-style=contract][data-loading] {
 	border-radius: 50%;
 	width: 52px;
 }
-	.ladda-button[data-style=contract][data-loading] .ladda-label {
-		opacity: 0;
-	}
-	.ladda-button[data-style=contract][data-loading] .ladda-spinner {
-		opacity: 1;
-	}
+.ladda-button[data-style=contract][data-loading] .ladda-label {
+	opacity: 0;
+}
+.ladda-button[data-style=contract][data-loading] .ladda-spinner {
+	opacity: 1;
+}
 
 
 
 /*************************************
- * OVERLAY
- */
+* OVERLAY
+*/
 
 .ladda-button[data-style=contract-overlay] {
 	overflow: hidden;
@@ -455,10 +455,10 @@ $spinnerSize: 32px;
 
 	box-shadow: 0px 0px 0px 2000px rgba(0,0,0,0);
 }
-	.ladda-button[data-style=contract-overlay] .ladda-spinner {
-		left: 50%;
-		margin-left: 0;
-	}
+.ladda-button[data-style=contract-overlay] .ladda-spinner {
+	left: 50%;
+	margin-left: 0;
+}
 
 .ladda-button[data-style=contract-overlay][data-loading] {
 	border-radius: 50%;
@@ -467,9 +467,9 @@ $spinnerSize: 32px;
 	/*outline: 10000px solid rgba( 0, 0, 0, 0.5 );*/
 	box-shadow: 0px 0px 0px 2000px rgba(0,0,0,0.8);
 }
-	.ladda-button[data-style=contract-overlay][data-loading] .ladda-label {
-		opacity: 0;
-	}
-	.ladda-button[data-style=contract-overlay][data-loading] .ladda-spinner {
-		opacity: 1;
-	}
+.ladda-button[data-style=contract-overlay][data-loading] .ladda-label {
+	opacity: 0;
+}
+.ladda-button[data-style=contract-overlay][data-loading] .ladda-spinner {
+	opacity: 1;
+}

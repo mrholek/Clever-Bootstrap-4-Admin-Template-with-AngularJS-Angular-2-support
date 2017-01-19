@@ -1,5 +1,5 @@
 $(function(){
-    // Bind normal buttons
+	// Bind normal buttons
 	Ladda.bind( '.btn-ladda', { timeout: 2000 } );
 
 	// Bind progress buttons and simulate loading progress

@@ -1,6 +1,6 @@
-import { Component }        from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-    templateUrl: 'invoice.component.html'
+  templateUrl: 'invoice.component.html'
 })
 export class InvoiceComponent { }

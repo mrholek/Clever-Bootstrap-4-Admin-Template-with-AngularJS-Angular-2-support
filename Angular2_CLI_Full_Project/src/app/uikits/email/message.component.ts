@@ -1,6 +1,6 @@
-import { Component }        from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-    templateUrl: 'message.component.html'
+  templateUrl: 'message.component.html'
 })
 export class MessageComponent { }

@@ -16,11 +16,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 text-xs-center">
+                <div class="col-md-4 text-center">
                     <h3>{{ viewDate | calendarDate:(view + 'ViewTitle'):'en' }}</h3>
                 </div>
                 <div class="col-md-4">
-                    <div class="btn-group float-xs-right">
+                    <div class="btn-group float-right">
                         <div class="btn btn-primary" (click)="view = 'month'" [class.active]="view === 'month'">Month</div>
                         <div class="btn btn-primary" (click)="view = 'week'" [class.active]="view === 'week'">Week</div>
                         <div class="btn btn-primary" (click)="view = 'day'" [class.active]="view === 'day'">Day</div>

@@ -1,73 +1,71 @@
-<header class="navbar">
-    <div class="container-fluid">
-        <button class="navbar-toggler hidden-lg-up" type="button">&#9776;</button>
-        <a class="navbar-brand" ui-sref="app.main"></a>
-        <ul class="nav navbar-nav hidden-md-down float-xs-left">
-            <li class="nav-item b-r-1">
-                <a class="nav-link navbar-toggler layout-toggler" href="#">&#9776;</a>
-            </li>
+<header class="app-header navbar">
+    <button class="navbar-toggler hidden-lg-up" type="button">&#9776;</button>
+    <a class="navbar-brand" ui-sref="app.main"></a>
+    <ul class="nav navbar-nav hidden-md-down b-r-1">
+        <li class="nav-item">
+            <a class="nav-link navbar-toggler sidebar-toggler" href="#">&#9776;</a>
+        </li>
 
-        </ul>
-        <form class="form-inline float-xs-left b-r-1 px-2 hidden-md-down">
-            <i class="fa fa-search"></i>
-            <input class="form-control" type="text" placeholder="Search...">
-        </form>
-        <ul class="nav navbar-nav float-xs-right hidden-md-down">
-            <li class="nav-item dropdown pr-2" ng-controller="languageCtrl">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    <img ng-src="img/flags/{{flag}}" class="img-flag" alt="{{lang}}" height="24">
-                </a>
-                <div class="dropdown-menu dropdown-menu-right">
-                    <div class="dropdown-header text-xs-center">
-                        <strong>{{ 'CHOOSE_LANGUAGE' | translate }}</strong>
-                    </div>
-                    <a ng-repeat="language in languages" class="dropdown-item" href="#" ng-click="changeLanguage(language.langKey)">
-                        <img ng-src="img/flags/{{language.flag}}" class="img-flag" alt="{{language.lang}}" height="24">{{language.lang}}
-                    </a>
+    </ul>
+    <form class="form-inline b-r-1 px-2 hidden-md-down">
+        <i class="fa fa-search"></i>
+        <input class="form-control" type="text" placeholder="Search...">
+    </form>
+    <ul class="nav navbar-nav ml-auto hidden-md-down">
+        <li class="nav-item dropdown pr-2" ng-controller="languageCtrl">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <img ng-src="img/flags/{{flag}}" class="img-flag" alt="{{lang}}" height="24">
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+                <div class="dropdown-header text-center">
+                    <strong>{{ 'CHOOSE_LANGUAGE' | translate }}</strong>
                 </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nav-pill" href="#"><i class="icon-bell"></i><span class="tag tag-pill tag-danger">5</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nav-pill" href="#"><i class="icon-list"></i></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nav-pill" href="#"><i class="icon-location-pin"></i></a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link nav-pill avatar" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    <img src="img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
-                    <span class="tag tag-pill tag-danger">9</span>
+                <a ng-repeat="language in languages" class="dropdown-item" href="#" ng-click="changeLanguage(language.langKey)">
+                    <img ng-src="img/flags/{{language.flag}}" class="img-flag" alt="{{language.lang}}" height="24">{{language.lang}}
                 </a>
-                <div class="dropdown-menu dropdown-menu-right">
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link nav-pill" href="#"><i class="icon-bell"></i><span class="badge badge-pill badge-danger">5</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link nav-pill" href="#"><i class="icon-list"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link nav-pill" href="#"><i class="icon-location-pin"></i></a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link nav-pill avatar" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <img src="img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                <span class="badge badge-pill badge-danger">9</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
 
-                    <div class="dropdown-header text-xs-center">
-                        <strong>{{ 'ACCOUNT' | translate }}</strong>
-                    </div>
-
-                    <a class="dropdown-item" href="#"><i class="fa fa-bell-o"></i> {{ 'UPDATES' | translate }}<span class="tag tag-info">42</span></a>
-                    <a class="dropdown-item" href="#"><i class="fa fa-envelope-o"></i> {{ 'MESSAGES' | translate }}<span class="tag tag-success">42</span></a>
-                    <a class="dropdown-item" href="#"><i class="fa fa-tasks"></i> {{ 'TASKS' | translate }}<span class="tag tag-danger">42</span></a>
-                    <a class="dropdown-item" href="#"><i class="fa fa-comments"></i> {{ 'COMMENTS' | translate }}<span class="tag tag-warning">42</span></a>
-
-                    <div class="dropdown-header text-xs-center">
-                        <strong>{{ 'SETTINGS' | translate }}</strong>
-                    </div>
-
-                    <a class="dropdown-item" href="#"><i class="fa fa-user"></i> {{ 'PROFILE' | translate }}</a>
-                    <a class="dropdown-item" href="#"><i class="fa fa-wrench"></i> {{ 'SETTINGS' | translate }}</a>
-                    <a class="dropdown-item" href="#"><i class="fa fa-usd"></i> {{ 'PAYMENTS' | translate }}<span class="tag tag-default">42</span></a>
-                    <a class="dropdown-item" href="#"><i class="fa fa-file"></i> {{ 'PROJECTS' | translate }}<span class="tag tag-primary">42</span></a>
-                    <div class="divider"></div>
-                    <a class="dropdown-item" href="#"><i class="fa fa-shield"></i> {{ 'LOCK_ACCOUNT' | translate }}</a>
-                    <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> {{ 'LOGOUT' | translate }}</a>
+                <div class="dropdown-header text-center">
+                    <strong>{{ 'ACCOUNT' | translate }}</strong>
                 </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link navbar-toggler aside-toggle" href="#">&#9776;</a>
-            </li>
 
-        </ul>
-    </div>
+                <a class="dropdown-item" href="#"><i class="fa fa-bell-o"></i> {{ 'UPDATES' | translate }}<span class="badge badge-info">42</span></a>
+                <a class="dropdown-item" href="#"><i class="fa fa-envelope-o"></i> {{ 'MESSAGES' | translate }}<span class="badge badge-success">42</span></a>
+                <a class="dropdown-item" href="#"><i class="fa fa-tasks"></i> {{ 'TASKS' | translate }}<span class="badge badge-danger">42</span></a>
+                <a class="dropdown-item" href="#"><i class="fa fa-comments"></i> {{ 'COMMENTS' | translate }}<span class="badge badge-warning">42</span></a>
+
+                <div class="dropdown-header text-center">
+                    <strong>{{ 'SETTINGS' | translate }}</strong>
+                </div>
+
+                <a class="dropdown-item" href="#"><i class="fa fa-user"></i> {{ 'PROFILE' | translate }}</a>
+                <a class="dropdown-item" href="#"><i class="fa fa-wrench"></i> {{ 'SETTINGS' | translate }}</a>
+                <a class="dropdown-item" href="#"><i class="fa fa-usd"></i> {{ 'PAYMENTS' | translate }}<span class="badge badge-default">42</span></a>
+                <a class="dropdown-item" href="#"><i class="fa fa-file"></i> {{ 'PROJECTS' | translate }}<span class="badge badge-primary">42</span></a>
+                <div class="divider"></div>
+                <a class="dropdown-item" href="#"><i class="fa fa-shield"></i> {{ 'LOCK_ACCOUNT' | translate }}</a>
+                <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> {{ 'LOGOUT' | translate }}</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link navbar-toggler aside-menu-toggler" href="#">&#9776;</a>
+        </li>
+
+    </ul>
 </header>

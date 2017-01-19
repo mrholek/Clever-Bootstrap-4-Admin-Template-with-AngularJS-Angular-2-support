@@ -1,13 +1,13 @@
 {
   "project": {
-    "version": "1.5.10",
+    "version": "1.5.13",
     "name": "GenesisUI"
   },
   "apps": [
     {
       "root": "src",
       "outDir": "dist",
-      "assets": "assets",
+      "assets": ["assets"],
       "index": "index.html",
       "main": "main.ts",
       "test": "test.ts",

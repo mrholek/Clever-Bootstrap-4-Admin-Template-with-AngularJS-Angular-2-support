@@ -1,10 +1,10 @@
-import { Component }        from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-    templateUrl: 'glyphicons.component.html'
+  templateUrl: 'glyphicons.component.html'
 })
 export class GlyphiconsComponent {
 
-    constructor() { }
+  constructor() { }
 
 }
