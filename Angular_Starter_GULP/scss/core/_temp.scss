@@ -11,3 +11,32 @@
 .label-pill {
   border-radius: 1rem !important;
 }
+
+// Temp Fix for Ng2-select 
+.open > .dropdown-menu {
+  display: block;
+}
+
+span.ui-select-match-item[type="button"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 3px 5px 4px 5px;
+  margin: 2px 0px 2px 2px !important;
+  border: 1px solid #d1d4d7;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: #f8f9fa;
+  filter: none;
+  background-image: none;
+  font-size: 11px;
+  position: relative;
+  line-height: 13px;
+  border-radius: 0;
+
+  .close {
+    float: left;
+    margin-left: 0 !important;
+    margin-right: 5px;
+  }
+}

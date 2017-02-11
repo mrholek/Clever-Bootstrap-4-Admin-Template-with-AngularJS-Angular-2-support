@@ -5,6 +5,27 @@ import { Component } from '@angular/core';
 })
 export class AdvancedFormsComponent {
 
+  // Angular 2 Input Mask
+
+  public dateModel = '';
+  public dateMask = [/\d/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/];
+
+  public phoneModel = '';
+  public phoneMask = ['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/];
+
+  public taxModel = '';
+  public taxMask = [/\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/, /\d/, /\d/, /\d/];
+
+  public ssnModel = '';
+  public ssnMask = [/\d/, /\d/, /\d/, '-', /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/];
+
+  public eyeScriptModel = '';
+  public eyeScriptMask = ['~', /\d/, '.', /\d/, /\d/, ' ', '~', /\d/, '.', /\d/, /\d/, ' ', /\d/, /\d/, /\d/];
+
+  public ccnModel = '';
+  public ccnMask = [/\d/, /\d/, /\d/, /\d/, ' ', /\d/, /\d/, /\d/, /\d/, ' ', /\d/, /\d/, /\d/, /\d/, ' ', /\d/, /\d/, /\d/, /\d/];
+
+
   // Datepicker
 
   public dt:Date = new Date();
@@ -105,22 +126,34 @@ export class AdvancedFormsComponent {
 
   // ng2-select
 
-  items: Array<any> = [
-    { id: 1, text: 'Option #1' },
-    { id: 2, text: 'Option #2' },
-    { id: 3, text: 'Option #3' },
-  ];
+  public items:Array<string> = ['Amsterdam', 'Antwerp', 'Athens', 'Barcelona',
+    'Berlin', 'Birmingham', 'Bradford', 'Bremen', 'Brussels', 'Bucharest',
+    'Budapest', 'Cologne', 'Copenhagen', 'Dortmund', 'Dresden', 'Dublin', 'Düsseldorf',
+    'Essen', 'Frankfurt', 'Genoa', 'Glasgow', 'Gothenburg', 'Hamburg', 'Hannover',
+    'Helsinki', 'Leeds', 'Leipzig', 'Lisbon', 'Łódź', 'London', 'Kraków', 'Madrid',
+    'Málaga', 'Manchester', 'Marseille', 'Milan', 'Munich', 'Naples', 'Palermo',
+    'Paris', 'Poznań', 'Prague', 'Riga', 'Rome', 'Rotterdam', 'Seville', 'Sheffield',
+    'Sofia', 'Stockholm', 'Stuttgart', 'The Hague', 'Turin', 'Valencia', 'Vienna',
+    'Vilnius', 'Warsaw', 'Wrocław', 'Zagreb', 'Zaragoza'];
 
-  items_multiple: Array<any> = [
-    { id: 1, text: 'Option #1' },
-    { id: 2, text: 'Option #2' },
-    { id: 3, text: 'Option #3' },
-    { id: 4, text: 'Option #4' },
-    { id: 5, text: 'Option #5' },
-    { id: 6, text: 'Option #6' },
-    { id: 7, text: 'Option #7' },
-    { id: 8, text: 'Option #8' },
-    { id: 9, text: 'Option #9' },
-    { id: 10, text: 'Option #10' },
-  ];
+  private value:any = ['Athens'];
+
+  public selected(value:any):void {
+    console.log('Selected value is: ', value);
+  }
+
+  public removed(value:any):void {
+    console.log('Removed value is: ', value);
+  }
+
+  public refreshValue(value:any):void {
+    this.value = value;
+  }
+
+  public itemsToString(value:Array<any> = []):string {
+    return value
+      .map((item:any) => {
+        return item.text;
+      }).join(',');
+  }
 }

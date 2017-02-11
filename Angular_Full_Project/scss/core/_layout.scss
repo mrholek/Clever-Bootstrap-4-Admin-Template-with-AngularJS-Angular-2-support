@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 // app-dashboard and app-root are Angular2 selectors. You can add here your own selectors if you need.
 .app,
 app-dashboard,
@@ -17,7 +21,7 @@ app-root {
 
 .app-body {
   display: flex;
-  flex: 1;
+  flex-grow:1;
   flex-direction: row;
   overflow-x: hidden;
 

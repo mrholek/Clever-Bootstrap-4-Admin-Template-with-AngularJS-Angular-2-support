@@ -20,11 +20,10 @@ const routes: Routes = [
         path: 'draggable-cards',
         loadChildren: './draggable-cards/draggable-cards.module#DraggableCardsModule'
       },
-      // Waiting fot angular2-ladda update, now have conflict with latest version of angular-cli
-    //   {
-    //     path: 'loading-buttons',
-    //     loadChildren: './loading-buttons/loading-buttons.module#LoadingButtonsModule'
-    //   },
+      {
+        path: 'loading-buttons',
+        loadChildren: './loading-buttons/loading-buttons.module#LoadingButtonsModule'
+      },
       {
         path: 'notifications',
         loadChildren: './notifications/notifications.module#NotificationsModule'

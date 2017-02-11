@@ -1,6 +1,6 @@
 {
   "name": "genesis-ui",
-  "version": "1.6.1 (AngularJS)",
+  "version": "1.7.0 (AngularJS)",
   "dependencies": {
     "bootstrap": "4.0.0-alpha.6",
     "jquery": "^3.1.0",

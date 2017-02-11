@@ -63,6 +63,10 @@ table.table thead .sorting_asc:before {
 table.dataTable th:active {
   outline: none;
 }
+
+.dataTables_wrapper.form-inline {
+  display: inline;
+}
 .dataTables_wrapper .row {
   margin-top: 20px;
 }
