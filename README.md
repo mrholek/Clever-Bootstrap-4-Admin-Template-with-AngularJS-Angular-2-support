@@ -8,7 +8,7 @@ Clever is meant to be the UX game changer. Pure & transparent code is devoid of 
 
 <img src="https://genesisui.com/img/macbook-clever-bs4.png" alt="Bootstrap 4 Admin Template">
 
-Demo: <a href="https://genesisui.com/showcase.html?id=clever">Clever Bootstrap 4 Admin Template</a>
+Demo: <a href="https://genesisui.com/bootstrap-admin-template.html?id=clever">Clever Bootstrap 4 Admin Template</a>
 
 **NOTE:** Please remember to **STAR** this project and **FOLLOW** [my Github](https://github.com/mrholek) to keep you update with this template.
 
@@ -34,4 +34,4 @@ Have a bug or a feature request? [Please open a new issue](https://github.com/mr
 
 ## Copyright and license
 
-Copyright (c) 2016 creativeLabs Łukasz Holeczek. If you want to use this template in your personal or commercial project you have to buy proper license. You can buy license on our website: https://genesisui.com/showcase.html?id=clever
+Copyright (c) 2017 creativeLabs Łukasz Holeczek. If you want to use this template in your personal or commercial project you have to buy proper license. You can buy license on our website: https://genesisui.com/bootstrap-admin-template.html?id=clever
