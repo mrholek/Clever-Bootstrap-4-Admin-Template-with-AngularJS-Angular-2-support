@@ -16,7 +16,7 @@ class Full extends Component {
           <main className="main">
             <Breadcrumbs
               wrapperElement="ol"
-              wrapperClass="breadcrumb mb-0"
+              wrapperClass="breadcrumb"
               itemClass="breadcrumb-item"
               separator=""
               routes={this.props.routes}

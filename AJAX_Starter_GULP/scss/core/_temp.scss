@@ -12,31 +12,27 @@
   border-radius: 1rem !important;
 }
 
-// Temp Fix for Ng2-select 
-.open > .dropdown-menu {
-  display: block;
+// temp fix for Vue-Strap
+
+// Open state for the dropdown
+.open {
+  // Show the menu
+  > .dropdown-menu {
+    display: block;
+  }
+
+  // Remove the outline when :focus is triggered
+  > a {
+    outline: 0;
+  }
 }
 
-span.ui-select-match-item[type="button"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding: 3px 5px 4px 5px;
-  margin: 2px 0px 2px 2px !important;
-  border: 1px solid #d1d4d7;
-  border-radius: 0;
-  box-shadow: none;
-  background-color: #f8f9fa;
-  filter: none;
-  background-image: none;
-  font-size: 11px;
-  position: relative;
-  line-height: 13px;
-  border-radius: 0;
+// navbar dropdown fix
+.navbar .dropdown-toggle {
+  @extend .nav-link;
 
-  .close {
-    float: left;
-    margin-left: 0 !important;
-    margin-right: 5px;
+  .img-avatar {
+    height: $navbar-height - 20px;
+    margin: 0 10px;
   }
 }

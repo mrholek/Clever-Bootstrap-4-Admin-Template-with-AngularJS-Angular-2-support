@@ -1,6 +1,6 @@
 {
   "name": "genesis-ui",
-  "version": "1.7.1 (Ajax & Static Version)",
+  "version": "1.8.0 (Ajax & Static Version)",
   "dependencies": {
     "bootstrap": "4.0.0-alpha.6",
     "tether": "latest",
