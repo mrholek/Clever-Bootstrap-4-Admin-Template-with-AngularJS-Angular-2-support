@@ -75,6 +75,15 @@ class Sidebar extends Component {
                   <Link to={'/icons/font-awesome'} className="nav-link" activeClassName="active"><i className="icon-star"></i> Font Awesome</Link>
                 </li>
                 <li className="nav-item">
+                  <Link to={'/icons/glyphicons'} className="nav-link" activeClassName="active"><i className="icon-star"></i> Glyphicons</Link>
+                </li>
+                <li className="nav-item">
+                  <Link to={'/icons/glyphicons-filetypes'} className="nav-link" activeClassName="active"><i className="icon-star"></i> Glyphicons Filetypes</Link>
+                </li>
+                <li className="nav-item">
+                  <Link to={'/icons/glyphicons-social'} className="nav-link" activeClassName="active"><i className="icon-star"></i> Glyphicons Social</Link>
+                </li>
+                <li className="nav-item">
                   <Link to={'/icons/simple-line-icons'} className="nav-link" activeClassName="active"><i className="icon-star"></i> Simple Line Icons</Link>
                 </li>
               </ul>

@@ -2,15 +2,20 @@
   <navbar>
     <button class="navbar-toggler mobile-sidebar-toggler hidden-lg-up" type="button" @click="mobileSidebarToggle">&#9776;</button>
     <a class="navbar-brand" href="#"></a>
-    <ul class="nav navbar-nav hidden-md-down  b-r-1">
+    <ul class="nav navbar-nav hidden-md-down">
       <li class="nav-item">
         <a class="nav-link navbar-toggler sidebar-toggler" href="#" @click="sidebarToggle">&#9776;</a>
       </li>
+      <li class="nav-item px-1">
+        <a class="nav-link" href="#">Dashboard</a>
+      </li>
+      <li class="nav-item px-1">
+        <a class="nav-link" href="#">Users</a>
+      </li>
+      <li class="nav-item px-1">
+        <a class="nav-link" href="#">Settings</a>
+      </li>
     </ul>
-    <form class="form-inline float-left b-r-1 px-2 hidden-md-down">
-      <i class="fa fa-search"></i>
-      <input class="form-control" type="text" placeholder="Search..."/>
-    </form>
     <ul class="nav navbar-nav ml-auto">
       <li class="nav-item hidden-md-down">
         <a class="nav-link nav-pill" href="#"><i class="icon-bell"></i><span class="badge badge-pill badge-danger">5</span></a>
@@ -82,3 +87,10 @@ export default {
   }
 }
 </script>
+
+<style lang="css">
+
+.dropdown-toggle::after {
+  /*display: none !important;*/
+}
+</style>

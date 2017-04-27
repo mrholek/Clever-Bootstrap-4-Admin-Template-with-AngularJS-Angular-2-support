@@ -20,6 +20,9 @@ import Tables from 'views/components/Tables'
 
 // Views - Icons
 import FontAwesome from 'views/icons/FontAwesome'
+import Glyphicons from 'views/icons/Glyphicons'
+import GlyphiconsFiletypes from 'views/icons/GlyphiconsFiletypes'
+import GlyphiconsSocial from 'views/icons/GlyphiconsSocial'
 import SimpleLineIcons from 'views/icons/SimpleLineIcons'
 
 // Views - Pages
@@ -113,6 +116,21 @@ export default new Router({
               path: 'font-awesome',
               name: 'Font Awesome',
               component: FontAwesome
+            },
+            {
+              path: 'glyphicons',
+              name: 'Glyphicons',
+              component: Glyphicons
+            },
+            {
+              path: 'glyphicons-filetypes',
+              name: 'Glyphicons Filetypes',
+              component: GlyphiconsFiletypes
+            },
+            {
+              path: 'glyphicons-social',
+              name: 'Glyphicons Social',
+              component: GlyphiconsSocial
             },
             {
               path: 'simple-line-icons',

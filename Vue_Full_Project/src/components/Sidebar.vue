@@ -44,6 +44,15 @@
               <router-link :to="'/icons/font-awesome'" class="nav-link" exact><i class="icon-star"></i> Font Awesome</router-link>
             </li>
             <li class="nav-item">
+              <router-link :to="'/icons/glyphicons'" class="nav-link" exact><i class="icon-star"></i> Glyphicons</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link :to="'/icons/glyphicons-filetypes'" class="nav-link" exact><i class="icon-star"></i> Glyphicons Filetypes</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link :to="'/icons/glyphicons-social'" class="nav-link" exact><i class="icon-star"></i> Glyphicons Social</router-link>
+            </li>
+            <li class="nav-item">
               <router-link :to="'/icons/simple-line-icons'" class="nav-link" exact><i class="icon-star"></i> Simple Line Icons</router-link>
             </li>
           </ul>
@@ -62,16 +71,16 @@
           <a class="nav-link nav-dropdown-toggle" href="#" @click="handleClick"><i class="icon-star"></i> Pages</a>
           <ul class="nav-dropdown-items">
             <li class="nav-item">
-              <a class="nav-link" href="views/pages/login.html" target="_top"><i class="icon-star"></i> Login</a>
+              <router-link :to="'/pages/login'" class="nav-link" exact><i class="icon-star"></i> Login</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="views/pages/register.html" target="_top"><i class="icon-star"></i> Register</a>
+                <router-link :to="'/pages/register'" class="nav-link" exact><i class="icon-star"></i> Register</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="views/pages/404.html" target="_top"><i class="icon-star"></i> Error 404</a>
+                <router-link :to="'/pages/404'" class="nav-link" exact><i class="icon-star"></i> Error 404</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="views/pages/500.html" target="_top"><i class="icon-star"></i> Error 500</a>
+              <router-link :to="'/pages/500'" class="nav-link" exact><i class="icon-star"></i> Error 500</router-link>
             </li>
           </ul>
         </li>

@@ -1,7 +1,7 @@
 {
   "name": "genesis-ui",
   "version": "1.8.0",
-  "description": "Bootstrap 4 Admin Template",
+  "description": "",
   "author": "Łukasz Holeczek <lukasz@holeczek.pl>",
   "private": true,
   "scripts": {

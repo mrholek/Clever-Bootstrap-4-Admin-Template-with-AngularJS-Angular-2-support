@@ -23,6 +23,9 @@ import AdvancedForms from './views/Forms/AdvancedForms'
 
 // Icons
 import FontAwesome from './views/Icons/FontAwesome/'
+import Glyphicons from './views/Icons/Glyphicons/'
+import GlyphiconsFiletypes from './views/Icons/GlyphiconsFiletypes/'
+import GlyphiconsSocial from './views/Icons/GlyphiconsSocial/'
 import SimpleLineIcons from './views/Icons/SimpleLineIcons/'
 
 // Plugins
@@ -60,6 +63,9 @@ export default (
       <Route path="icons/" name="Icons">
         <IndexRoute component={FontAwesome}/>
         <Route path="font-awesome" name="Font Awesome" component={FontAwesome}/>
+        <Route path="glyphicons" name="Glyphicons" component={Glyphicons}/>
+        <Route path="glyphicons-filetypes" name="Glyphicons Filetypes" component={GlyphiconsFiletypes}/>
+        <Route path="glyphicons-social" name="Glyphicons Social" component={GlyphiconsSocial}/>
         <Route path="simple-line-icons" name="Simple Line Icons" component={SimpleLineIcons}/>
       </Route>
       <Route path="plugins/" name="Plugins">

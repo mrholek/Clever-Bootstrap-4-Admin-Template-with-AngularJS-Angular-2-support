@@ -1,0 +1,6 @@
+{
+  "name": "Glyphicons",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Glyphicons.js"
+}

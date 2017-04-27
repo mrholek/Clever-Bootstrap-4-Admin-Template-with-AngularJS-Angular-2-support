@@ -1,6 +1,6 @@
 /**
  * GenesisUI - Bootstrap 4 Admin Template
- * @version v1.8.0
+ * @version v1.8.1
  * @link https://genesisui.com
  * Copyright (c) 2017 creativeLabs Łukasz Holeczek
  * @license Commercial
@@ -13586,8 +13586,6 @@ base-chart.chart {
   border-radius: 50em; }
   .navbar .nav-item .nav-link.nav-pill:hover, .navbar .nav-item .nav-pill.dropdown-toggle:hover {
     border-color: #9faecb; }
-  .navbar .nav-item .nav-link.nav-pill i, .navbar .nav-item .nav-pill.dropdown-toggle i {
-    vertical-align: top; }
   .navbar .nav-item .nav-link.nav-pill .badge-pill, .navbar .nav-item .nav-pill.dropdown-toggle .badge-pill {
     margin-top: -18px;
     margin-left: -5px;
